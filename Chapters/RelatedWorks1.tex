@@ -1,0 +1,82 @@
+\chapter{Related Works}
+\section{Advances in Actuation Technologies for Multi-DoFs End-Effectors in Laparoscopic Instruments}
+
+Prior to the advent of Minimally Invasive Surgery (MIS), conventional abdominal procedures typically required a large, open incision—often referred to as a laparotomy—to provide surgeons with direct visual and physical access to the target anatomy. The instruments employed in such open surgeries were generally limited to a single DoF, such as simple grasping or cutting, while the remaining necessary dexterity — including rotation, flexion, and extension — was supplied entirely by the surgeon's own wrist and arm movements. Although effective in an open setting, this approach resulted in significant tissue trauma, prolonged patient recovery, and increased postoperative pain. In response to these limitations, the development of MIS spurred the exploration of multiple technological approaches to restore dexterity and precision within the constrained environment of keyhole surgery.
+
+To address the limited dexterity at the instrument tip, a prominent solution involves using cables as a medium to transmit power from the handpiece to the end-effector, thereby enabling enhanced DoFs, such as roll or yaw rotations. First introduced in the late 1990s, Intuitive Surgical's da Vinci system exemplifies this approach, employing a cable-driven mechanism to control its articulated tips. The primary advantage of such a system is that cables can transmit power over a distance with a lower weight penalty compared to rigid linkages or gear trains\cite{brodie_future_2018}. However, this benefit is accompanied by inherent challenges. In the initial design of the da Vinci system, cable coupling—where the movement of one cable inadvertently affects another—was a significant issue that could not be overlooked, often leading to kinematic inaccuracies and reduced control fidelity. Therefore, various approaches have been studied to address these problems.
+
+\subsection{Replacements of Driven Motors}
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{cc}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=0.8\columnwidth]{Figures/magnetic.png}
+\caption{Design and Illustration of Ultrasonic Motors\cite{li_design_2022}.}
+\label{fig31}
+\end{minipage}
+\end{tabular}
+\end{figure}
+To address the challenges of control fidelity loss and restricted tip articulation in minimally invasive surgical instruments, various driving mechanisms have been extensively investigated. One prominent approach involves the implementation of ultrasonic motors as alternatives to conventional electromagnetic actuators. As illustrated in Fig. \ref{fig31}, experimental validation has confirmed that the maximum output torque reaches 1.2 mN·m for the rotary configuration and 1.4 mN·m for the tilting mechanism. These torque values adequately satisfy the operational requirements of magnetically anchored laparoscopes while offering superior positional precision. Crucially, performance evaluations of the prototype system have substantiated both the feasibility and effectiveness of integrating these ultrasonic motors into laparoscopic applications\cite{kiong_tan_precision_2015}. This approach presents a novel and practical alternative for achieving enhanced visual platform maneuverability in single-port surgery, addressing fundamental limitations in conventional cable-driven systems through improved torque transmission and positioning accuracy.
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{cc}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=0.8\columnwidth]{Figures/bending torsion.png}
+\caption{Bending and Torsion layouts of the Transducer\cite{wu_rotary_2021}.}
+\label{fig32}
+\end{minipage}
+\end{tabular}
+\end{figure}
+
+To match the power density and peak torque output of this proposed driving method to electromagnetic actuators, there are studies that focus on this area. By applying a rod-shaped transducer in torsional and bending modes, the rotor is driven in its orthogonal direction with external excitements at certain frequencies. By adjusting exciting frequencies, the maximum torque recorded in the experiments reaches 10.1 N.m and output power reaches 38.1 W\cite{wu_rotary_2021}.
+
+\subsection{Additional Sensors}
+
+A fundamental limitation in the original cable-driven system involves the progressive uncertainty of cable length resulting from material creep during prolonged operation. This phenomenon introduces cumulative positioning errors between the input and output ends, significantly compromising control fidelity\cite{liang_novel_2017}. To mitigate this inherent uncertainty, the integration of supplemental sensing modalities has been implemented. These sensors enable real-time monitoring of either cable tension, end-effector pose, or both, facilitating a closed-loop control architecture that dynamically compensates for length variations and restores positional accuracy.
+
+
+
+Accurate measurement of cable tension during surgical procedures represents a critical safety requirement in cable-driven robotic systems. In traditional laparoscopic surgery, surgeons rely on haptic feedback transmitted through rigid instruments to assess tissue interaction forces. However, in motor-driven systems where actuation forces are generated remotely, this crucial tactile information becomes significantly attenuated. This sensory disconnect necessitates extensive training for surgeons to develop appropriate motor control through the handheld interface, as demonstrated in studies on force sensing in robotic surgery \cite{trejos_force_2010}.
+
+Force sensing has emerged as a promising solution to restore this lost feedback. The most straightforward approach involves embedding force sensors, such as Fiber Bragg Gratings (FBGs), directly into the surgical instrument. As explored in research on mechatronic design of force sensors\cite{zemiti_mechatronic_2007}, this method enables direct measurement of interaction forces at the end-effector. However, this integration often results in structural redundancy and increased instrument diameter, creating bulky designs that may compromise surgical access and maneuverability in confined operative fields.
+
+To address these limitations, recent research has focused on miniaturized sensing strategies. One innovative approach involves embedding FBGs within precisely machined grooves on inclined cantilevers within the instrument structure\cite{xue_design_2018}. This design exploits the strain measurement capabilities of FBGs to detect minute deformations in the cantilevers caused by cable tension variations. The inclined configuration amplifies these deformations, enabling high-sensitivity force measurement while maintaining a compact form factor compatible with the dimensional constraints of minimally invasive instruments.
+
+\subsection{Novel Structures of the Tip and Rod Design }
+
+In conventional master-slave robotic systems, such as the da Vinci Surgical System and similar handheld robotic instruments, the end-effector typically provides 4 to 5 DoFs. This configuration is designed to replicate the articulation capabilities of the human wrist and fingers, enabling complex maneuvers like pitching, yawing, rolling, and grasping. However, a significant design limitation persists: these multiple DoFs are concentrated exclusively at the distal tip, while the connecting shaft or linkage primarily functions as a passive rotary base.
+
+This recognition of ergonomic limitations in conventional articulated instruments has stimulated significant research into alternative tip architectures in recent years. With advances in the modeling and control of continuum robots, their design principles have been increasingly translated into the medical domain. Unlike traditional tip designs composed of multiple rigid links connected by discrete joints, continuum robots offer a validated scheme for implementing soft or continuously flexible connections—both between the tip and the instrument shaft, and among individual sub-components of the tip itself. This paradigm shift enables a more distributed deformation along the instrument's length, effectively increasing the overall dexterity without concentrating all articulation at a single point. The resulting designs, often drawing inspiration from biological structures like tentacles or snakes, promise to mitigate surgeon fatigue by decoupling the end-effector's pose from the precise position of the surgeon's hand, thereby offering a more intuitive and ergonomic manipulation platform for complex surgical tasks.
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{cc}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=0.8\columnwidth]{Figures/soft modular.png}
+\caption{flexible fluidic actuators formed with granular to vary stiffness \cite{ranzani_soft_2016}}
+\label{fig33}
+\end{minipage}
+\end{tabular}
+\end{figure}
+Building upon the foundational research in continuum robotics, recent studies have explored innovative structural designs to enhance surgical instrument dexterity and safety. Ranzani et al. (2016) demonstrated a significant advancement by integrating flexible fluidic actuators within a silicone matrix containing multiple pneumatic chambers. This design enabled multi-directional bending and elongation capabilities. The proposed manipulator employed a modular architecture, utilizing granular jamming techniques to achieve dynamic stiffness variation and diverse movement profiles, as illustrated in \ref{fig33}.
+\begin{figure}[htbp]
+\centering
+\begin{tabular}{cc}
+\begin{minipage}[t]{0.45\textwidth}
+\centering
+\includegraphics[width=0.8\columnwidth]{Figures/trimmed.png}
+\caption{The tendon-driven manipulator design with Trimmed Helicoids\cite{guan_trimmed_2023}}
+\label{fig34}
+\end{minipage}
+\end{tabular}
+\end{figure}
+Further extending this paradigm, researchers have investigated the transition from rigid linkages to compliant structures to substantially improve operational flexibility. One notable approach involves manipulating the trimmed angle of a helicoid structure to create a variable-stiffness robotic arm\cite{guan_trimmed_2023}. When coupled with a cable-driven actuation system, this design achieves an expanded workspace while significantly minimizing the risk of iatrogenic tissue damage during surgical procedures, as shown in \ref{fig34}. These developments in soft robotics and variable-stiffness mechanisms represent promising directions for next-generation surgical instruments that balance precision with patient safety.
+
+\subsection{AI-assisted Monitor and Control}
+As analyzed in previous sections, contemporary research in medical instrumentation predominantly advances along three interconnected fronts: innovative tip design, integrated sensory feedback systems, and intelligent control algorithms. The rapid evolution of Deep Learning and Reinforcement Learning methodologies has now catalyzed a fourth research direction: the integration of data-driven approaches into clinical practice.
+
+A particularly promising development lies in repurposing the existing endoscopic camera—initially intended solely for surgical visualization—as an external verification system for instrument navigation. Specifically, Kong et al. (2023) demonstrated that through a specially designed architecture, both the visual stream from the camera and kinematic data from the actuation motors can be fused to estimate the positional discrepancy between commanded and actual end-effector positions following movement execution\cite{kong_automatic_2023}. This estimated deviation is subsequently converted into compensation signals that drive automatic self-correction maneuvers, effectively creating a vision-enhanced closed-loop control system that continuously calibrates the instrument without requiring additional hardware beyond the standard surgical setup.
+
+This methodology represents a significant paradigm shift from traditional model-dependent control strategies, leveraging the wealth of available surgical video data to address inherent system limitations such as cable stretch, hysteresis, and kinematic modeling inaccuracies. The approach demonstrates how computer vision and deep learning techniques can transform existing surgical infrastructure into a self-calibrating system, potentially enhancing both positioning accuracy and long-term reliability in cable-driven surgical instruments.
