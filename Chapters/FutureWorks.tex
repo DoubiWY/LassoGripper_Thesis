@@ -1,13 +1,15 @@
 % Chapter 8
 \chapter{Future Works} % Main chapter title
 
-\label{Chapter10} % For referencing the chapter elsewhere, use 
+\label{Chapter10} % For referencing the chapter elsewhere, use
+The future directions of this thesis follow the same two-embodiment structure as the main body. One line of work extends the tendon-driven surgical instrument toward higher precision and richer modularity under clinical constraints. The other extends Lasso Gripper toward broader manipulation scenarios and more capable loop-based grasping strategies. In both cases, the underlying aim is the same: to deepen the mechanism framework developed in this thesis and expand the range of tasks that tendon-driven systems can perform reliably.
+
 \section{Surgical Instruments}
 While the current prototype of the cable-driven surgical instrument demonstrates robust functionality, there are significant opportunities for enhancement in precision, adaptability, and overall system intelligence. Future work will focus on the following two key areas:
 
 \subsection{Enhanced Precision through Adaptive Learning-based Control}
 
-A fundamental limitation of the current kinematic model is its assumption of fixed cable lengths. In practice, the stainless steel cables undergo microscopic plastic deformation and experience minute stretching after repeated loading cycles. Even a tiny elongation on the order of 0.1\% can accumulate over the cable path, leading to a noticeable positional error at the end-effector—a phenomenon that compromises absolute accuracy and can manifest as a failure to reach a commanded pose.
+A fundamental limitation of the current kinematic model is its assumption of fixed cable lengths. In practice, the stainless steel cables undergo microscopic plastic deformation and experience minute stretching after repeated loading cycles. Even a tiny elongation on the order of 0.1\% can accumulate over the cable path, leading to a noticeable positional error at the end-effector, a phenomenon that compromises absolute accuracy and can manifest as a failure to reach a commanded pose.
 
 To address this inherent model inaccuracy, a promising solution is to transition from a purely model-based control scheme to a data-driven, adaptive approach. We propose the integration of Reinforcement Learning (RL) algorithms. An RL agent can be trained, either in a simulated environment or through extensive real-world operation, to learn the subtle, non-linear relationship between motor commands and the resulting end-effector pose, effectively calibrating out the effects of cable stretch and hysteresis in real-time. By continuously correlating the commanded inputs with the actual achieved positions (potentially validated by external tracking systems during training), the model can self-correct and maintain high precision throughout the instrument's lifespan, moving beyond the limitations of a static kinematic model.
 
@@ -20,6 +22,8 @@ To fully realize the potential of this modularity, the system must possess the i
 Together, these advancements in intelligent control and context-aware modularity will pave the way for a new generation of surgical robots that are more precise, adaptable, and intuitive to use.
 
 \section{Further Applications of Lasso Gripper}
+Whereas the previous section extends tendon-driven mechanisms toward greater clinical precision and modularity, this section returns to the adaptive grasping side of the thesis. The goal here is not simply to add new demonstrations, but to probe how the loop-based mechanism can be scaled, coordinated, and deployed in more dynamic environments.
+
 Future investigations may involve utilizing multiple loops (two or three) to grasp the same object, potentially enhancing gripping stability and robustness. This multi-loop approach could provide additional security and adaptability in handling complex shapes and sizes, offering a promising avenue for further development.
 \subsection{Multi-Loop Configuration}
 Implementing a multi-loop configuration involves arranging two or more string loops to work in tandem. Each loop would be controlled independently but coordinated through a central control system to ensure synchronized movement and force application. This setup is particularly advantageous for gripping objects with irregular geometries or those requiring more secure handling.
@@ -32,5 +36,4 @@ As demonstrated in Chapter 6, Lasso Gripper successfully captured flying objects
 \subsection{Potential Challenges and Solutions}
 While the multi-loop approach offers clear advantages, it also introduces several challenges. Coordinating the movement and tension of multiple loops demands sophisticated control algorithms and real-time feedback systems. Additionally, the mechanical design must prevent interference among the loops during operation. Achieving the ultimate goal of capturing randomly flying objects further requires the grasping algorithm to be robust and adaptive to external obstacles such as walls or floors.
 
-To address these challenges, future research should focus on developing advanced control algorithms that integrate sensor data for precise and dynamic adjustments. Moreover, the mechanical design could incorporate features to facilitate maintenance and quick reconfiguration, ensuring both reliability and operational efficiency.
-
+To address these challenges, future research should focus on developing advanced control algorithms that integrate sensor data for precise and dynamic adjustments. Moreover, the mechanical design could incorporate features to facilitate maintenance and quick reconfiguration, ensuring both reliability and operational efficiency. These extensions would further strengthen the central claim of this thesis: tendon-driven mechanisms can be systematically adapted to very different manipulation problems, provided that tension control, routing strategy, and task-specific interaction geometry are designed together.
