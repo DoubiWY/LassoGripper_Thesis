@@ -1,9 +1,12 @@
 %%%%%%%%%%%%%%%%%%%% Chapter 3
 \chapter{Lasso Gripper: Design, Analysis, and Experiments}
 
-This chapter introduces the Lasso Gripper as the first mechanism embodiment of the thesis. The design investigates how a tendon-driven system can use a flexible tensile element not only for force transmission but also for adaptive grasp formation. Conventional rigid grippers often struggle when the target object exceeds the maximum opening width or presents soft, fragile, or highly variable geometry. In such cases, increasing gripping force alone can raise the risk of slippage, deformation, or damage.
+\section*{Chapter summary}
+\noindent
+This chapter presents the Lasso Gripper as the principal mechanism embodiment used to explore tendon-driven design rules. The chapter focuses on the device concept, mechanical architecture, actuation and sensing choices, the grasp planning strategy, and a set of demonstration experiments. The goal is to establish the feasibility of using a controllable tensile loop as a practical end-effector and to identify the mechanism-level advantages and failure modes that inform the broader thesis.
 
-To address this limitation, the Lasso Gripper is proposed as an integrated mechatronic system optimized for adaptive capture, high-speed operation, and distributed contact through a controllable string loop. The following sections describe its mechanical architecture, the dedicated mechanisms for string deployment and retraction, and the control structure that enables its dynamic grasping behavior. The chapter establishes the mechanism principles that are later translated into the handheld surgical instrument presented in this thesis.
+\noindent
+The experimental program reported here is demonstration-focused and qualitative by design: experiments illustrate the gripper's operating behaviors, its tolerance to object uncertainty, and comparative advantages versus a classical antipodal gripper. Quantitative statistical evaluation (e.g., large-sample success rates, repeatability statistics, fatigue testing) is not included and is recommended as a follow-up study.
 % ------------------------- 2.1 Overall Structure -------------------------
 \section{Design and Principle}
 
@@ -18,7 +21,7 @@ To address this limitation, the Lasso Gripper is proposed as an integrated mecha
 \end{tabular}
 \end{figure}
 
-Lasso Gripper comprises several crucial elements, including the robotic arm, controller, power supply, and communication interfaces. The robotic arm is engineered to provide the necessary degrees of freedom and precision required for accurate positioning and manipulation. The controller is responsible for managing the gripper's operations, processing sensor inputs, and executing the gripping actions. It employs advanced algorithms to ensure optimal performance. The power supply guarantees consistent electrical energy to all components, while communication interfaces enable seamless data exchange between the gripper and the central control system, ensuring synchronized operations.
+Lasso Gripper integrates four core subsystems: the launch-and-retract end-effector, a proximal control unit, sensing for tension and loop position, and a host robot for gross positioning. The end-effector implements the friction-wheel propulsion and spool retraction mechanisms; the control unit coordinates motor commands and processes sensor feedback; sensing includes a spool-mounted force sensor and motor/position encoders used for tension regulation; the host robot provides coarse positioning and aiming for capture. This modular decomposition clarifies subsystem responsibilities and guides the experimental evaluation reported below.
 
 \begin{figure}[htbp]
 \centering

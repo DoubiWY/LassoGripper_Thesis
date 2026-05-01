@@ -1,11 +1,23 @@
 % Chapter 4
-\section{Gripping Algorithm Design} % Main chapter title
-\label{Chapter4} % For referencing the chapter elsewhere, use 
-The design of the gripping algorithm is critical to the functionality and efficiency of Lasso Gripper, ensuring precise and reliable manipulation of various objects. This section outlines the algorithm's design, which leverages advanced techniques for object recognition and manipulation, ensuring robust performance in diverse scenarios.
+\chapter{Gripping Algorithm Design} % Main chapter title
+\label{Chapter4} % For referencing the chapter elsewhere, use
+The design of the gripping algorithm is critical to the functionality and efficiency of Lasso Gripper, ensuring precise and reliable manipulation of various objects. This chapter outlines the algorithm's design, which leverages practical point-cloud processing, loop-synthesis for caging grasps, and real-time tension feedback to achieve robust performance in demonstrative scenarios.
 
 % ------------------------- 3.1 Object Recognition and Point Cloud Processing -------------------------
-\subsection{}section{Object Recognition and Point Cloud Processing}
-The gripping algorithm begins with the recognition of the target object using an Intel REALSENSE depth camera D435i. The camera captures a 3D point cloud of the object, providing detailed spatial information about its shape and orientation. The point cloud data is processed to identify key features of the object, including its boundaries, surface characteristics, and potential gripping points.
+\subsection{Object Recognition and Point Cloud Processing}
+\noindent
+The gripping algorithm begins with target detection using an Intel RealSense D435i depth camera. The captured point cloud is processed to locate candidate "neck" regions and to synthesize feasible caging loops that avoid reliance on exact surface contacts. The algorithm output is a target loop position and approach plan that the launch-and-retract mechanism can execute.
+
+\noindent
+A concise pseudocode summary:
+\begin{enumerate}
+    \item Acquire point cloud $P$ from depth camera.
+    \item Preprocess $P$ (filtering, downsampling, outlier removal).
+    \item Identify candidate neck regions using caging-loop detection.
+    \item Select loop pose $L$ according to capture feasibility and approach constraints.
+    \item Execute launch sequence and monitor spool tension.
+    \item Retract and close loop; apply tension-based release criteria.
+\end{enumerate}
 
 \begin{figure}[htbp]
 \centering

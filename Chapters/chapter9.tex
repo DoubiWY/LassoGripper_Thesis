@@ -7,14 +7,10 @@
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
-\subsection{Digital Signal Logic}
-A critical aspect of ensuring precise control of the end-effector tip is the ability to accurately interpret user intent while rejecting extraneous inputs, such as physiological tremor or unintended vibrations. To achieve this, an advanced signal processing and control architecture has been implemented.
+\subsection{Signal Processing and Control}
+Accurate mapping of user intent to end-effector motion, while rejecting involuntary inputs such as tremor, is central to the control design. The system uses an Extended Kalman Filter (EKF) to fuse encoder and sensor data and to produce smoothed intent estimates. A low-level PID controller regulates motor position and cable tension using motor feedback, forming a hierarchical control architecture.
 
-An Extended Kalman Filter (EKF) is employed to fuse and filter raw data acquired from multiple sources, including the AS5600 encoders and the feedback from the STS3009 servos. The EKF provides robust state estimation by dynamically weighting sensor inputs and predicting true user motion in the presence of noise and transient disturbances. This results in smooth, stable, and intentional control signals that faithfully represent operator commands while effectively suppressing high-frequency noise and involuntary motions.
-
-At the core of the control system is an ESP32 microcontroller, which serves as the central computation unit. This chip is responsible for executing the EKF algorithm in real-time, processing sensory data, generating corresponding motor commands, and managing communication between system components. Its high processing power and support for floating-point operations make it well-suited for handling computationally intensive filtering and control tasks onboard.
-
-After the user's input signals are filtered and interpreted, the refined commands are transmitted to the output-stage STS3032 motors that drive the cables. To further enhance motion accuracy and disturbance rejection, a PID control strategy is implemented based on real-time feedback from the STS3032 motors' built-in encoders. This closed-loop architecture enables precise regulation of cable tension and position, providing haptic transparency and ensuring safe, responsive operation during delicate surgical tasks. The combination of high-level EKF-based intention recognition and low-level PID motor control creates a robust hierarchical control system capable of compensating for both environmental uncertainties and human factors.
+These algorithms run on an ESP32 microcontroller that executes the EKF and the real-time control loops. After high-level intent is estimated, the controller issues commands to the STS3032 output servos; their internal encoders provide the feedback required for tension and position regulation.
 
 \subsection{Human-Machine Interface}
 

@@ -1,12 +1,19 @@
 % Chapter 5
+\section*{Chapter summary}
+\noindent
+This chapter analyses the dynamics that govern the formation and stability of the self-supporting string loop used by the Lasso Gripper. An analytical model based on a Frenet–Serret description balances tension, gravity and aerodynamic drag to identify regimes of loop formation and critical junctures in the solution.
+
+\noindent
+Assumptions and simplifications (e.g., negligible string radius, linear drag approximation) are stated explicitly and comparison with representative experimental profiles is used to validate trends. Detailed parametric sensitivity studies and structural FEA are outside this chapter's scope and are deferred to future work.
+
 \section{Dynamics of the String Loop} % Main chapter title
 
 %\label{Chapter5} % For referencing the chapter elsewhere, use 
 
 \subsection{The Dynamics of String Analysis}
-The dynamics of the string loop in the lasso gripper are rooted in principles of fluid mechanics and physics \cite{abello2024string}\cite{daerr2019charmed}. This section explores the behavior of the string loop as it transitions from a low-velocity, gravity-dominated state to a high-velocity, self-supporting configuration.
+This section analyzes the loop dynamics that govern Lasso Gripper operation. We focus on the transition from a gravity-dominated regime at low ejection speeds to a self-supporting regime at higher speeds, where aerodynamic drag and inertial effects stabilize the loop shape. The analytic model follows prior theoretical work and is compared with representative experimental profiles to validate qualitative trends\cite{abello2024string}\cite{daerr2019charmed}.
 
-At low velocities, the string loop is primarily influenced by gravity, causing it to hang downwards. This gravity-dominated regime is characterized by a noticeable sag in the string due to its light. As the velocity increases, the string undergoes a transition to a high-velocity regime where it forms a self-supporting loop. In this regime, the string is no longer suspended due to inertia but rather through the hydrodynamic drag. This drag force exerted by the surrounding air counteracts gravity, allowing the string to maintain a stable loop shape.
+At low ejection speeds the loop sags under gravity. As ejection speed increases, aerodynamic drag and inertial forces can balance gravity and internal tension, yielding a self-supporting loop profile. Characterizing these regimes helps select launch speed, loop length, and control strategies that improve capture reliability.
 
 \begin{figure}[htbp]
 \label{simulation}

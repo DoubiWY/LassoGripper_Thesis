@@ -3,15 +3,22 @@
 \label{Chapter1} % For referencing the chapter elsewhere, use
 %----------------------------------------------------------------------------------------
 
+\section*{Chapter summary}
+\noindent
+This chapter motivates the study by describing scenarios where rigid-link manipulators are limited (narrow workspaces, fragile or irregular objects, and applications that require low distal inertia). It states the central research question: how can tendon-driven mechanisms be designed to provide adaptive, dexterous, and reliable manipulation under these constraints.
+
+\noindent
+The chapter also outlines the thesis structure and main contributions: (1) a mechanism-level study of tension management and proximal actuation; (2) the Lasso Gripper concept, prototype and qualitative demonstrations; (3) extraction of transferable design principles and their translation into a handheld motorized laparoscopic instrument; (4) recommendations and future directions for evaluation and clinical translation.
+
 % Define some commands to keep the formatting separated from the content
 % \newcommand{\keyword}[1]{\textbf{#1}}
 % \newcommand{\tabhead}[1]{\textbf{#1}}
 % \newcommand{\code}[1]{\texttt{#1}}
 % \newcommand{\file}[1]{\texttt{\bfseries#1}}
 % \newcommand{\option}[1]{\texttt{\itshape#1}}
-Robotic manipulation systems are increasingly required to operate in environments where conventional rigid-link mechanisms become inefficient or unsafe. Such conditions include manipulation in narrow workspaces, interaction with fragile or irregularly shaped targets, and applications in which distal mass must be minimized without sacrificing force transmission or dexterity. Tendon-driven and cable-driven mechanisms are particularly attractive in these settings because they transmit force through lightweight tensile elements, enable proximal placement of motors, and introduce a degree of compliance at the point of contact. At the same time, they also present persistent engineering challenges, including slack accumulation, hysteresis, friction losses, coupled motions, and reduced predictability under varying loads.
+Robotic manipulation increasingly occurs in constrained environments—narrow workspaces, fragile or irregular objects, and tasks that require low distal inertia. Rigid-link mechanisms often perform poorly under these conditions. Tendon- and cable-driven systems are attractive because they transmit force through lightweight tensile elements, allow motors to be placed proximally, and provide compliance at contact points. However, such systems introduce engineering challenges including slack accumulation, hysteresis, friction losses, coupling between degrees of freedom, and reduced predictability under varying loads.
 
-This thesis addresses these challenges from a mechanism-centered perspective. The central research question is how tendon-driven mechanisms can be systematically designed to achieve adaptive, dexterous, and reliable manipulation under constraints of limited space, low distal inertia, and compliant contact. The thesis is therefore not organized as two unrelated engineering projects. Instead, it develops a common tendon-driven design framework and validates that framework through two embodiments: a lasso-based gripper for adaptive robotic grasping, and a handheld laparoscopic instrument for minimally invasive surgical manipulation.
+This thesis adopts a mechanism-centered perspective to address these issues. The central question is how tendon-driven mechanisms can be designed to deliver adaptive, dexterous, and reliable manipulation while meeting constraints on size, weight, and compliance. To answer this, I develop a transferable tendon-driven design framework and validate it with two embodiments: the Lasso Gripper (an adaptive loop-based end-effector) and a handheld motorized laparoscopic instrument.
 
 The first embodiment, termed the Lasso Gripper, studies how a flexible tensile element can function not only as a transmission component but also as the primary structure for grasp formation. Inspired by traditional capture tools such as the cowboy lasso and the Mongolian uurga, shown in Fig.\ref{fig:11} and Fig.\ref{fig:12}, the proposed mechanism launches and retracts a controllable string loop to create a large adaptive capture region around the target. This approach differs fundamentally from conventional antipodal grippers, which apply concentrated contact forces over limited areas and often struggle with large, soft, or irregularly shaped objects. By contrast, the string loop enables distributed contact, greater tolerance to positional uncertainty, and a favorable balance between grasp adaptivity and force transmission.
 \begin{figure}[htbp]

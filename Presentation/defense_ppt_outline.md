@@ -14,7 +14,7 @@ Slide bullets:
 - Department of Mechanical Engineering, HKU
 
 Speaker script:
-> Good morning, and thank you for attending my MPhil thesis defense. This thesis is mechanism-centered. Instead of presenting two unrelated devices, I study a common tendon-driven design framework and validate it through two embodiments: Lasso Gripper for adaptive grasping, and a handheld laparoscopic instrument for surgical manipulation.
+> Good morning, and thank you for attending my MPhil thesis defense. This thesis is mechanism-centered. Instead of presenting two unrelated devices, I study a common tendon-driven design framework and validate it through two embodiments: a handheld laparoscopic instrument for surgical manipulation, and Lasso Gripper for adaptive grasping.
 
 ## Slide 2. Motivation
 
@@ -58,27 +58,27 @@ Speaker script:
 Image: `Figures/overview_transparent.png`
 
 Slide bullets:
-- Mechanism-level study of tendon-driven systems
-- Lasso Gripper as the first embodiment
-- Transferable design principles extracted
-- Handheld surgical instrument as the second embodiment
+ - Mechanism-level study of tendon-driven systems
+ - Handheld surgical instrument as the first embodiment
+ - Transferable design principles extracted
+ - Lasso Gripper as the second embodiment
 
 Speaker script:
-> The thesis makes four contributions. First, it studies tendon-driven systems at the mechanism level. Second, it develops Lasso Gripper as a novel adaptive grasping mechanism. Third, it extracts transferable design principles. Fourth, it translates those principles into a handheld laparoscopic instrument.
+> The thesis makes four contributions. First, it studies tendon-driven systems at the mechanism level. Second, it develops a handheld surgical instrument as the first embodiment. Third, it extracts transferable design principles. Fourth, it demonstrates those principles in Lasso Gripper as the second embodiment.
 
 ## Slide 6. Thesis Roadmap
 
 Image: `Figures/overview_transparent.png`
 
 Slide bullets:
-- Problem definition
-- Related work
-- Lasso Gripper
-- Extracted mechanism principles
-- Surgical translation
+ - Problem definition
+ - Related work
+ - Surgical translation
+ - Extracted mechanism principles
+ - Lasso Gripper
 
 Speaker script:
-> This slide shows the roadmap of the thesis. I begin with the mechanism problem, then review related work. The first embodiment is Lasso Gripper, which is used to discover and validate mechanism principles. These principles are then transferred to the second embodiment, a handheld surgical instrument.
+> This slide shows the roadmap of the thesis. I begin with the mechanism problem, then review related work. The first embodiment is the handheld surgical instrument, which is used to discover and validate mechanism principles. These principles are then transferred to the second embodiment, Lasso Gripper.
 
 ## Slide 7. Related Work: Surgical Instruments
 
@@ -118,17 +118,17 @@ Slide bullets:
 Speaker script:
 > These five principles unify the thesis. Tension management ensures predictable force transmission. Proximal actuation reduces distal mass. Differential routing enables compact multi-DOF behavior. Compliant interaction improves safety and adaptability.
 
-## Slide 10. Embodiment 1: Lasso Gripper Concept
+## Slide 10. Embodiment 2: Lasso Gripper Concept
 
 Image: `Figures/Figure1.png`
 
 Slide bullets:
-- Inspired by the lasso and the uurga
-- Loop-based capture instead of point contact
-- Adaptive capture region for uncertain targets
+ - Inspired by the lasso and the uurga
+ - Loop-based capture instead of point contact
+ - Adaptive capture region for uncertain targets
 
 Speaker script:
-> The first embodiment is Lasso Gripper. Its inspiration comes from traditional capture tools such as the lasso and the uurga. The key idea is to use a controllable string loop as the primary grasping structure, so that capture is achieved through tension-driven closure rather than rigid fingertip contact.
+> The second embodiment is Lasso Gripper. Its inspiration comes from traditional capture tools such as the lasso and the uurga. The key idea is to use a controllable string loop as the primary grasping structure, so that capture is achieved through tension-driven closure rather than rigid fingertip contact.
 
 ## Slide 11. Lasso Gripper: Mechanical Design
 
@@ -205,7 +205,7 @@ Slide bullets:
 Speaker script:
 > The key outcome of Lasso Gripper is not only a new end-effector. It also provides transferable mechanism insights. Controlled tension improves repeatability, flexible contact improves tolerance to uncertainty, and proximal actuation with differential routing can be reused beyond grasping.
 
-## Slide 17. Embodiment 2: Surgical Translation
+## Slide 17. Embodiment 1: Surgical Translation
 
 Image: `Figures/surgical instrument.jpg`
 
@@ -215,7 +215,7 @@ Slide bullets:
 - Need ergonomic balance and motion fidelity
 
 Speaker script:
-> The second embodiment tests the same mechanism framework in a more constrained setting. In minimally invasive surgery, the instrument must be slender, precise, ergonomic, and safe. This makes tendon-driven actuation especially relevant, because it allows actuation to remain proximal while producing multi-DOF motion at the tip.
+> The first embodiment tests the same mechanism framework in a more constrained setting. In minimally invasive surgery, the instrument must be slender, precise, ergonomic, and safe. This makes tendon-driven actuation especially relevant, because it allows actuation to remain proximal while producing multi-DOF motion at the tip.
 
 ## Slide 18. Surgical Instrument: Design
 
@@ -229,6 +229,19 @@ Slide bullets:
 
 Speaker script:
 > This slide summarizes the architecture of the handheld surgical instrument. The design combines proximal actuation, compact motor arrangement, dedicated reel architecture, and precise cable routing. The reel is especially important because it preserves bidirectional tension and reduces slack accumulation.
+
+## Slide 18b. 手术器械：历史版本演化
+
+Image: `Presentation/医疗机械臂/ver1.0.png`  (建议同时在幻灯片中展示 3–4 张缩略图)
+
+Slide bullets:
+- v1.0: 拇指摇杆与波轮的4自由度设计，最小化钳头体积
+- v2.0: 云台手柄稳定与食指捏合反馈，改进操控人机工程
+- v3.3: 自设计PCB与定制钳头、双电机自稳实现精度提升
+- v4.1: 恢复俯仰、横滚自由度，采用大扭矩直驱电机
+
+Speaker script:
+> 本幻灯片展示手术器械从早期原型到当前版本的关键演化。每一轮迭代都针对早期问题（如张力管理、操控稳定性或体积）做出权衡和改进，最终形成当前的卷盘与紧凑马达布局架构。
 
 ## Slide 19. Surgical Instrument: Control and Validation
 

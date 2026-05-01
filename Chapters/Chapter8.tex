@@ -8,14 +8,18 @@
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
+\section*{Chapter summary}
+\noindent
+This chapter details component-level design choices and their rationale: motor and sensor selection, tip guidance and cable routing, paired-cable reel mechanisms, and the quick-swap end-effector interface. Emphasis is placed on preserving cable tension, minimizing hysteresis, and enabling modularity suitable for handheld laparoscopic tools.
+
+\noindent
+Key specifications and trade-offs are given to motivate selections; thorough mechanical verification and long-term durability testing are left for future work.
+
 \section{Mechanism and Design}
 \subsection{Output Motors}
-A paramount challenge in the design of handheld cable-driven devices lies in the selection of the actuation unit. The motor must satisfy two critical, and often conflicting, requirements: it must be extremely lightweight to maintain a low overall device mass and ensure ergonomic usability, while simultaneously being capable of delivering sufficient torque to reliably tension the driving cables for both grasping and manipulation tasks. High torque output is essential to overcome friction in the cable pathways, generate the necessary gripping force, and provide adequate acceleration for precise movements.
+A key challenge for handheld cable-driven devices is selecting actuators that combine low mass with sufficient torque. The chosen output actuator, the Feetech STS3032 smart servo, offers a favorable performance-to-weight ratio and built-in feedback useful for closed-loop control. It weighs approximately 9 g and provides a stall torque of about 4.5 kg·cm, enabling reliable tensioning through small-diameter pulleys.
 
-After a comprehensive evaluation of available options,  Feetech STS3032, a smart servo was selected for this application. This choice was driven by its exceptional  ratio over performance-to-weight and integrated control architecture. Key factors influencing this decision include:
-The STS3032 servo weighs a mere 9 grams, yet it delivers a substantial stall torque of 4.5 kg·cm. This high torque output ensures that the servo can generate significant tensile force in the cables, even when operating through small-diameter pulleys or under load, making it ideally suited for the demands of a surgical gripper.Unlike traditional pulse-width modulation (PWM) servos that require a dedicated control wire for each unit, the STS3032 utilizes a serial bus communication protocol. This architecture allows multiple servos to be daisy-chained and controlled via a single data line, drastically reducing the number of wires running through the device's handle. This reduction in cabling is a significant advantage for miniaturization, improving flexibility, simplifying assembly, and enhancing overall system reliability.
-
-Another advantage of the this motor is that, as a smart servo, the STS3032 provides built-in feedback on parameters such as position, speed, and load. This enables closed-loop control strategies, which are critical for achieving the high positional accuracy and force sensitivity required for precise manipulation. The ability to read the motor's load provides valuable data for implementing basic force sensing, which can be used to prevent overloading and enable interactive control.
+The STS3032's serial-bus communication simplifies wiring and supports daisy-chaining, which reduces the number of conductors running through the handle and aids miniaturization. As a smart servo it reports position, speed, and load, allowing the controller to perform basic load estimation and to implement tension-aware control strategies that improve positional accuracy and protect against overloading.
 
 \subsection{Input Motors and Sensors}
 

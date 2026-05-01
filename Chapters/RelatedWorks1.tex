@@ -1,7 +1,15 @@
 \chapter{Related Works}
+
+\section*{Chapter summary}
+\noindent
+This chapter surveys prior work relevant to tendon-driven and laparoscopic end-effectors, including actuation technologies, sensing strategies, tip and rod architectures, soft and continuum approaches, and AI-assisted monitoring and control. It highlights recurring challenges such as cable coupling, material creep and stretch, frictional losses, and the trade-offs between flexibility and load capacity.
+
+\noindent
+The chapter identifies open gaps that motivate this thesis: compact, tension-preserving cable routing; miniature sensing for closed-loop compensation; and mechanism-level evaluations that connect design choices to practical performance.
+
 \section{Advances in Actuation Technologies for Multi-DoFs End-Effectors in Laparoscopic Instruments}
 
-Prior to the advent of Minimally Invasive Surgery (MIS), conventional abdominal procedures typically required a large, open incision—often referred to as a laparotomy—to provide surgeons with direct visual and physical access to the target anatomy. The instruments employed in such open surgeries were generally limited to a single DoF, such as simple grasping or cutting, while the remaining necessary dexterity — including rotation, flexion, and extension — was supplied entirely by the surgeon's own wrist and arm movements. Although effective in an open setting, this approach resulted in significant tissue trauma, prolonged patient recovery, and increased postoperative pain. In response to these limitations, the development of MIS spurred the exploration of multiple technological approaches to restore dexterity and precision within the constrained environment of keyhole surgery.
+Minimally Invasive Surgery (MIS) shifted instrument design toward restoring distal dexterity within severe access constraints. Cable-driven actuation is widely used because it enables multi-degree-of-freedom tips with low distal mass, but it brings challenges such as cable coupling, material creep, and reduced control fidelity. This section summarizes actuation alternatives, sensing strategies for tension and pose estimation, and tip/shaft design patterns that motivate the tendon-driven choices explored in this thesis.
 
 To address the limited dexterity at the instrument tip, a prominent solution involves using cables as a medium to transmit power from the handpiece to the end-effector, thereby enabling enhanced DoFs, such as roll or yaw rotations. First introduced in the late 1990s, Intuitive Surgical's da Vinci system exemplifies this approach, employing a cable-driven mechanism to control its articulated tips. The primary advantage of such a system is that cables can transmit power over a distance with a lower weight penalty compared to rigid linkages or gear trains\cite{brodie_future_2018}. However, this benefit is accompanied by inherent challenges. In the initial design of the da Vinci system, cable coupling—where the movement of one cable inadvertently affects another—was a significant issue that could not be overlooked, often leading to kinematic inaccuracies and reduced control fidelity. Therefore, various approaches have been studied to address these problems.
 
