@@ -3,11 +3,9 @@
 
 \label{Chapter7} % For referencing the chapter elsewhere, use
 
-\section*{Chapter summary}
-\noindent
+\ChapterSummary
 This chapter translates mechanism-level principles into the design of a handheld motorized laparoscopic instrument. It sets the primary design goals—low distal mass, ergonomic balance, repeatability, and safety—and presents an integrated architecture that uses proximal actuation, differential tendon routing, tension-preserving reels, and sensing to achieve multi-DoF distal behavior in a compact form factor.
 
-\noindent
 Structural finite-element analysis and clinical validation are beyond the present scope and are listed as future work; this chapter focuses on concept, prototyping choices, and early benchtop validation of the mechanism and control strategy.
 
 \section{Necessity To Develop Handheld Motorized Medical Instrument}
@@ -26,25 +24,29 @@ To resolve this fundamental trade-off, the present work introduces a holistic ap
 
 This cable-driven, differential actuation philosophy offers several fundamental advantages that are particularly suited to the development of advanced hand-held devices:
 
-    -\textbf{Enhanced Dexterity and Manipulation}: The system enables multi-degree-of-freedom manipulation (e.g., rotation, twisting) using a minimal number of actuated elements. This is crucial for applications requiring fine motor control within confined spaces.
+\begin{itemize}
+\item \textbf{Enhanced Dexterity and Manipulation}: The system enables multi-degree-of-freedom manipulation (e.g., rotation, twisting) using a minimal number of actuated elements. This is crucial for applications requiring fine motor control within confined spaces.
 
-    -\textbf{Inherent Compliance and Safety}: The system is naturally compliant. Cables under tension provide a direct force-feedback path. If an unexpected obstacle is encountered, the cables will slacken rather than apply a rigid, potentially damaging force. This passive safety feature is a critical asset for interactions in unstructured or delicate environments.
+\item \textbf{Inherent Compliance and Safety}: The system is naturally compliant. Cables under tension provide a direct force-feedback path. If an unexpected obstacle is encountered, the cables will slacken rather than apply a rigid, potentially damaging force. This passive safety feature is a critical asset for interactions in unstructured or delicate environments.
 
-    -\textbf{Proximal Actuation and Minimal End-Effector Mass}: A primary benefit for hand-held device design is the ability to locate the heavy actuators (motors) and associated drive electronics proximally, either in the device's handle or even in a remote unit. This dramatically reduces the mass and inertia of the distal end-effector, leading to improved ergonomics, reduced user fatigue, and the potential for higher maneuverability and smaller form factors at the interaction point.
+\item \textbf{Proximal Actuation and Minimal End-Effector Mass}: A primary benefit for hand-held device design is the ability to locate the heavy actuators (motors) and associated drive electronics proximally, either in the device's handle or even in a remote unit. This dramatically reduces the mass and inertia of the distal end-effector, leading to improved ergonomics, reduced user fatigue, and the potential for higher maneuverability and smaller form factors at the interaction point.
+\end{itemize}
 
 \section{Defining Performance Metrics for Structural Design}
 
 To translate this conceptual framework into a viable product, key performance metrics must be established. These metrics are the surgical-domain counterpart of the mechanism criteria discussed in the Lasso Gripper chapters: instead of capture range and adaptive loop closure, the emphasis now shifts to precision, low hysteresis, compact routing, and stable bidirectional tension transmission. They will directly guide the structural design choices detailed in the next chapter:
 
-    -\textbf{Precision and Resolution}: The minimum achievable incremental movement of the end-effector tip, targeting sub-millimeter and sub-degree accuracy for delicate tasks.
+\begin{itemize}
+\item \textbf{Precision and Resolution}: The minimum achievable incremental movement of the end-effector tip, targeting sub-millimeter and sub-degree accuracy for delicate tasks.
 
-    -\textbf{Force Capability}: The maximum tensile force the cables must transmit to securely grasp and manipulate objects of a target weight range.
+\item \textbf{Force Capability}: The maximum tensile force the cables must transmit to securely grasp and manipulate objects of a target weight range.
 
-    -\textbf{Range of Motion}: The required angular deflection and rotational range of the end-effector to perform its intended functions effectively.
+\item \textbf{Range of Motion}: The required angular deflection and rotational range of the end-effector to perform its intended functions effectively.
 
-    -\textbf{Force Transmission Efficiency}: Minimizing friction losses throughout the cable drive path is essential for accurate force feedback and predictable control.
+\item \textbf{Force Transmission Efficiency}: Minimizing friction losses throughout the cable drive path is essential for accurate force feedback and predictable control.
 
-    -\textbf{Low Hysteresis and Backlash}: The structural design must ensure minimal play and elastic deformation in the system to guarantee precise, repeatable, and immediate response to actuator inputs.
+\item \textbf{Low Hysteresis and Backlash}: The structural design must ensure minimal play and elastic deformation in the system to guarantee precise, repeatable, and immediate response to actuator inputs.
+\end{itemize}
 
 \section{Pathway to Structural Implementation}
 This chapter has outlined how the tendon-driven principles distilled from Lasso Gripper can be reformulated for a hand-held surgical device. The core principles of compliance, proximal actuation, differential control, and explicit tension management remain the same, but their implementation must now satisfy stricter constraints on packaging, repeatability, and operator ergonomics.

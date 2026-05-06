@@ -3,8 +3,7 @@
 \label{Chapter1} % For referencing the chapter elsewhere, use
 %----------------------------------------------------------------------------------------
 
-\section*{Chapter summary}
-\noindent
+\ChapterSummary
 This chapter motivates the study by describing scenarios where rigid-link manipulators are limited (narrow workspaces, fragile or irregular objects, and applications that require low distal inertia). It states the central research question: how can tendon-driven mechanisms be designed to provide adaptive, dexterous, and reliable manipulation under these constraints.
 
 \noindent
@@ -16,11 +15,13 @@ The chapter also outlines the thesis structure and main contributions: (1) a mec
 % \newcommand{\code}[1]{\texttt{#1}}
 % \newcommand{\file}[1]{\texttt{\bfseries#1}}
 % \newcommand{\option}[1]{\texttt{\itshape#1}}
+\begin{sloppypar}
 Robotic manipulation increasingly occurs in constrained environments—narrow workspaces, fragile or irregular objects, and tasks that require low distal inertia. Rigid-link mechanisms often perform poorly under these conditions. Tendon- and cable-driven systems are attractive because they transmit force through lightweight tensile elements, allow motors to be placed proximally, and provide compliance at contact points. However, such systems introduce engineering challenges including slack accumulation, hysteresis, friction losses, coupling between degrees of freedom, and reduced predictability under varying loads.
+\end{sloppypar}
 
-This thesis adopts a mechanism-centered perspective to address these issues. The central question is how tendon-driven mechanisms can be designed to deliver adaptive, dexterous, and reliable manipulation while meeting constraints on size, weight, and compliance. To answer this, I develop a transferable tendon-driven design framework and validate it with two embodiments: the Lasso Gripper (an adaptive loop-based end-effector) and a handheld motorized laparoscopic instrument.
+This thesis adopts a mechanism-centered perspective to address these issues. The central question is how tendon-driven mechanisms can be designed to deliver adaptive, dexterous, and reliable manipulation while meeting constraints on size, weight, and compliance. To answer this,  a transferable tendon-driven design framework is developed and validated with two embodiments: Lasso Gripper (an adaptive loop-based end-effector) and a handheld motorized laparoscopic instrument.
 
-The first embodiment, termed the Lasso Gripper, studies how a flexible tensile element can function not only as a transmission component but also as the primary structure for grasp formation. Inspired by traditional capture tools such as the cowboy lasso and the Mongolian uurga, shown in Fig.\ref{fig:11} and Fig.\ref{fig:12}, the proposed mechanism launches and retracts a controllable string loop to create a large adaptive capture region around the target. This approach differs fundamentally from conventional antipodal grippers, which apply concentrated contact forces over limited areas and often struggle with large, soft, or irregularly shaped objects. By contrast, the string loop enables distributed contact, greater tolerance to positional uncertainty, and a favorable balance between grasp adaptivity and force transmission.
+The first embodiment, termed Lasso Gripper, studies how a flexible tensile element can function not only as a transmission component but also as the primary structure for grasp formation. Inspired by traditional capture tools such as the cowboy lasso and the Mongolian Uurga, shown in Fig.\ref{fig:11} and Fig.\ref{fig:12}, the proposed mechanism launches and retracts a controllable string loop to create a large adaptive capture region around the target. This approach differs fundamentally from conventional antipodal grippers, which apply concentrated contact forces over limited areas and often struggle with large, soft, or irregularly shaped objects. By contrast, the string loop enables distributed contact, greater tolerance to positional uncertainty, and a favorable balance between grasp adaptivity and force transmission.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7 \linewidth]{Figures/California_rodeo_Salinas_lasso_bull_p1050544.jpg}
@@ -39,14 +40,14 @@ The first embodiment, termed the Lasso Gripper, studies how a flexible tensile e
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=0.8\columnwidth]{Figures/Figure1.png}
+\includegraphics[width=\linewidth]{Figures/Figure1.png}
 \caption{Prototype of the proposed Lasso Gripper.}
-\label{linkage structure A}
+\label{fig:prototype_lasso_gripper}
 \end{minipage}
 \end{tabular}
 \end{figure}
 
-Within this thesis, the Lasso Gripper serves as the first mechanism instantiation and as the main source of transferable design insights. Its development makes it possible to study several mechanism-level questions: how tension can be maintained during reversible actuation, how launch-and-retraction dynamics affect capture range, how a flexible loop can improve robustness to object uncertainty, and how remote actuation can be coordinated to preserve low distal complexity. These insights are treated not as properties of a single prototype, but as candidate design rules for tendon-driven systems more broadly.
+Within this thesis, Lasso Gripper serves as the first mechanism instantiation and as the main source of transferable design insights. Its development makes it possible to study several mechanism-level questions: how tension can be maintained during reversible actuation, how launch-and-retraction dynamics affect capture range, how a flexible loop can improve robustness to object uncertainty, and how remote actuation can be coordinated to preserve low distal complexity. These insights are treated not as properties of a single prototype, but as candidate design rules for tendon-driven systems more broadly.
 
 The second embodiment translates these mechanism insights into a much more constrained application domain. In laparoscopic surgery, surgeons manipulate long and slender tools through small incisions, which severely restrict distal dexterity and attenuate direct haptic perception, as illustrated in Fig.\ref{fig:13}. Conventional instruments typically provide only basic grasping and rotation, while more advanced articulated systems must balance dexterity against weight, complexity, and controllability. Tendon-driven actuation is highly relevant in this context because it permits motors to remain proximal while producing multiple distal degrees of freedom. However, the medical setting imposes additional constraints on size, ergonomic balance, repeatability, safety, and motion fidelity.
 \begin{figure}[htbp]
@@ -56,16 +57,16 @@ The second embodiment translates these mechanism insights into a much more const
     \label{fig:13}
 \end{figure}
 
-The handheld laparoscopic instrument presented in this thesis is therefore framed as a second embodiment of the same tendon-driven mechanism framework. Rather than being a separate topic, it functions as a translational validation of the principles derived from the Lasso Gripper. In particular, the instrument tests whether proximal actuation, differential tendon routing, explicit tension management, and sensor-supported closed-loop control can be integrated into a compact hand-held system that improves distal dexterity while respecting practical clinical constraints.
+The handheld laparoscopic instrument presented in this thesis is therefore framed as a second embodiment of the same tendon-driven mechanism framework. Rather than being a separate topic, it functions as a translational validation of the principles derived from Lasso Gripper. In particular, the instrument tests whether proximal actuation, differential tendon routing, explicit tension management, and sensor-supported closed-loop control can be integrated into a compact hand-held system that improves distal dexterity while respecting practical clinical constraints.
 
 The main contributions of this thesis are summarized as follows:
 \begin{enumerate}
     \item A mechanism-level study of tendon-driven robotic systems focused on tension management, proximal actuation, compliant interaction, and low distal inertia.
-    \item The design, fabrication, and experimental validation of the Lasso Gripper as a novel tendon-driven mechanism for adaptive robotic grasping.
-    \item The extraction of transferable design principles from the Lasso Gripper and their translation into a handheld motorized laparoscopic instrument for minimally invasive manipulation.
+    \item The design, fabrication, and experimental validation of Lasso Gripper as a novel tendon-driven mechanism for adaptive robotic grasping.
+    \item The extraction of transferable design principles from Lasso Gripper and their translation into a handheld motorized laparoscopic instrument for minimally invasive manipulation.
     \item A unified thesis narrative showing how tendon-driven mechanism principles can bridge general robotic grasping and surgical instrumentation.
 \end{enumerate}
 
-The remainder of this thesis is organized to follow that mechanism-centered narrative. Chapter 2 reviews related work in laparoscopic end-effectors and adaptive grasping systems, with emphasis on actuation, sensing, and tendon-driven design trade-offs. The subsequent chapters present the Lasso Gripper, including its mechanism design, grasping strategy, dynamic behavior, and experimental validation. The thesis then transitions to the handheld surgical instrument, where the previously derived tendon-driven principles are translated into a compact device architecture, cable routing design, sensing strategy, and control framework. The final chapters discuss the broader implications of these results and outline future directions for tendon-driven robotic mechanisms.
+The remainder of this thesis is organized to follow that mechanism-centered narrative. Chapter 2 reviews related work in laparoscopic end-effectors and adaptive grasping systems, with emphasis on actuation, sensing, and tendon-driven design trade-offs. The subsequent chapters present Lasso Gripper, including its mechanism design, grasping strategy, dynamic behavior, and experimental validation. The thesis then transitions to the handheld surgical instrument, where the previously derived tendon-driven principles are translated into a compact device architecture, cable routing design, sensing strategy, and control framework. The final chapters discuss the broader implications of these results and outline future directions for tendon-driven robotic mechanisms.
 
 \let\cleardoublepage\clearpage

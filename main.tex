@@ -51,7 +51,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 % \usepackage[backend=bibtex,style=alphabetic,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-\usepackage[natbib=true,maxbibnames=99,firstinits=true]{biblatex}
+\usepackage[natbib=true,maxbibnames=99,giveninits=true]{biblatex}
 
 \addbibresource{thesis.bib} % The filename of the bibliography
 
@@ -75,6 +75,7 @@ headsepline, % Uncomment to get a line under the header
 	bindingoffset=.5cm, % Binding offset
 	top=2.5cm, % Top margin
 	bottom=2.5cm, % Bottom margin
+	head=30.0pt,
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -140,6 +141,16 @@ headsepline, % Uncomment to get a line under the header
 %	NEW COMMAND DEFINITION
 %----------------------------------------------------------------------------------------
 \newcommand{\codestyle}[1]{\colorbox{gray!20}{\darkred{#1}}}
+
+%----------------------------------------------------------------------------------------
+%  Chapter/Section title style unification (robust)
+%  Define a reusable, robust chapter-summary hook. The actual redefinition
+%  of \chapter to append this hook is applied after \mainmatter to avoid
+%  interfering with frontmatter environments.
+%----------------------------------------------------------------------------------------
+\usepackage{letltxmacro}
+\usepackage{xparse}
+\newcommand{\ChapterSummary}{\section*{Chapter summary}\noindent}
 
 % ======================================================================================== %
 %                                        START DOCUMENT
@@ -233,6 +244,9 @@ headsepline, % Uncomment to get a line under the header
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% (No automatic chapter redefinition — chapter summary headings are provided
+% in each chapter using the `\ChapterSummary` macro.)
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters

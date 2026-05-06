@@ -2,14 +2,10 @@
 %\chapter{Related works} % Main chapter title
 %\label{Chapter2} % For referencing the chapter elsewhere, use 
 %----------------------------------------------------------------------------------------
-\section*{Chapter summary}
-\noindent
-This chapter reviews developments in adaptive and enveloping grasping, with emphasis on loop- and belt-based grippers, sensorized soft grippers, material and microstructure innovations, and grasp planning algorithms. The survey synthesizes how these approaches trade off shape adaptability, load capacity, and sensing complexity.
 
-\noindent
-The literature suggests that loop-based grippers offer strong advantages in distributed contact and tolerance to positional uncertainty, but they require robust sensing and routing strategies to handle dynamic targets and scale to diverse applications — issues the Lasso Gripper prototype seeks to explore.
 
 \section{Development of Adaptive Grasping and its application}
+% Chapter summary moved to Chapters/RelatedWorks1.tex
 \subsection{The Necessity of Enveloping and Encircling Grasping}
 Enveloping and encircling grasping provide enhanced stability and shape adaptability for a wide range of objects. This subsection reviews recent structural and control approaches that achieve enveloping grasps and highlights the remaining limitations that motivate loop-based and tendon-driven solutions.
 
@@ -25,28 +21,26 @@ Enveloping and encircling grasping techniques are crucial in robotic grasping te
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/1.png}
+\includegraphics[width=\linewidth]{Figures/1.png}
 \caption{Pressurized the actuation chamber and adaptive grasping \cite{hu2023dual}}
 \end{minipage}
-\qquad
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/8.png}
+\includegraphics[width=\linewidth]{Figures/8.png}
 \caption{Belt Loop Actuated Adhesion Design \cite{chen2024soft}}
 \end{minipage}
 \end{tabular}
 \begin{tabular}{cc}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/4.png}
+\includegraphics[width=\linewidth]{Figures/4.png}
 \caption{Enveloping grasps of the multifunctional jaw \cite{sun2024low}}
 \end{minipage}
-\qquad
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/172.png}
+\includegraphics[width=\linewidth]{Figures/172.png}
 \caption{Examples of enveloping grasps of Velo gripper \cite{ciocarlie2014velo}}
 \end{minipage}
 \end{tabular}
@@ -73,15 +67,14 @@ The combination of sensors with soft materials such as loops in robotic grippers
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/2.png}
+\includegraphics[width=\linewidth]{Figures/2.png}
 \caption{The Flying Gripper holding a coffee cup \cite{gabrich2018flying}}
 \end{minipage}
-\qquad
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/15.png}
+\includegraphics[width=\linewidth]{Figures/15.png}
 \caption{The illustration of tactile sensor and pressure sensors integrated in the loop gripper \cite{hughes2020sensorization}}
 \end{minipage}
 \end{tabular}
@@ -110,21 +103,20 @@ The integration of advanced material technologies and microstructural designs ha
 \begin{tabular}{cc}
 \begin{minipage}[t]{1\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/3.png}
+\includegraphics[width=\linewidth]{Figures/3.png}
 \caption{Manufacturing process of actuator with multifilament nylon thread \cite{wang2021lightweight}}
 \end{minipage}
 
 \end{tabular}
 \begin{tabular}{cc}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/12.png}
+\includegraphics[width=\linewidth]{Figures/12.png}
 \caption{Bio-mechanism of inchworm’s true leg \cite{li2017development}}
 \end{minipage}
-\qquad
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/19.png}
+\includegraphics[width=\linewidth]{Figures/19.png}
 \caption{Shape Memory Alloy-Based Soft Gripper \cite{wang2017shape}}
 \end{minipage}
 \end{tabular}
@@ -146,7 +138,7 @@ These advancements in grasping algorithm design underscore the importance of inn
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.6\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/14.png}
+\includegraphics[width=\linewidth]{Figures/14.png}
 \caption{Geometric construction of a non-stiff cord \cite{li2015fast}}
 \end{minipage}
 
@@ -165,21 +157,20 @@ Manes et al. (2024) introduced a soft cable loop-based gripper designed for robo
 \begin{tabular}{cc}
 \begin{minipage}[t]{1\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/6.png}
+\includegraphics[width=\linewidth]{Figures/6.png}
 \caption{A cable loop gripper prototype was evaluated for its ability to grasp various types of chemistry glassware. \cite{manes2024soft}}
 \end{minipage}
 
 \end{tabular}
 \begin{tabular}{cc}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/13.png}
+\includegraphics[width=\linewidth]{Figures/13.png}
 \caption{String shoot impact towards a wall \cite{Japan2023}}
 \end{minipage}
-\qquad
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.47\textwidth}
 \centering
-\includegraphics[width=0.7\columnwidth]{Figures/16.png}
+\includegraphics[width=\linewidth]{Figures/16.png}
 \caption{String loop gripper for honeycomb materials \cite{roth2021loop}}
 \end{minipage}
 \end{tabular}
@@ -204,9 +195,9 @@ Current research in robotic gripping mechanisms often focuses on achieving a bal
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1\columnwidth]{Figures/sensors-22-04851-g014.png}
+\includegraphics[width=\linewidth]{Figures/sensors-22-04851-g014.png}
 \caption{Pneumatic actuator grasping process of an egg \cite{yu2022modeling}: (a) The soft actuator moves toward the egg when pneumatic module one is pressurized to 10 kPa, with module two remaining at zero pressure. (b) Contact between the tip of the soft actuator and the egg occurs when the pressure in module one is increased to 20 kPa and module two is set to 14.1 kPa. (c) The egg is securely pinched by the gripper when both module one and module two are pressurized to 20 kPa. (d) The egg is held firmly when the supporting platform is removed, indicating a stable grasp by the gripper.}
-\label{linkage structure A}
+\label{fig:pneumatic_actuator_process}
 \end{minipage}
 % \qquad
 % \begin{minipage}[t]{0.5\textwidth}
@@ -225,9 +216,9 @@ On the other hand, Chameleon-like shooting manipulator offer extended working ra
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.45\textwidth}
 \centering
-\includegraphics[width=0.8\columnwidth]{Figures/chameleon.png}
+\includegraphics[width=\linewidth]{Figures/chameleon.png}
 \caption{Manipulating model of chameleon-like gripper \cite{mochiyama2015chameleon}.}
-\label{linkage structure A}
+\label{fig:chameleon_manipulating_model}
 \end{minipage}
 % \qquad
 % \begin{minipage}[t]{0.5\textwidth}
@@ -244,11 +235,11 @@ Fractal grippers, as discussed by Tisdale and Burdick, draw inspiration from an 
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
-\begin{minipage}[t]{1.1\textwidth}
+\begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=0.8\columnwidth]{Figures/fractal.png}
+\includegraphics[width=\linewidth]{Figures/fractal.png}
 \caption{ Fractal Hand prototype \cite{tisdale2023fractal}.}
-\label{linkage structure A}
+\label{fig:fractal_hand_prototype}
 \end{minipage}
 % \qquad
 % \begin{minipage}[t]{0.5\textwidth}

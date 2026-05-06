@@ -4,7 +4,7 @@
 The design of the gripping algorithm is critical to the functionality and efficiency of Lasso Gripper, ensuring precise and reliable manipulation of various objects. This chapter outlines the algorithm's design, which leverages practical point-cloud processing, loop-synthesis for caging grasps, and real-time tension feedback to achieve robust performance in demonstrative scenarios.
 
 % ------------------------- 3.1 Object Recognition and Point Cloud Processing -------------------------
-\subsection{Object Recognition and Point Cloud Processing}
+\section{Object Recognition and Point Cloud Processing}
 \noindent
 The gripping algorithm begins with target detection using an Intel RealSense D435i depth camera. The captured point cloud is processed to locate candidate "neck" regions and to synthesize feasible caging loops that avoid reliance on exact surface contacts. The algorithm output is a target loop position and approach plan that the launch-and-retract mechanism can execute.
 
@@ -19,12 +19,28 @@ A concise pseudocode summary:
     \item Retract and close loop; apply tension-based release criteria.
 \end{enumerate}
 
+\section{Grasping State Machine}
+\noindent
+The grasping controller is implemented as a simple finite-state machine. States and typical transition conditions are:
+\begin{itemize}
+    \item \textbf{Idle}: waiting for operator start or a higher-level command.
+    \item \textbf{Scan}: acquire and preprocess the point cloud; detect candidate neck regions.
+    \item \textbf{Plan}: synthesize loop pose $L$ and compute an approach trajectory that avoids collisions.
+    \item \textbf{Launch}: spin friction wheels and extrude the loop along the planned trajectory.
+    \item \textbf{Monitor}: observe loop pose and spool tension. A capture is declared if visual enclosure is detected for $N$ consecutive frames or spool tension rises above a capture threshold $T_{detect}$ for a debounce interval $t_{debounce}$.
+    \item \textbf{Tighten}: retract the spool until the target holding tension $T_{hold}$ or a position limit is reached.
+    \item \textbf{Lift}: lift and transport the object while maintaining tension control.
+    \item \textbf{Release/Recovery}: release the object on command or on safety conditions; rewind the loop and return to \textbf{Idle}.
+\end{itemize}
+
+Transitions rely on fused sensor information (point-cloud-based enclosure detection, spool-mounted tension sensor, motor encoder positions) and safety timeouts. For example: if no capture is detected within a maximum launch time $t_{max}$ the controller aborts the attempt and executes a recovery sequence to avoid entanglement.
+
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1.0\columnwidth]{Figures/caging.png}
+\includegraphics[width=\linewidth]{Figures/caging.png}
 \caption{ The caging loop calculating algorithm for Lasso Gripper \cite{liu2018caging}. (a) The setup of the depth reconstruction system (b)The Point cloud captured by depth camera directly. (c) A r-offset surface is built for defining the grasping space. (d) Two Morse saddle points (blue) are calculated to define the grasping loop.}
 \end{minipage}
 \end{tabular}
@@ -33,7 +49,7 @@ A concise pseudocode summary:
 The algorithm employs a method for identifying the "neck" of the object, which is a critical region for secure gripping. The method entails identifying caging loops, which are closed curves characterized within the embedding space of the target object's shape \cite{liu2018caging}. By decoupling the caging loops from the surface geometry, the algorithm can synthesize feasible caging grasps that are not constrained by the object's surface details. This enables the gripper to handle objects with complex geometries and topologies effectively.
 
 % ------------------------- 3.2 Loop Positioning and Tightening -------------------------
-\subsection{Loop Positioning and Tightening}
+\section{Loop Positioning and Tightening}
 
 Once the neck region is identified, the algorithm determines the optimal position for the string loop around the neck. The positioning is crucial for ensuring that the loop can be tightened securely without slipping or causing damage to the object. The algorithm calculates the precise coordinates for the loop's placement, taking into account the object's shape and the desired gripping force.
 
@@ -42,7 +58,7 @@ Once the neck region is identified, the algorithm determines the optimal positio
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1.0\columnwidth]{Figures/exp.png}
+\includegraphics[width=\linewidth]{Figures/exp.png}
 \caption{The illustration of the relative position of the string loop and the target object -- an early test}
 \end{minipage}
 \end{tabular}
@@ -63,7 +79,7 @@ Input: Point Cloud P, String shooting velocity V
 \end{enumerate}
 
 % ------------------------- 3.3 Real-Time Feedback and Adjustment -------------------------
-\subsection{Real-Time Feedback and Adjustment}
+\section{Real-Time Feedback and Adjustment}
 The gripping algorithm incorporates real-time feedback mechanisms to adjust the gripping force and position dynamically. Sensors embedded in the gripper provide continuous data on the tension of the string, the position of the loop, and the force exerted on the object. This data is processed by the controller to make real-time adjustments, ensuring that the grip remains secure and stable.
 
 The force feedback sensor, located on the spool's axle, plays a pivotal role in this process. It monitors the tension of the string during the tightening phase and adjusts the motor's torque accordingly. This prevents excessive force that could damage the object and ensures that the grip is firm enough to hold the object securely.

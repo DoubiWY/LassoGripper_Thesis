@@ -1,11 +1,9 @@
 %%%%%%%%%%%%%%%%%%%% Chapter 3
 \chapter{Lasso Gripper: Design, Analysis, and Experiments}
 
-\section*{Chapter summary}
-\noindent
-This chapter presents the Lasso Gripper as the principal mechanism embodiment used to explore tendon-driven design rules. The chapter focuses on the device concept, mechanical architecture, actuation and sensing choices, the grasp planning strategy, and a set of demonstration experiments. The goal is to establish the feasibility of using a controllable tensile loop as a practical end-effector and to identify the mechanism-level advantages and failure modes that inform the broader thesis.
+\ChapterSummary
+This chapter presents Lasso Gripper as the principal mechanism embodiment used to explore tendon-driven design rules. The chapter focuses on the device concept, mechanical architecture, actuation and sensing choices, the grasp planning strategy, and a set of demonstration experiments. The goal is to establish the feasibility of using a controllable tensile loop as a practical end-effector and to identify the mechanism-level advantages and failure modes that inform the broader thesis.
 
-\noindent
 The experimental program reported here is demonstration-focused and qualitative by design: experiments illustrate the gripper's operating behaviors, its tolerance to object uncertainty, and comparative advantages versus a classical antipodal gripper. Quantitative statistical evaluation (e.g., large-sample success rates, repeatability statistics, fatigue testing) is not included and is recommended as a follow-up study.
 % ------------------------- 2.1 Overall Structure -------------------------
 \section{Design and Principle}
@@ -15,7 +13,7 @@ The experimental program reported here is demonstration-focused and qualitative 
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1\columnwidth]{Figures/overall_img.png}
+\includegraphics[width=\linewidth]{Figures/overall_img.png}
 \caption{The SolidWorks designed hardware of the proposed gripper}
 \end{minipage}
 \end{tabular}
@@ -28,7 +26,7 @@ Lasso Gripper integrates four core subsystems: the launch-and-retract end-effect
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1\columnwidth]{Figures/system_overview.jpg}
+\includegraphics[width=\linewidth]{Figures/system_overview.jpg}
 \caption{The proposed gripper connected with an ESP32 controller, motor electronic speed controller.}
 \end{minipage}
 \end{tabular}
@@ -50,7 +48,7 @@ During the string shooting phase, both pairs of friction wheels rotate in the sa
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.9\textwidth}
 \centering
-\includegraphics[width=1.0\columnwidth]{Figures/Figure11.png}
+\includegraphics[width=\linewidth]{Figures/Figure11.png}
 \caption{The friction wheels and the retraction mechanism driving motors are highlighted for illustration.}
 \end{minipage}
 \end{tabular}
@@ -62,25 +60,23 @@ Within this confined space, a spool mechanism is designed. The spool is equipped
 
 \subsection{The ESP32 Main Controller for Lasso Gripper}
 
-The ESP32 Main Controller serves as the central hub for managing the operations of Lasso Gripper. The ESP32 integrated Wi-Fi and Bluetooth capabilities, provides both the computational power and connectivity required for the gripper's complex functions.
+The ESP32 Main Controller serves as the central hub for Lasso Gripper operations. The ESP32, with integrated Wi‑Fi and Bluetooth, provides the computational power and connectivity required by the prototype.
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.5\textwidth}
 \centering
-\includegraphics[width=1.0\columnwidth]{Figures/esp32.png}
+\includegraphics[width=\linewidth]{Figures/esp32.png}
 \caption{The ESP32 controller used in the proposed Lasso Gripper.}
 \end{minipage}
 \end{tabular}
 \end{figure}
-At the heart of the ESP32 Main Controller is its dual-core processor, which efficiently handles multiple tasks simultaneously. This includes real-time processing of sensor data, executing gripping algorithms, and maintaining communication with external devices. The controller interfaces with various sensors, such as force sensors and motion trackers, to gather critical data on gripping forces, positioning accuracy, and object integrity.
+Its dual-core processor handles real-time sensor processing, execution of the grasping algorithms, and communication with external devices. The controller interfaces with a spool-mounted force sensor, motor encoders, and any auxiliary trackers used during experiments.
 
-The ESP32's GPIO (General Purpose Input/Output) pins are utilized to control the retraction modules that adjust the grasping force of the lasso, ensuring precise manipulation of objects. Additionally, the controller's PWM (Pulse Width Modulation) capabilities allow for fine-tuned control of the friction wheels.
-
-The integrated Wi-Fi and Bluetooth features of the ESP32 facilitate seamless communication with a upper computer for target recognition and grasping planning. This connectivity also allows for remote monitoring and control, data logging, and integration with broader automation systems.
+GPIO pins drive the retraction modules and friction-wheel controllers, while PWM outputs provide fine speed control for the propulsion motors. Wireless connectivity is used for logging, target-recognition offload, and remote monitoring via a host computer when required.
 
 \section{Implications for Tendon-Driven Mechanisms and Medical Devices}
 
-The Lasso Gripper work provides several mechanism-level insights that generalise beyond the specific prototype. First, the principle of using a flexible tensile element to create an adaptive capture region suggests new ways to trade capture range for control complexity. Second, differential and proximal actuation patterns enable low distal mass while still producing multi-degree-of-freedom effects at the end-effector; this trade-off is central to designing hand-held tools and remote manipulators. Third, performance metrics such as capture probability, peak tensile load, retraction dynamics, and hysteresis in the cable path form a compact evaluation set that is applicable to other tendon-driven designs.
+Lasso Gripper work provides several mechanism-level insights that generalise beyond the specific prototype. First, the principle of using a flexible tensile element to create an adaptive capture region suggests new ways to trade capture range for control complexity. Second, differential and proximal actuation patterns enable low distal mass while still producing multi-degree-of-freedom effects at the end-effector; this trade-off is central to designing hand-held tools and remote manipulators. Third, performance metrics such as capture probability, peak tensile load, retraction dynamics, and hysteresis in the cable path form a compact evaluation set that is applicable to other tendon-driven designs.
 
-These insights motivated the subsequent handheld surgical instrument presented in this thesis: the instrument intentionally reuses the same tendon-driven design philosophy and control principles, but applies them to the clinical constraints of minimally invasive surgery (low profile, ergonomic balance, safety and sterilizability). The following chapter therefore uses the Lasso Gripper both as a technical proof-of-concept and as a source of formalised mechanism design rules.
+These insights motivated the subsequent handheld surgical instrument presented in this thesis: the instrument intentionally reuses the same tendon-driven design philosophy and control principles, but applies them to the clinical constraints of minimally invasive surgery (low profile, ergonomic balance, safety and sterilizability). The following chapter therefore uses Lasso Gripper both as a technical proof-of-concept and as a source of formalised mechanism design rules.

@@ -1,0 +1,2040 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{abello2024string}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=022ce06faba9e957f809a4d0e3110709}{%
+           family={Abello},
+           familyi={A\bibinitperiod},
+           given={Margaux},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9a223645a36a0c89c083a63f63795d3e}{%
+           family={Courson},
+           familyi={C\bibinitperiod},
+           given={Juliette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2c74b9bc15c33f18390095ecf2a40fc0}{%
+           family={Maury},
+           familyi={M\bibinitperiod},
+           given={Arnaud},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8b107702cb4c9cacc6c36ec633dad722}{%
+           family={Renaud},
+           familyi={R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{729fe905eff730f327a904022d04edd3}
+      \strng{fullhash}{3714d68d1ce351516272c54c9c8bdd45}
+      \strng{fullhashraw}{3714d68d1ce351516272c54c9c8bdd45}
+      \strng{bibnamehash}{3714d68d1ce351516272c54c9c8bdd45}
+      \strng{authorbibnamehash}{3714d68d1ce351516272c54c9c8bdd45}
+      \strng{authornamehash}{729fe905eff730f327a904022d04edd3}
+      \strng{authorfullhash}{3714d68d1ce351516272c54c9c8bdd45}
+      \strng{authorfullhashraw}{3714d68d1ce351516272c54c9c8bdd45}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2402.17813}
+      \field{title}{String Shooter's overall shape in ambient air}
+      \field{year}{2024}
+    \endentry
+    \entry{brodie_future_2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5e0718eced1fe0213961b8fd151a5dd4}{%
+           family={Brodie},
+           familyi={B\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f12fe3244e3b803fc1c8dd0eec1517e}{%
+           family={Vasdev},
+           familyi={V\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{fullhash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{fullhashraw}{00077e6a992f70b4c47c76551b104e63}
+      \strng{bibnamehash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{authorbibnamehash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{authornamehash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{authorfullhash}{00077e6a992f70b4c47c76551b104e63}
+      \strng{authorfullhashraw}{00077e6a992f70b4c47c76551b104e63}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How robotics could help shape the future of surgical care}
+      \field{issn}{0035-8843, 1478-7083}
+      \field{issue}{Supplement 7}
+      \field{journaltitle}{The Annals of The Royal College of Surgeons of England}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{note}{Publisher: Royal College of Surgeons of England}
+      \field{shortjournal}{annals}
+      \field{title}{The future of robotic surgery}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{100}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4\bibrangedash 13}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1308/rcsann.supp2.4
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\HN3PRUII\\Brodie和Vasdev - 2018 - The future of robotic surgery.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://publishing.rcseng.ac.uk/doi/10.1308/rcsann.supp2.4
+      \endverb
+      \verb{url}
+      \verb https://publishing.rcseng.ac.uk/doi/10.1308/rcsann.supp2.4
+      \endverb
+    \endentry
+    \entry{brun2014introduction}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0dc69869b9b1080c896c4c8c1295f712}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={Pierre-Thomas},
+           giveni={P\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=228455fbc293bd88a1a4c162c2129546}{%
+           family={Ribe},
+           familyi={R\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3251bd705349d0f780fea3d541f2baf1}{%
+           family={Audoly},
+           familyi={A\bibinitperiod},
+           given={Basile},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society Publishing}%
+      }
+      \strng{namehash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{fullhash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{fullhashraw}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{bibnamehash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{authorbibnamehash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{authornamehash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{authorfullhash}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \strng{authorfullhashraw}{89d8e356bc3fe83eabc48bccf17db4b6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2171}
+      \field{title}{An introduction to the mechanics of the lasso}
+      \field{volume}{470}
+      \field{year}{2014}
+      \field{pages}{20140512}
+      \range{pages}{1}
+    \endentry
+    \entry{chen2024soft}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=d646103726aa6cdba390d8e483ee04dc}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Gen},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0b513de77b4de5af0489e67c9f8f9633}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Junsong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=53f90aa659ae14734c307d61aeefc1ef}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zijian},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=462102f8b35c6e5f6dc44454381a662c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Bolun},
+           giveni={B\bibinitperiod}}}%
+        {{hash=32d53ba5ea8514bf5a1d1af7f8a80d22}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Zhongyi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4260063d1c584d8f551bc600d50bafe9}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0003519ca0bda324db58bdb65d89061d}
+      \strng{fullhash}{6d3d94021ddc7a45cc69c777156f44cd}
+      \strng{fullhashraw}{6d3d94021ddc7a45cc69c777156f44cd}
+      \strng{bibnamehash}{6d3d94021ddc7a45cc69c777156f44cd}
+      \strng{authorbibnamehash}{6d3d94021ddc7a45cc69c777156f44cd}
+      \strng{authornamehash}{0003519ca0bda324db58bdb65d89061d}
+      \strng{authorfullhash}{6d3d94021ddc7a45cc69c777156f44cd}
+      \strng{authorfullhashraw}{6d3d94021ddc7a45cc69c777156f44cd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{title}{A Soft Robotic Gripper with a Belt Loop Actuated Adhesion Design for Gentle Handling of Fragile Object}
+      \field{year}{2024}
+    \endentry
+    \entry{ciocarlie2014velo}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=05f830e9e30d3f051d38ebd34989e8ac}{%
+           family={Ciocarlie},
+           familyi={C\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c105f6d51ada6f430aab9b2f000ea19}{%
+           family={Hicks},
+           familyi={H\bibinitperiod},
+           given={Fernando\bibnamedelima Mier},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=999e32dd657f56ce928988447c30b149}{%
+           family={Holmberg},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=139106c2549abca11e119be634515619}{%
+           family={Hawke},
+           familyi={H\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f7050b424109eaf30b30839cd2043f18}{%
+           family={Schlicht},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f7ac446fb160fba49fe4e048a0f94ed2}{%
+           family={Gee},
+           familyi={G\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9da2697074bef43ad4c7986722407186}{%
+           family={Stanford},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=57c5bb4f605edf871f4a4687cabae222}{%
+           family={Bahadur},
+           familyi={B\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{df96b1a63712587f217e8d68f0761762}
+      \strng{fullhash}{48cd04f45ebea018017876394e4ed8c3}
+      \strng{fullhashraw}{48cd04f45ebea018017876394e4ed8c3}
+      \strng{bibnamehash}{48cd04f45ebea018017876394e4ed8c3}
+      \strng{authorbibnamehash}{48cd04f45ebea018017876394e4ed8c3}
+      \strng{authornamehash}{df96b1a63712587f217e8d68f0761762}
+      \strng{authorfullhash}{48cd04f45ebea018017876394e4ed8c3}
+      \strng{authorfullhashraw}{48cd04f45ebea018017876394e4ed8c3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{number}{5}
+      \field{title}{The Velo gripper: A versatile single-actuator design for enveloping, parallel and fingertip grasps}
+      \field{volume}{33}
+      \field{year}{2014}
+      \field{pages}{753\bibrangedash 767}
+      \range{pages}{15}
+    \endentry
+    \entry{daerr2019charmed}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=1c7889e18b0ab3f4a9cd1eff5bed578a}{%
+           family={Daerr},
+           familyi={D\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9a223645a36a0c89c083a63f63795d3e}{%
+           family={Courson},
+           familyi={C\bibinitperiod},
+           given={Juliette},
+           giveni={J\bibinitperiod}}}%
+        {{hash=022ce06faba9e957f809a4d0e3110709}{%
+           family={Abello},
+           familyi={A\bibinitperiod},
+           given={Margaux},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a7bd1fdf627f761a8185857107058374}{%
+           family={Toutain},
+           familyi={T\bibinitperiod},
+           given={Wladimir},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ec85d58c57bf0448b4dd52a4916583b1}{%
+           family={Andreotti},
+           familyi={A\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{a8f1a0b85696f25e46424333ac873d73}
+      \strng{fullhash}{b1632f9b79d93298ce37433e309ca9dd}
+      \strng{fullhashraw}{b1632f9b79d93298ce37433e309ca9dd}
+      \strng{bibnamehash}{b1632f9b79d93298ce37433e309ca9dd}
+      \strng{authorbibnamehash}{b1632f9b79d93298ce37433e309ca9dd}
+      \strng{authornamehash}{a8f1a0b85696f25e46424333ac873d73}
+      \strng{authorfullhash}{b1632f9b79d93298ce37433e309ca9dd}
+      \strng{authorfullhashraw}{b1632f9b79d93298ce37433e309ca9dd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Fluid Mechanics}
+      \field{title}{The charmed string: self-supporting loops through air drag}
+      \field{volume}{877}
+      \field{year}{2019}
+      \field{pages}{R2}
+      \range{pages}{-1}
+    \endentry
+    \entry{fang2023anygrasp}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=55e92fab30c8f36b42b5a22a82fa8325}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Hao-Shu},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=47f64381ad069e88d82016d4c642356d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chenxi},
+           giveni={C\bibinitperiod}}}%
+        {{hash=47973408dba24d38ad680d11de2f2b48}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7a35a6c74c2b4ff1e684b86ef3e5cc7f}{%
+           family={Gou},
+           familyi={G\bibinitperiod},
+           given={Minghao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=802dd3796c775b261894747198e1d293}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jirong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d328acb07db78fd2e6a3f10efdd8c049}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Hengxu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8c45c6c0e5a97262c3ab5f8ea9e194be}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wenhai},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ba3b8bba433520d860df8b69c14f90a3}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Yichen},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0c7325e4c4968d1bba992545190bee4f}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Cewu},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c05837aaf35187c0e15ef291734ece9c}
+      \strng{fullhash}{74b74140f0773596e451fa5e89fb0ab8}
+      \strng{fullhashraw}{74b74140f0773596e451fa5e89fb0ab8}
+      \strng{bibnamehash}{74b74140f0773596e451fa5e89fb0ab8}
+      \strng{authorbibnamehash}{74b74140f0773596e451fa5e89fb0ab8}
+      \strng{authornamehash}{c05837aaf35187c0e15ef291734ece9c}
+      \strng{authorfullhash}{74b74140f0773596e451fa5e89fb0ab8}
+      \strng{authorfullhashraw}{74b74140f0773596e451fa5e89fb0ab8}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{title}{Anygrasp: Robust and efficient grasp perception in spatial and temporal domains}
+      \field{year}{2023}
+    \endentry
+    \entry{gabrich2018flying}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=d1b9400eb0e67095a865b112306f0a52}{%
+           family={Gabrich},
+           familyi={G\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=185dc828fa9adb35c5f9c73785d92abc}{%
+           family={Saldana},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3c2a6a0658f1ad90e7d4a83eef9c3841}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod}}}%
+        {{hash=3e097fdd54c521b3b8f2321bd045bd74}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2a44ac721638aedc48444a82ba9887f3}
+      \strng{fullhash}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \strng{fullhashraw}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \strng{bibnamehash}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \strng{authorbibnamehash}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \strng{authornamehash}{2a44ac721638aedc48444a82ba9887f3}
+      \strng{authorfullhash}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \strng{authorfullhashraw}{81bb4bfc268bc5eecc4033ce1ed1f22d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{A flying gripper based on cuboid modular robots}
+      \field{year}{2018}
+      \field{pages}{7024\bibrangedash 7030}
+      \range{pages}{7}
+    \endentry
+    \entry{guan_trimmed_2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=8030b107ce260acb306db60cc8f1c5fc}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Qinghua},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=741062ac75534206d3046ffdee486da3}{%
+           family={Stella},
+           familyi={S\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=454430d03165d804c0ec65bdb8ef07bd}{%
+           family={Della\bibnamedelima Santina},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Cosimo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cfb57e272824d751a5b7a1d4f5ccf9f0}{%
+           family={Leng},
+           familyi={L\bibinitperiod},
+           given={Jinsong},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7617c66c5f736043bbd5a50344c84f7a}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Josie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf0679a6c6b08e3b54b3c858e7bb5c3b}
+      \strng{fullhash}{4b43d4c276371eeea5410f6412e578fe}
+      \strng{fullhashraw}{4b43d4c276371eeea5410f6412e578fe}
+      \strng{bibnamehash}{4b43d4c276371eeea5410f6412e578fe}
+      \strng{authorbibnamehash}{4b43d4c276371eeea5410f6412e578fe}
+      \strng{authornamehash}{cf0679a6c6b08e3b54b3c858e7bb5c3b}
+      \strng{authorfullhash}{4b43d4c276371eeea5410f6412e578fe}
+      \strng{authorfullhashraw}{4b43d4c276371eeea5410f6412e578fe}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract The development and use of architectured structures is changing the means by which we design and fabricate soft robots. These materials utilize their topology and geometry to control physical and mechanical structural properties. We propose an architectured structure based on trimmed helicoids that allows for independent regulation of the bending and axial stiffness which facilitates tuneability of the resulting soft robot properties. Leveraging {FEA} and computational analysis we select a geometry that provides an optimal trade-off between controllability, sensitivity to errors in control, and compliance. By combining these modular trimmed helicoid structures in conjunction with control methods, we demonstrate a meter-scale soft manipulator that shows control precision, large workspace, and compliant interactions with the environment. These properties enable the robot to perform complex tasks that leverage robot-human and robot-environment interactions such as human feeding and collaborative object manipulation.}
+      \field{day}{26}
+      \field{issn}{2731-4278}
+      \field{journaltitle}{npj Robotics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{1}
+      \field{shortjournal}{npj Robot}
+      \field{shorttitle}{Trimmed helicoids}
+      \field{title}{Trimmed helicoids: an architectured soft structure yielding soft robots with high precision, large workspace, and compliant interactions}
+      \field{urlday}{3}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{1}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s44182-023-00004-7
+      \endverb
+      \verb{file}
+      \verb Guan et al_2023_Trimmed helicoids.pdf:C\:\\Users\\Yu\\Zotero\\storage\\QVKRFU5M\\Guan et al_2023_Trimmed helicoids.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s44182-023-00004-7
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s44182-023-00004-7
+      \endverb
+    \endentry
+    \entry{hu2023dual}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=ad39393a1a69bbbc315a0d4046c276e3}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Tete},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cd4781effee302fd7c86910f43e35a0b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xinjiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=948178cb2c41414f5ab565ddfae7f152}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Du},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{fullhash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{fullhashraw}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{bibnamehash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{authorbibnamehash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{authornamehash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{authorfullhash}{52502fa79ffc126dd464ce2b14c8d128}
+      \strng{authorfullhashraw}{52502fa79ffc126dd464ce2b14c8d128}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors and Actuators A: Physical}
+      \field{title}{A dual-mode and enclosing soft robotic gripper with stiffness-tunable and high-load capacity}
+      \field{volume}{354}
+      \field{year}{2023}
+      \field{pages}{114294}
+      \range{pages}{1}
+    \endentry
+    \entry{hughes2020sensorization}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=7617c66c5f736043bbd5a50344c84f7a}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={Josie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=77686c67c5dc36c9d824fbe4fbfe36c6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shuguang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f74192f92945701041a41bfa429ee111}{%
+           family={Rus},
+           familyi={R\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{fullhash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{fullhashraw}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{bibnamehash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{authorbibnamehash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{authornamehash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{authorfullhash}{cdc8f474a75df58220dcd41a366c1468}
+      \strng{authorfullhashraw}{cdc8f474a75df58220dcd41a366c1468}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Sensorization of a continuum body gripper for high force and delicate object grasping}
+      \field{year}{2020}
+      \field{pages}{6913\bibrangedash 6919}
+      \range{pages}{7}
+    \endentry
+    \entry{kiong_tan_precision_2015}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b47a34b754aed8f59208a7b6539d6f08}{%
+           family={Kiong\bibnamedelima Tan},
+           familyi={K\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Kok},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c412771d3555a809f0c7bcd5d6fb1604}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Wenyu},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d772a664d743aeb06bfeda3a19f82c84}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Sunan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=72d3963a599df2b785b57dfbc9e64857}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Le\bibnamedelima Phuong},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=f46481abd0cdd9064dff93f8397b4d64}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Silu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=47e5e5073a76d0705f81581bea997b6b}{%
+           family={Wee\bibnamedelima Gan},
+           familyi={W\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Chee},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c6d6b9d28a0cf194e13bd896ed9c2a98}{%
+           family={Yee\bibnamedelima Lim},
+           familyi={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Hsueh},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{f2c618132577f8aaa31713c0467bef85}
+      \strng{fullhash}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \strng{fullhashraw}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \strng{bibnamehash}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \strng{authorbibnamehash}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \strng{authornamehash}{f2c618132577f8aaa31713c0467bef85}
+      \strng{authorfullhash}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \strng{authorfullhashraw}{7b23e8bda03e3d5acd7e1a1b99561516}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The current treatment of otitis media with effusion ({OME}) when medication fails is to surgically insert a grommet tube in the tympanic membrane. A novel precision surgical device has been developed, which allows tube insertion to be accomplished in an office setting. The device leverages on a piezoelectric ultrasonic motor ({USM}) stage to facilitate the motion sequences for the procedures. The core engine of the device is in the {USM} motion controller to achieve the high precision, fast response, and repeatability necessary to allow these medical procedures to be efficiently and successfully done with minimum trauma to the patient. This paper focuses on the controller design for the {USM} to meet the unique set of specifications to apply the surgical device optimally on patient with {OME}. A model of the {USM} is first built and identified. A proportional-integral-derivative ({PID}) controller is used as the main tracking controller with the parameters derived optimally using an linear-quadratic regulator ({LQR})-assisted tuning approach. A sign function compensator acts to remove nonlinear dynamics due mainly to friction and a sliding mode controller further rejects remnant uncertainty and disturbance. The experimental results show that the constituent control components fulfill their respective functions well, and collectively, the composite controller is effective toward delivering the level of control performance to meet the objectives for the medical procedures.}
+      \field{day}{1}
+      \field{issn}{0022-0434, 1528-9028}
+      \field{journaltitle}{Journal of Dynamic Systems, Measurement, and Control}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{note}{Publisher: {ASME} International}
+      \field{number}{6}
+      \field{title}{Precision Control of Piezoelectric Ultrasonic Motor for Myringotomy With Tube Insertion}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{137}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1115/1.4029409
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\LF8LT2AI\\Kiong Tan 等 - 2015 - Precision Control of Piezoelectric Ultrasonic Motor for Myringotomy With Tube Insertion.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://asmedigitalcollection.asme.org/dynamicsystems/article/doi/10.1115/1.4029409/473985/Precision-Control-of-Piezoelectric-Ultrasonic
+      \endverb
+      \verb{url}
+      \verb https://asmedigitalcollection.asme.org/dynamicsystems/article/doi/10.1115/1.4029409/473985/Precision-Control-of-Piezoelectric-Ultrasonic
+      \endverb
+    \endentry
+    \entry{kong_automatic_2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=4c73533d6dc7a6c2bf2b0ba891219813}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Xiaowen},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a276d4b5a6009499e636b1e596e73bb0}{%
+           family={Mo},
+           familyi={M\bibinitperiod},
+           given={Hangjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2cd9ec6cc6279b54c776732793c7d2b8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Erbao},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3bd6f6e01c7d31340ba0a055a014e4d1}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yunhui},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=af36d00fe8272f95c483a6bb449395d5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab6eb9039b585d02ecfed35914481e61}
+      \strng{fullhash}{129e7beabbae42657d63fd4bf21b0dbf}
+      \strng{fullhashraw}{129e7beabbae42657d63fd4bf21b0dbf}
+      \strng{bibnamehash}{129e7beabbae42657d63fd4bf21b0dbf}
+      \strng{authorbibnamehash}{129e7beabbae42657d63fd4bf21b0dbf}
+      \strng{authornamehash}{ab6eb9039b585d02ecfed35914481e61}
+      \strng{authorfullhash}{129e7beabbae42657d63fd4bf21b0dbf}
+      \strng{authorfullhashraw}{129e7beabbae42657d63fd4bf21b0dbf}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In existing surgery process, surgeons need to manually adjust the laparoscopes to provide a better field of view ({FOV}) during operation, which may distract surgeons and slow down the surgery process. Herein, a data‐driven control method that uses a continuum laparoscope to adjust the {FOV} by tracking the surgical instruments is presented. A Koopman‐based system identification method is first applied to linearize the nonlinear system. Shifted Chebyshev polynomials are used to construct observation functions that transfer low‐dimension observations to high‐dimension ones. The Koopman operator is approximated using a finite‐dimensional estimation method. An optimal controller is further developed according to the trained linear dynamic model. Furthermore, a learning‐based pose estimation framework is designed to detect keypoints on surgical instruments and provides visual feedback for the control system. Compared with other detection methods, the proposed scheme achieves a higher detection precision and provides more optional keypoints for tracking. Simulation and experiments validate the feasibility of the proposed control method. Experimental results show that the proposed method can automatically adjust the field of continuum laparoscope by tracking surgical instruments in real time and satisfy the clinical requirements.}
+      \field{issn}{2640-4567, 2640-4567}
+      \field{journaltitle}{Advanced Intelligent Systems}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Advanced Intelligent Systems}
+      \field{title}{Automatic Tracking of Surgical Instruments with a Continuum Laparoscope Using Data‐Driven Control in Robotic Surgery}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2200188}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/aisy.202200188
+      \endverb
+      \verb{file}
+      \verb Kong 等 - 2023 - Automatic Tracking of Surgical Instruments with a .pdf:C\:\\Users\\Yu\\Zotero\\storage\\3M329QGY\\Kong 等 - 2023 - Automatic Tracking of Surgical Instruments with a .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/aisy.202200188
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/aisy.202200188
+      \endverb
+    \endentry
+    \entry{li_design_2022}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=e8ce76362e80a8cf370e30d2479c2fe8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingwu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a976661f40be56e85c8d3ce8872a519c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Zhijun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=617d6674e31645ed45bde784275c28da}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={He},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cf32476a79243716b4b5f400d26518f6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jinyan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2f30e36aaa7307ad62182bf68460336}
+      \strng{fullhash}{dea42d8eef23812d50a731ab9ab039f9}
+      \strng{fullhashraw}{dea42d8eef23812d50a731ab9ab039f9}
+      \strng{bibnamehash}{dea42d8eef23812d50a731ab9ab039f9}
+      \strng{authorbibnamehash}{dea42d8eef23812d50a731ab9ab039f9}
+      \strng{authornamehash}{b2f30e36aaa7307ad62182bf68460336}
+      \strng{authorfullhash}{dea42d8eef23812d50a731ab9ab039f9}
+      \strng{authorfullhashraw}{dea42d8eef23812d50a731ab9ab039f9}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Images taken by an endoscope in single-port-access surgery are the most important information for directing surgeons to operate, so acquiring images taken at better position and a more desired perspective has profound signiﬁcance for improving the efﬁciency and safety of surgery. The magnetically anchored laparoscope can help to realize this goal compared with the traditional laparoscope used in single-port-access surgery. In this paper, we propose the concept of applying ultrasonic motors in the magnetically anchored laparoscope. Two types of ultrasonic motors used for driving the laparoscope, namely a miniature traveling wave-rotating ultrasonic motor and a miniature traveling wave-tilt ultrasonic motor, are designed. The prototype of the magnetically anchored laparoscope using these two types of ultrasonic motors is fabricated and evaluated by experiments. The results show that the maximum output torque of the miniature traveling wave-rotating ultrasonic motor is 1.2 {mN}·m, and that of the miniature traveling wave-tilt ultrasonic motor is 1.4 {mN}·m, which is enough to actuate the magnetically anchored laparoscope. Additionally, it is proven that the two designed ultrasonic motors can be applied successfully in the laparoscope.}
+      \field{day}{30}
+      \field{issn}{2072-666X}
+      \field{journaltitle}{Micromachines}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{note}{Publisher: {MDPI} {AG}}
+      \field{number}{6}
+      \field{title}{Design of a Magnetically Anchored Laparoscope Using Miniature Ultrasonic Motors}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{855}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/mi13060855
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\X7452F4L\\Li 等 - 2022 - Design of a Magnetically Anchored Laparoscope Using Miniature Ultrasonic Motors.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2072-666X/13/6/855
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2072-666X/13/6/855
+      \endverb
+    \endentry
+    \entry{li2017development}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=632eca010c226651e87d07f1e668691e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Mingjun},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c704f4b644349c6c5b9134871497d090}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Manjia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ae77544c63449bdcba9c702934b79d1a}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Rongzhen},
+           giveni={R\bibinitperiod}}}%
+        {{hash=21bcec28b2c8de5bcb840a009c60b0a0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yihong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bd222b44859fe26a4cd6f17edbde5f8e}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Haifei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=228dd687961f3612985beeddec81f72a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f598b399ca43cc991bab639d2068ac28}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Yisheng},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e784f8f467639f931d4b4303eaa6fc43}
+      \strng{fullhash}{41babed991ff60a8ddd4d7f149e9e912}
+      \strng{fullhashraw}{41babed991ff60a8ddd4d7f149e9e912}
+      \strng{bibnamehash}{41babed991ff60a8ddd4d7f149e9e912}
+      \strng{authorbibnamehash}{41babed991ff60a8ddd4d7f149e9e912}
+      \strng{authornamehash}{e784f8f467639f931d4b4303eaa6fc43}
+      \strng{authorfullhash}{41babed991ff60a8ddd4d7f149e9e912}
+      \strng{authorfullhashraw}{41babed991ff60a8ddd4d7f149e9e912}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)}
+      \field{title}{Development of a bio-inspired soft gripper with claws}
+      \field{year}{2017}
+      \field{pages}{828\bibrangedash 833}
+      \range{pages}{6}
+    \endentry
+    \entry{li2023visual}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=df274dc69d494116ec6e6e8b97ca88b7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shoujie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1632eca8c9a0113eeb1334729a930f6d}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Haixin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a8a87842ba1c0423ebf115897b33dcfa}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Wenbo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=1ae40da41d42fc582b3884d3de244e68}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Houde},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e4571c92165eabd0709a8f472186becf}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Linqi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=12587ab9a8f9c4ab35a84cc809f8ca1e}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Chongkun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a12341c94d872c404fc1d74ed1c1b834}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xueqian},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ac8341e3048fc04a833bb65a5d1f7961}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiao-Ping},
+           giveni={X\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e02571e0b2de4580f36066a7c810693e}
+      \strng{fullhash}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \strng{fullhashraw}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \strng{bibnamehash}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \strng{authorbibnamehash}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \strng{authornamehash}{e02571e0b2de4580f36066a7c810693e}
+      \strng{authorfullhash}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \strng{authorfullhashraw}{de0fde7a2dc7a08b3e69b69b8fde9ca1}
+      \field{extraname}{3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{title}{Visual--tactile fusion for transparent object grasping in complex backgrounds}
+      \field{year}{2023}
+    \endentry
+    \entry{li2015fast}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=cf1f0547c288eff0857572dcc12516bb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=637a18d695c99902f806ba26e0707c34}{%
+           family={Saut},
+           familyi={S\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=73519cf8ac801fab21eefa422034ab11}{%
+           family={Pettré},
+           familyi={P\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0f23b4b6b77c81e0556ca60b85345618}{%
+           family={Sahbani},
+           familyi={S\bibinitperiod},
+           given={Anis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ded2b79fb70e183f072051a3fba19118}{%
+           family={Multon},
+           familyi={M\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{677a69f08dadda0d77c611bf2804acaa}
+      \strng{fullhash}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \strng{fullhashraw}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \strng{bibnamehash}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \strng{authorbibnamehash}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \strng{authornamehash}{677a69f08dadda0d77c611bf2804acaa}
+      \strng{authorfullhash}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \strng{authorfullhashraw}{4ef6b89843b17d9db51fa8c3e293ecf1}
+      \field{extraname}{4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{number}{6}
+      \field{title}{Fast grasp planning using cord geometry}
+      \field{volume}{31}
+      \field{year}{2015}
+      \field{pages}{1393\bibrangedash 1403}
+      \range{pages}{11}
+    \endentry
+    \entry{liang_novel_2017}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=4e638a2c9959074aaa60b7b571da17ea}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Yunlei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e1fbe09356d28283ca26dde5086f4c7e}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Zhijiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f705c53ffe8cb18b3d62ad78397d6938}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f5957f2cbf5a778b9f8a014814f2f3ab}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Lining},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ff10e0e59c138aada17e189e2e16da3}
+      \strng{fullhash}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \strng{fullhashraw}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \strng{bibnamehash}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \strng{authorbibnamehash}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \strng{authornamehash}{9ff10e0e59c138aada17e189e2e16da3}
+      \strng{authorfullhash}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \strng{authorfullhashraw}{bfc234eb0e9d174ce92bb549332a3fe9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The tendon driven mechanism using a cable and pulley to transmit power is adopted by many surgical robots. However, backlash hysteresis objectively exists in cable-pulley mechanisms, and this nonlinear problem is a great challenge in precise position control during the surgical procedure. Previous studies mainly focused on the transmission characteristics of the cable-driven system and constructed transmission models under particular assumptions to solve nonlinear problems. However, these approaches are limited because the modeling process is complex and the transmission models lack general applicability. This paper presents a novel position compensation control scheme to reduce the impact of backlash hysteresis on the positioning accuracy of surgical robots’ end-effectors. In this paper, a position compensation scheme using a support vector machine based on feedforward control is presented to reduce the position tracking error. To validate the proposed approach, experimental validations are conducted on our cable-pulley system and comparative experiments are carried out. The results show remarkable improvements in the performance of reducing the positioning error for the use of the proposed scheme.}
+      \field{day}{30}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{note}{Publisher: {MDPI} {AG}}
+      \field{number}{10}
+      \field{title}{A Novel Position Compensation Scheme for Cable-Pulley Mechanisms Used in Laparoscopic Surgical Robots}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{17}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2257}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s17102257
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\HWAJQ8UC\\Liang 等 - 2017 - A Novel Position Compensation Scheme for Cable-Pulley Mechanisms Used in Laparoscopic Surgical Robot.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/17/10/2257
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/17/10/2257
+      \endverb
+    \endentry
+    \entry{liu2018caging}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=fd903bc507de58459375d974764ab4ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=96d190c3380b091b066b505667adb1df}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Shiqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=004ddeed24ee891d06cf1755bf151cc3}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Zengfu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=568a42a13259d7c58f48c7be17424609}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=edbf10db49ec7131a46357066954d0c2}{%
+           family={Tu},
+           familyi={T\bibinitperiod},
+           given={Changhe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5f2cdf2c163110e212cb66e7aa399101}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Baoquan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{039a88a9cacce682bbebf9c2b11a71ac}
+      \strng{fullhash}{8559b269fd2ead3a9e822244c8a120dc}
+      \strng{fullhashraw}{8559b269fd2ead3a9e822244c8a120dc}
+      \strng{bibnamehash}{8559b269fd2ead3a9e822244c8a120dc}
+      \strng{authorbibnamehash}{8559b269fd2ead3a9e822244c8a120dc}
+      \strng{authornamehash}{039a88a9cacce682bbebf9c2b11a71ac}
+      \strng{authorfullhash}{8559b269fd2ead3a9e822244c8a120dc}
+      \strng{authorfullhashraw}{8559b269fd2ead3a9e822244c8a120dc}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Caging loops in shape embedding space: theory and computation}
+      \field{year}{2018}
+      \field{pages}{5612\bibrangedash 5619}
+      \range{pages}{8}
+    \endentry
+    \entry{manes2024soft}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e396143cd4f2c48a7734cde95e45f427}{%
+           family={Manes},
+           familyi={M\bibinitperiod},
+           given={Lupo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6771aebd444a933ce625d0221a16b969}{%
+           family={Fichera},
+           familyi={F\bibinitperiod},
+           given={Sebastiano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cae2e63779327ae85d14f8848765d30f}{%
+           family={Fakhruldeen},
+           familyi={F\bibinitperiod},
+           given={Hatem},
+           giveni={H\bibinitperiod}}}%
+        {{hash=37af826494e93a841fa76a6dbc24100a}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Andrew\bibnamedelima I},
+           giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=f8e7ff549853c821290e6694ef2d4a47}{%
+           family={Paoletti},
+           familyi={P\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{542e85607a6349f12e32ad0193ef2c08}
+      \strng{fullhash}{549d7c74106db75d59c4dee5531ab334}
+      \strng{fullhashraw}{549d7c74106db75d59c4dee5531ab334}
+      \strng{bibnamehash}{549d7c74106db75d59c4dee5531ab334}
+      \strng{authorbibnamehash}{549d7c74106db75d59c4dee5531ab334}
+      \strng{authornamehash}{542e85607a6349f12e32ad0193ef2c08}
+      \strng{authorfullhash}{549d7c74106db75d59c4dee5531ab334}
+      \strng{authorfullhashraw}{549d7c74106db75d59c4dee5531ab334}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{A soft cable loop based gripper for robotic automation of chemistry}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{8899}
+      \range{pages}{1}
+    \endentry
+    \entry{mochiyama2015chameleon}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=4bfe6e0cda73931ee15c60bafb0b75b4}{%
+           family={Mochiyama},
+           familyi={M\bibinitperiod},
+           given={Hiromi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2d238ef23d4aff2ac45e45b63ba9a493}{%
+           family={Nakajima},
+           familyi={N\bibinitperiod},
+           given={Hiroto},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6f63f40b8ad3d6fa4ac6215984e8c141}{%
+           family={Hatakeyama},
+           familyi={H\bibinitperiod},
+           given={Tomofumi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{594011a172d963a086d418485e78bc3f}
+      \strng{fullhash}{594011a172d963a086d418485e78bc3f}
+      \strng{fullhashraw}{594011a172d963a086d418485e78bc3f}
+      \strng{bibnamehash}{594011a172d963a086d418485e78bc3f}
+      \strng{authorbibnamehash}{594011a172d963a086d418485e78bc3f}
+      \strng{authornamehash}{594011a172d963a086d418485e78bc3f}
+      \strng{authorfullhash}{594011a172d963a086d418485e78bc3f}
+      \strng{authorfullhashraw}{594011a172d963a086d418485e78bc3f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 10th Asian Control Conference (ASCC)}
+      \field{title}{Chameleon-like shooting manipulator for accurate 10-meter reaching}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{murata2024elastic}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9bc8f0085fb789a1ed15dc1f3914a474}{%
+           family={Murata},
+           familyi={M\bibinitperiod},
+           given={Kenya},
+           giveni={K\bibinitperiod}}}%
+        {{hash=087a719a7127a09f5ca9a5fc2ea05729}{%
+           family={Kusumegi},
+           familyi={K\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+        {{hash=309b374c7ea6e3f192a4134883a78dd3}{%
+           family={Kakogawa},
+           familyi={K\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0fd0de0b99eb31297e2b7f10ee3063ef}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Shugen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{087e445d6639c5181173ecc7dc93a45c}
+      \strng{fullhash}{f2d2d4c8c97229b395170103a0bf551c}
+      \strng{fullhashraw}{f2d2d4c8c97229b395170103a0bf551c}
+      \strng{bibnamehash}{f2d2d4c8c97229b395170103a0bf551c}
+      \strng{authorbibnamehash}{f2d2d4c8c97229b395170103a0bf551c}
+      \strng{authornamehash}{087e445d6639c5181173ecc7dc93a45c}
+      \strng{authorfullhash}{f2d2d4c8c97229b395170103a0bf551c}
+      \strng{authorfullhashraw}{f2d2d4c8c97229b395170103a0bf551c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advanced Robotics}
+      \field{title}{Elastic material selection for omni-wheels of in-pipe robots with high traction capability}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
+    \entry{ranzani_soft_2016}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=675c03a7ee20d66ac0332c4ec7e6e351}{%
+           family={Ranzani},
+           familyi={R\bibinitperiod},
+           given={Tommaso},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fd7b31f315b60515f844287e859c6453}{%
+           family={Cianchetti},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=85172fe322a3a91cba204e111e48b738}{%
+           family={Gerboni},
+           familyi={G\bibinitperiod},
+           given={Giada},
+           giveni={G\bibinitperiod}}}%
+        {{hash=acdac9116f84d5c3b993a3e492dca8cd}{%
+           family={Falco},
+           familyi={F\bibinitperiod},
+           given={Iris\bibnamedelima De},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6f3d64d29d196341a9db792eb483aa55}{%
+           family={Menciassi},
+           familyi={M\bibinitperiod},
+           given={Arianna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{15e6402934180b1b2010225880c76358}
+      \strng{fullhash}{e4e6e993369766183ac365402155347f}
+      \strng{fullhashraw}{e4e6e993369766183ac365402155347f}
+      \strng{bibnamehash}{e4e6e993369766183ac365402155347f}
+      \strng{authorbibnamehash}{e4e6e993369766183ac365402155347f}
+      \strng{authornamehash}{15e6402934180b1b2010225880c76358}
+      \strng{authorfullhash}{e4e6e993369766183ac365402155347f}
+      \strng{authorfullhashraw}{e4e6e993369766183ac365402155347f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper presents the concept design of a modular soft manipulator for minimally invasive surgery. Unlike traditional surgical manipulators based on metallic steerable needles, tendondriven mechanisms, or articulated motorized links, we combine ﬂexible ﬂuidic actuators to obtain multidirectional bending and elongation with a variable stiffness mechanism based on granular jamming. The idea is to develop a manipulator based on a series of modules, each consisting of a silicone matrix with pneumatic chambers for 3-D motion, and one central channel for the integration of granular-jamming-based stiffening mechanism. A bellows-shaped braided structure is used to contain the lateral expansion of the ﬂexible ﬂuidic actuator and to increase its motion range. In this paper, the design and experimental characterization of a single module composed of such a manipulator is presented. Possible applications of the manipulator in the surgical ﬁeld are discussed.}
+      \field{issn}{1552-3098, 1941-0468}
+      \field{journaltitle}{{IEEE} Transactions on Robotics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{note}{Publisher: Institute of Electrical and Electronics Engineers ({IEEE})}
+      \field{number}{1}
+      \field{shortjournal}{{IEEE} Trans. Robot.}
+      \field{shorttitle}{A Soft Modular Manipulator for Minimally Invasive Surgery}
+      \field{title}{A Soft Modular Manipulator for Minimally Invasive Surgery: Design and Characterization of a Single Module}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{32}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{187\bibrangedash 200}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/tro.2015.2507160
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\P4Z35M54\\Ranzani 等 - 2016 - A Soft Modular Manipulator for Minimally Invasive Surgery Design and Characterization of a Single M.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7387755/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7387755/
+      \endverb
+    \endentry
+    \entry{roth2021loop}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a5dd67892a8059ec23b8dc94bd90d866}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0c14acdad90ab54632a84bb9d189e1bc}{%
+           family={Eschen},
+           familyi={E\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=36b50a1ed6656226d7777984beb267b6}{%
+           family={Schüppstuhl},
+           familyi={S\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{fullhash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{fullhashraw}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{bibnamehash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{authorbibnamehash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{authornamehash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{authorfullhash}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \strng{authorfullhashraw}{ae8f2ed2df7eda85e17b6ec8b5c3c2eb}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia manufacturing}
+      \field{title}{The loop gripper: A soft gripper for honeycomb materials}
+      \field{volume}{55}
+      \field{year}{2021}
+      \field{pages}{160\bibrangedash 167}
+      \range{pages}{8}
+    \endentry
+    \entry{sun2020soft}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=ec985df62bf79fcf609d0d6905f3ad0e}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=38c8ed9edcf760e394821745967c569e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yuanlong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=19a147b6b2da613dabe68d0696335ede}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Tianyu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=26a743151bc1d317aca43c9ddb322fb2}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Chenlei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6ae7a4e94acbd26925027dd2fa657bf4}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Binbin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=30b48d044aae667f797d3abad4d8145a}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yimin},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{be078ccfa20050bc5ccfc9806a682790}
+      \strng{fullhash}{9f8582ee893322d568cd51609b5b9ee7}
+      \strng{fullhashraw}{9f8582ee893322d568cd51609b5b9ee7}
+      \strng{bibnamehash}{9f8582ee893322d568cd51609b5b9ee7}
+      \strng{authorbibnamehash}{9f8582ee893322d568cd51609b5b9ee7}
+      \strng{authornamehash}{be078ccfa20050bc5ccfc9806a682790}
+      \strng{authorfullhash}{9f8582ee893322d568cd51609b5b9ee7}
+      \strng{authorfullhashraw}{9f8582ee893322d568cd51609b5b9ee7}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Robotics and Computer-Integrated Manufacturing}
+      \field{title}{A soft gripper with variable stiffness inspired by pangolin scales, toothed pneumatic actuator and autonomous controller}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{pages}{101848}
+      \range{pages}{1}
+    \endentry
+    \entry{sun2024low}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e0a87b50693ba303963ba97a495cecdc}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Xiantao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=88954891eac7b5dcae5413f056cfb422}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8ec6299c8e78c303ef3bf8d6be34b11d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuxia},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fb35bbad67c8d553a20e6549c269d41c}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Weihai},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f792da9ce32f6a141cc0114fcfcba0a2}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b57b1fceb1cdcd5913313d3eb71b8242}
+      \strng{fullhash}{94abe1133dc21b34e959e655b50d502d}
+      \strng{fullhashraw}{94abe1133dc21b34e959e655b50d502d}
+      \strng{bibnamehash}{94abe1133dc21b34e959e655b50d502d}
+      \strng{authorbibnamehash}{94abe1133dc21b34e959e655b50d502d}
+      \strng{authornamehash}{b57b1fceb1cdcd5913313d3eb71b8242}
+      \strng{authorfullhash}{94abe1133dc21b34e959e655b50d502d}
+      \strng{authorfullhashraw}{94abe1133dc21b34e959e655b50d502d}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors and Actuators A: Physical}
+      \field{title}{A low-cost underactuated compliant gripper with multifunctional jaws for precision manipulation}
+      \field{volume}{366}
+      \field{year}{2024}
+      \field{pages}{115047}
+      \range{pages}{1}
+    \endentry
+    \entry{tisdale2023fractal}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4395461eeb6ae6aa0626043cd54c92c1}{%
+           family={Tisdale},
+           familyi={T\bibinitperiod},
+           given={Malcolm\bibnamedelima GA},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4657fdf1503c10e3d6b8c385ff5346cf}{%
+           family={Burdick},
+           familyi={B\bibinitperiod},
+           given={Joel\bibnamedelima W},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{fullhash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{fullhashraw}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{bibnamehash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{authorbibnamehash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{authornamehash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{authorfullhash}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \strng{authorfullhashraw}{3db3a23ef2c084bfec3c8ea8d60f0a88}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2309.08766}
+      \field{title}{The Fractal Hand-II: Reviving a Classic Mechanism for Contemporary Grasping Challenges}
+      \field{year}{2023}
+    \endentry
+    \entry{Japan2023}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=182ffb4cf5bb454ea9530275ca43f635}{%
+           family={TOKUOMI\bibnamedelima SAEKO},
+           familyi={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={OSHIMA\bibnamedelima YASUTAKA},
+           giveni={O\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           suffix={MORI\bibnamedelima KAZUYA},
+           suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Science Council of Japan}%
+      }
+      \strng{namehash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{fullhash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{fullhashraw}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{bibnamehash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{authorbibnamehash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{authornamehash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{authorfullhash}{182ffb4cf5bb454ea9530275ca43f635}
+      \strng{authorfullhashraw}{182ffb4cf5bb454ea9530275ca43f635}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Japan Conference on Structural Safety and Reliability}
+      \field{title}{Development of String Shoot Impactor and its Application to Detection of Raised Tiles}
+      \field{year}{2023}
+      \field{pages}{66\bibrangedash 71}
+      \range{pages}{6}
+    \endentry
+    \entry{trejos_force_2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7ccd8b2fe6c78759f21ebc048d9f14d3}{%
+           family={Trejos},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=53bda5174c969e3493d582974aa43dc4}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=74094b50aa5e292367e64b6c1afafae0}{%
+           family={Naish},
+           familyi={N\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{fullhash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{fullhashraw}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{bibnamehash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{authorbibnamehash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{authornamehash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{authorfullhash}{a36f516b8d17f7c52393cbca12c87d29}
+      \strng{authorfullhashraw}{a36f516b8d17f7c52393cbca12c87d29}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The reduced access conditions of minimally invasive surgery and therapy ({MIST}) impair or completely eliminate the feel of tool-tissue interaction forces. Many researchers have been working actively on the development of force sensors and sensing techniques to address this problem. The goal of this survey article is to summarize the state of the art in force sensing techniques for medical interventions in order to identify existing limitations and future directions. A literature search was performed from January to July 2009 using a combination of keywords relevant to the area, including force, sensor, sensing, haptics, and minimally invasive surgery. The literature search resulted in 126 articles with valuable content. This article presents a summary of the force sensing technologies, design specifications for force sensors in clinical applications, force sensors and sensing instruments that have been developed for {MIST} and the experiments performed to determine the need for force information. Open areas of research include force sensor design, development of alternative methods of sensing, assessment of the impact of force information on performance, determination of the benefits of haptic information, and evaluation of the human factors involved in the processing and use of force information. [{PUBLICATION} {ABSTRACT}]}
+      \field{issn}{09544062}
+      \field{issue}{C7}
+      \field{journaltitle}{Proceedings of the Institution of Mechanical Engineers: Journal of Mechanical Engineering Science, Part C}
+      \field{note}{Num Pages: 20 Publisher: {SAGE} {PUBLICATIONS}, {INC}. Section: {SPECIAL} {ISSUE} {PAPER}}
+      \field{shorttitle}{Force sensing and its application in minimally invasive surgery and therapy}
+      \field{title}{Force sensing and its application in minimally invasive surgery and therapy: a survey}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{224}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1435\bibrangedash 1454}
+      \range{pages}{20}
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\Yu\\Zotero\\storage\\M3FY3LQR\\Trejos 等 - 2010 - Force sensing and its application in minimally invasive surgery and therapy a survey.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www-proquest-com.eproxy.lib.hku.hk/docview/861836712/abstract/D2EF92CB8D0D4C47PQ/1
+      \endverb
+      \verb{url}
+      \verb https://www-proquest-com.eproxy.lib.hku.hk/docview/861836712/abstract/D2EF92CB8D0D4C47PQ/1
+      \endverb
+      \keyw{Force,Haptics,Minimally invasive procedure,Sensors,Studies,Surgery,Therapy}
+    \endentry
+    \entry{wang2021lightweight}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=99de65e5476005b6deb7b87170202067}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Sen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b7ae6f758c4a7a436631aa923dbf9b93}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Hongxin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8fc69b57c1938006f13c622530af1abb}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Hailin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5eb4c3e75d14d3af4ceb7f957e07f41c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=30918ba64f15da7ff8ea9c593a930c6e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e23729dcda9a05f758a8d2b3eb0c6230}
+      \strng{fullhash}{a460839765a50d08dede86754ce00479}
+      \strng{fullhashraw}{a460839765a50d08dede86754ce00479}
+      \strng{bibnamehash}{a460839765a50d08dede86754ce00479}
+      \strng{authorbibnamehash}{a460839765a50d08dede86754ce00479}
+      \strng{authornamehash}{e23729dcda9a05f758a8d2b3eb0c6230}
+      \strng{authorfullhash}{a460839765a50d08dede86754ce00479}
+      \strng{authorfullhashraw}{a460839765a50d08dede86754ce00479}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Robotics and Automation Letters}
+      \field{number}{2}
+      \field{title}{A lightweight soft gripper driven by self-sensing super-coiled polymer actuator}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{2775\bibrangedash 2782}
+      \range{pages}{8}
+    \endentry
+    \entry{wang2017shape}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f27ec46ccd272a021fd78bdac92dd490}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=4916fd6dbd018a3ea40510c79b0da22e}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Sung-Hoon},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}%
+      }
+      \strng{namehash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{fullhash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{fullhashraw}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{bibnamehash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{authorbibnamehash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{authornamehash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{authorfullhash}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \strng{authorfullhashraw}{d734270a92d48b4f2b90a4b3d3e9876a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Soft robotics}
+      \field{number}{4}
+      \field{title}{Shape memory alloy-based soft gripper with variable stiffness for compliant and effective grasping}
+      \field{volume}{4}
+      \field{year}{2017}
+      \field{pages}{379\bibrangedash 389}
+      \range{pages}{11}
+    \endentry
+    \entry{wu_rotary_2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=102ca035f85effc875ea631c3a32d510}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2b16aaffe30352ac2a55b07553802692}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Yosuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7aad2ddf8217def3d1ece0931f3e7a29}{%
+           family={Nakamura},
+           familyi={N\bibinitperiod},
+           given={Kentaro},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{fullhash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{fullhashraw}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{bibnamehash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{authorbibnamehash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{authornamehash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{authorfullhash}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \strng{authorfullhashraw}{701e48a2bd99d5acdd4d5f8da0787f5f}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, to achieve high torque density and high power density of rotary ultrasonic motors ({USMs}), we develop a rod-shaped transducer operating in torsional/bending (T/B) modes and excite two elliptical motions on its bilateral ends to drive the rotor orthogonally pressed onto the transducer. Here, the torsional vibration, the driving structure, and the rod shape may enable the T/B motor to provide high driving force, large driving distance, and low weight, which facilitate the realization of high torque density and high power density. To assess the validity, first, we construct a transducer 43 and 110 mm in diameter and length, respectively. Then, we investigate the load characteristics of the T/B motor: When it works at the frequency of 21.64 {kHz}, the maximal torque and the maximal output power reach 10.1 N·m and 38.1 W, respectively. In the meantime, it yields the torque density and the power density of, respectively, 20.0 N·m/kg and 75.7 W/kg, which are, as predicted, relatively high compared to the values of most conventional rotary motors. This article not only validates the effectiveness of our proposal but also provides a new approach to design powerful rotary {USMs}.}
+      \field{issn}{1557-9948}
+      \field{journaltitle}{{IEEE} Transactions on Industrial Electronics}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{A Rotary Ultrasonic Motor Operating in Torsional/Bending Modes With High Torque Density and High Power Density}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{68}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6109\bibrangedash 6120}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TIE.2020.3000112
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9113502/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9113502/
+      \endverb
+      \keyw{Bending mode,Density measurement,hybrid transducer,Power system measurements,rotary ultrasonic motor ({USM}),Rotors,Torque,torsional mode,Transducers,Vibrations}
+    \endentry
+    \entry{xiong2018design}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=224222f006507ca6b07f0f2fbb2f9db7}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Ya},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2014a41f25557d3cabf36297679e5bf4}{%
+           family={From},
+           familyi={F\bibinitperiod},
+           given={Pal\bibnamedelima Johan},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=87b8d080b88aecea246d4901006d26ea}{%
+           family={Isler},
+           familyi={I\bibinitperiod},
+           given={Volkan},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{fullhash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{fullhashraw}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{bibnamehash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{authorbibnamehash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{authornamehash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{authorfullhash}{d72897f5efd5b8f50b174d0043c0430e}
+      \strng{authorfullhashraw}{d72897f5efd5b8f50b174d0043c0430e}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE international conference on robotics and automation (ICRA)}
+      \field{title}{Design and evaluation of a novel cable-driven gripper with perception capabilities for strawberry picking robots}
+      \field{year}{2018}
+      \field{pages}{7384\bibrangedash 7391}
+      \range{pages}{8}
+    \endentry
+    \entry{xue_design_2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=854f651764fa323bb1aeefbe157d6a82}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Renfeng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f32f79d53aa7d4f91eda8a7bb4f3cf0a}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Bingyin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=be790679dff55cb939371863a8930608}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jiaqing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5bcec1b604fa12ae30e4fb6cae082bb9}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e1fbe09356d28283ca26dde5086f4c7e}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Zhijiang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{c57a84c86ca83c7082792a5669a30510}
+      \strng{fullhash}{a659df4fc271c2c13ff6545a7fcb2587}
+      \strng{fullhashraw}{a659df4fc271c2c13ff6545a7fcb2587}
+      \strng{bibnamehash}{a659df4fc271c2c13ff6545a7fcb2587}
+      \strng{authorbibnamehash}{a659df4fc271c2c13ff6545a7fcb2587}
+      \strng{authornamehash}{c57a84c86ca83c7082792a5669a30510}
+      \strng{authorfullhash}{a659df4fc271c2c13ff6545a7fcb2587}
+      \strng{authorfullhashraw}{a659df4fc271c2c13ff6545a7fcb2587}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to the narrow space and a harsh chemical environment in the sterilization processes for the end-effector of surgical robots, it is difﬁcult to install and integrate suitable sensors for the purpose of effective and precise force control. This paper presents an innovative tension sensor for estimation of grasping force in our laparoscope surgical robot. The proposed sensor measures the tension of cable using ﬁber gratings ({FBGs}) which are pasted in the grooves on the inclined cantilevers of the sensor. By exploiting the stain measurement characteristics of {FBGs}, the small deformation of the inclined cantilevers caused by the cable tension can be measured. The working principle and the sensor model are analyzed. Based on the sensor model, the dimensions of the sensor are designed and optimized. A dedicated experimental setup is established to calibrate and test the sensor. The results of experiments for estimation the grasping force validate the sensor.}
+      \field{day}{28}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{note}{Publisher: {MDPI} {AG}}
+      \field{number}{7}
+      \field{title}{Design and Evaluation of {FBG}-Based Tension Sensor in Laparoscope Surgical Robots}
+      \field{urlday}{27}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2067}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s18072067
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\MA96MVFG\\Xue 等 - 2018 - Design and Evaluation of FBG-Based Tension Sensor in Laparoscope Surgical Robots.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/18/7/2067
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/18/7/2067
+      \endverb
+    \endentry
+    \entry{yin2020closing}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=69b617baea233c43f938e2b9162960cf}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jessica},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d6433892704f95fdaf3b3169d1c21d4b}{%
+           family={Hellebrekers},
+           familyi={H\bibinitperiod},
+           given={Tess},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b8c870cb8cc3e803edf2f2b0ce503663}{%
+           family={Majidi},
+           familyi={M\bibinitperiod},
+           given={Carmel},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{fullhash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{fullhashraw}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{bibnamehash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{authorbibnamehash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{authornamehash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{authorfullhash}{5fd23ab7cc313562b161482bfdaeb87d}
+      \strng{authorfullhashraw}{5fd23ab7cc313562b161482bfdaeb87d}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 3rd IEEE International Conference on Soft Robotics (RoboSoft)}
+      \field{title}{Closing the loop with liquid-metal sensing skin for autonomous soft robot gripping}
+      \field{year}{2020}
+      \field{pages}{661\bibrangedash 667}
+      \range{pages}{7}
+    \endentry
+    \entry{yu2022modeling}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=106bec94f2d407952200f9b4e38c3225}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=896c50fc1655fde5b6cb302b96526145}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wenwen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c16e592968201fed7413e6fa85a80d4d}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b28277a5a255dd449caf5168e245e2ea}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Yanyan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9b37dd9af4a904c06f82055fd9bb0b88}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Xuewu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=23eda93d1080d9778a9c740aca550f30}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{2d19560e6951a8fd3cc26e36a21c0a4a}
+      \strng{fullhash}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \strng{fullhashraw}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \strng{bibnamehash}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \strng{authorbibnamehash}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \strng{authornamehash}{2d19560e6951a8fd3cc26e36a21c0a4a}
+      \strng{authorfullhash}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \strng{authorfullhashraw}{b235b82b83993b6ea20d7ad6661a5c4b}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{13}
+      \field{title}{Modeling and analysis of a composite structure-based soft pneumatic actuators for soft-robotic gripper}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{4851}
+      \range{pages}{1}
+    \endentry
+    \entry{zemiti_mechatronic_2007}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=56dc303f93f5d9a6c940bdc0b828bef2}{%
+           family={Zemiti},
+           familyi={Z\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f632d3f408147a6c3b9a584b57609d54}{%
+           family={Morel},
+           familyi={M\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a72fe1209103af2a988c6dff99d7e122}{%
+           family={Ortmaier},
+           familyi={O\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=5d559ef7110e18643a5910af94f8c301}{%
+           family={Bonnet},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{457aadf1f59e4710921e65206c6127ca}
+      \strng{fullhash}{2fe9ddb0b52c3689f082f038458899f6}
+      \strng{fullhashraw}{2fe9ddb0b52c3689f082f038458899f6}
+      \strng{bibnamehash}{2fe9ddb0b52c3689f082f038458899f6}
+      \strng{authorbibnamehash}{2fe9ddb0b52c3689f082f038458899f6}
+      \strng{authornamehash}{457aadf1f59e4710921e65206c6127ca}
+      \strng{authorfullhash}{2fe9ddb0b52c3689f082f038458899f6}
+      \strng{authorfullhashraw}{2fe9ddb0b52c3689f082f038458899f6}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Minimally invasive surgery ({MIS}) challenges the surgeon’s skills due to his/her separation from the operation area, which can be reached with long instruments only. Therefore, the surgeon looses access to the manipulation forces inside the patient. This reduces his/her dexterity when performing the operation. A new compact and lightweight robot for {MIS} is presented, which allows for the measurement of manipulation forces. The main advantage of this concept is that no miniaturized force sensor has to be integrated into surgical instruments and inserted into the patient. Rather, outside the patient, a standard sensor is attached to a modiﬁed trocar, which allows for the undisturbed measurement of manipulation forces. This approach reduces costs and sterilizability demands. Results of in vitro and in vivo force control experiments are presented to validate the concepts.}
+      \field{issn}{1083-4435}
+      \field{journaltitle}{{IEEE}/{ASME} Transactions on Mechatronics}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{note}{Publisher: Institute of Electrical and Electronics Engineers ({IEEE})}
+      \field{number}{2}
+      \field{shortjournal}{{IEEE}/{ASME} Trans. Mechatron.}
+      \field{title}{Mechatronic Design of a New Robot for Force Control in Minimally Invasive Surgery}
+      \field{urlday}{29}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{143\bibrangedash 153}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/tmech.2007.892831
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\Yu\\Zotero\\storage\\VA6FALFW\\Zemiti 等 - 2007 - Mechatronic Design of a New Robot for Force Control in Minimally Invasive Surgery.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/4154715/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/4154715/
+      \endverb
+    \endentry
+    \entry{zhang2017design}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=c0cfb79af9d20d719d272ce9252da540}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hongying},
+           giveni={H\bibinitperiod}}}%
+        {{hash=219774870c8d1b82bd1df5d310461471}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Michael\bibnamedelima Yu},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=d455a4cb8a24820dd2e089881a930d91}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Feifei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=45acd312c06c7552d094b5b1b557d8b3}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yiqiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bff9a0db2778144dd84a012ea2d3749e}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={A\bibnamedelima Senthil},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6c5058c271beb17b4a3cf23b02d8a259}{%
+           family={Fuh},
+           familyi={F\bibinitperiod},
+           given={Jerry\bibnamedelima YH},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a8e913768ab67f42d2bb493b09ed0408}
+      \strng{fullhash}{05ebb7327749596a65ff63c6615016b2}
+      \strng{fullhashraw}{05ebb7327749596a65ff63c6615016b2}
+      \strng{bibnamehash}{05ebb7327749596a65ff63c6615016b2}
+      \strng{authorbibnamehash}{05ebb7327749596a65ff63c6615016b2}
+      \strng{authornamehash}{a8e913768ab67f42d2bb493b09ed0408}
+      \strng{authorfullhash}{05ebb7327749596a65ff63c6615016b2}
+      \strng{authorfullhashraw}{05ebb7327749596a65ff63c6615016b2}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE/RSJ international conference on intelligent robots and systems (IROS)}
+      \field{title}{Design and development of a soft gripper with topology optimization}
+      \field{year}{2017}
+      \field{pages}{6239\bibrangedash 6244}
+      \range{pages}{6}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
