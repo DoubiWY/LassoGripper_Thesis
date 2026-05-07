@@ -90,16 +90,14 @@
   publisher={Cambridge University Press}
 }
 
-@article{ abello2024string,
-	author = {{Abello, Margaux} and {Courson, Juliette} and {Maury, Arnaud} and {Renaud, Julian}},
-	title = {String Shooter’s overall shape in ambient air},
-	DOI= "10.1051/emsci/2019007",
-	url= "https://doi.org/10.1051/emsci/2019007",
-	journal = {Emergent Scientist},
-	year = 2020,
-	volume = 4,
-	pages = "1",
-}@article{hu2023dual,
+@article{abello2024string,
+  title={String Shooter's overall shape in ambient air},
+  author={Abello, Margaux and Courson, Juliette and Maury, Arnaud and Renaud, Julian},
+  journal={arXiv preprint arXiv:2402.17813},
+  year={2024}
+}
+%%%%%%%% New reference on Aug 02 %%%%%%%%%%%%%%%
+@article{hu2023dual,
   title={A dual-mode and enclosing soft robotic gripper with stiffness-tunable and high-load capacity},
   author={Hu, Tete and Lu, Xinjiang and Xu, Du},
   journal={Sensors and Actuators A: Physical},
@@ -315,38 +313,74 @@
 }
 
 
+% Duplicate entry removed: key hernandez2023current
+
+
+% Duplicate entry removed: key yu2022modeling
 
 
 
+% Duplicate entry removed: key mochiyama2015chameleon
 
 
 
+% Duplicate entry removed: key tisdale2023fractal
 
 
 
+% Duplicate entry removed: key brun2014introduction
 
 
 
+% Duplicate entry removed: key liu2018caging
 
+
+
+% Duplicate entry removed: key murata2024elastic
+
+
+% Duplicate entry removed: key daerr2019charmed
+
+
+
+% Duplicate entry removed: key abello2024string
 
 
 %%%%%%%% New reference on Aug 02 %%%%%%%%%%%%%%%
 
+% Duplicate entry removed: key hu2023dual
 
 
 
+% Duplicate entry removed: key gabrich2018flying
 
 
 
+% Duplicate entry removed: key wang2021lightweight
 
 
 
+% Duplicate entry removed: key sun2024low
 
 
 
+% Duplicate entry removed: key fang2023anygrasp
 
 
 
+% Duplicate entry removed: key manes2024soft
+
+
+
+% Duplicate entry removed: key sun2020soft
+
+
+
+% Duplicate entry removed: key chen2024soft
+
+
+
+% Duplicate entry removed: key yin2020closing
 
 @ARTICLE{10081306,
   author={Peng, Rui and Wang, Zehao and Lu, Peng},
@@ -361,23 +395,48 @@
 
 
 
+% Duplicate entry removed: key zhang2017design
 
 
 
+% Duplicate entry removed: key xiong2018design
 
 
 
+% Duplicate entry removed: key li2017development
 
 
 
+% Duplicate entry removed: key Japan2023
 
 
 
+% Duplicate entry removed: key li2015fast
 
 
 
+% Duplicate entry removed: key hughes2020sensorization
 
 
+
+% Duplicate entry removed: key roth2021loop
+
+
+
+% Duplicate entry removed: key ciocarlie2014velo
+
+
+
+% Duplicate entry removed: key li2023visual
+
+
+
+% Duplicate entry removed: key wang2017shape
+
+String Shooter
+
+File outline
+ 
 
 @article{ciocarlie_velo_2014,
 	title = {The {Velo} gripper: {A} versatile single-actuator design for enveloping, parallel and fingertip grasps},
@@ -1153,23 +1212,25 @@ Conclusions: We describe the ﬁrst clinical application of a novel robotic plat
 @article{wu_rotary_2021,
 	title = {A Rotary Ultrasonic Motor Operating in Torsional/Bending Modes With High Torque Density and High Power Density},
 	volume = {68},
-	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
-	issn = {0278-0046, 1557-9948},
+	issn = {1557-9948},
 	url = {https://ieeexplore.ieee.org/document/9113502/},
-	doi = {10.1109/tie.2020.3000112},
-	abstract = {In this article, to achieve high torque density and high power density of rotary ultrasonic motors ({USMs}), we develop a rod-shaped transducer operating in torsional/bending (T/B) modes and excite two elliptical motions on its bilateral ends to drive the rotor orthogonally pressed onto the transducer. Here, the torsional vibration, the driving structure, and the rod shape may enable the T/B motor to provide high driving force, large driving distance, and low weight, which facilitate the realization of high torque density and high power density. To assess the validity, ﬁrst, we construct a transducer 43 and 110 mm in diameter and length, respectively. Then, we investigate the load characteristics of the T/B motor: When it works at the frequency of 21.64 {kHz}, the maximal torque and the maximal output power reach 10.1 N·m and 38.1 W, respectively. In the meantime, it yields the torque density and the power density of, respectively, 20.0 N·m/kg and 75.7 W/kg, which are, as predicted, relatively high compared to the values of most conventional rotary motors. This article not only validates the effectiveness of our proposal but also provides a new approach to design powerful rotary {USMs}.},
+	doi = {10.1109/TIE.2020.3000112},
+	abstract = {In this article, to achieve high torque density and high power density of rotary ultrasonic motors ({USMs}), we develop a rod-shaped transducer operating in torsional/bending (T/B) modes and excite two elliptical motions on its bilateral ends to drive the rotor orthogonally pressed onto the transducer. Here, the torsional vibration, the driving structure, and the rod shape may enable the T/B motor to provide high driving force, large driving distance, and low weight, which facilitate the realization of high torque density and high power density. To assess the validity, first, we construct a transducer 43 and 110 mm in diameter and length, respectively. Then, we investigate the load characteristics of the T/B motor: When it works at the frequency of 21.64 {kHz}, the maximal torque and the maximal output power reach 10.1 N·m and 38.1 W, respectively. In the meantime, it yields the torque density and the power density of, respectively, 20.0 N·m/kg and 75.7 W/kg, which are, as predicted, relatively high compared to the values of most conventional rotary motors. This article not only validates the effectiveness of our proposal but also provides a new approach to design powerful rotary {USMs}.},
 	pages = {6109--6120},
 	number = {7},
 	journaltitle = {{IEEE} Transactions on Industrial Electronics},
-	shortjournal = {{IEEE} Trans. Ind. Electron.},
 	author = {Wu, Jiang and Mizuno, Yosuke and Nakamura, Kentaro},
 	urldate = {2025-09-27},
 	date = {2021-07},
-	langid = {english},
-	note = {Publisher: Institute of Electrical and Electronics Engineers ({IEEE})},
-	file = {PDF:C\:\\Users\\Yu\\Zotero\\storage\\IEHLVVKW\\Wu 等 - 2021 - A Rotary Ultrasonic Motor Operating in TorsionalBending Modes With High Torque Density and High Pow.pdf:application/pdf},
+	keywords = {Bending mode, Density measurement, hybrid transducer, Power system measurements, rotary ultrasonic motor ({USM}), Rotors, Torque, torsional mode, Transducers, Vibrations},
 }
 
+
+% Duplicate entry removed: key wu_rotary_2021
+
+
+
+% Duplicate entry removed: key liang_novel_2017
 
 
 @article{zemiti_mechatronic_2007,

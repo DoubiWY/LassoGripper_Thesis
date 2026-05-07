@@ -5,67 +5,70 @@
 \contentsline {chapter}{List of Publications}{iii}{chapter*.4}%
 \contentsline {chapter}{List of Figures}{ix}{chapter*.10}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.11}%
-\contentsline {chapter}{\numberline {2}Related Works}{6}{chapter.21}%
-\contentsline {section}{\numberline {2.1}Advances in Actuation Technologies for Multi-DoFs End-Effectors in Laparoscopic Instruments}{6}{section.23}%
-\contentsline {subsection}{\numberline {2.1.1}Replacements of Driven Motors}{7}{subsection.24}%
-\contentsline {subsection}{\numberline {2.1.2}Additional Sensors}{8}{subsection.27}%
-\contentsline {subsection}{\numberline {2.1.3}Novel Structures of the Tip and Rod Design }{9}{subsection.28}%
-\contentsline {subsection}{\numberline {2.1.4}AI-assisted Monitor and Control}{10}{subsection.31}%
-\contentsline {section}{\numberline {2.2}Development of Adaptive Grasping and its application}{12}{section.32}%
-\contentsline {subsection}{\numberline {2.2.1}The Necessity of Enveloping and Encircling Grasping}{12}{subsection.33}%
-\contentsline {subsection}{\numberline {2.2.2}Grasping System with Integrated Sensors}{12}{subsection.35}%
-\contentsline {subsection}{\numberline {2.2.3}Designing for the Physical Properties of Soft Gripper}{15}{subsection.37}%
-\contentsline {subsection}{\numberline {2.2.4}Advancement of Grasp Planning Algorithm for Lasso Grippers}{16}{subsection.39}%
-\contentsline {subsection}{\numberline {2.2.5}Application of Lasso Grippers in Real-World Scenarios}{18}{subsection.41}%
-\contentsline {subsection}{\numberline {2.2.6}The Balance between Flexibility and Strength}{20}{subsection.43}%
-\contentsline {chapter}{\numberline {3}Lasso Gripper: Design, Analysis, and Experiments}{23}{chapter.47}%
-\contentsline {section}{\numberline {3.1}Design and Principle}{23}{section.49}%
-\contentsline {subsection}{\numberline {3.1.1}String Shooting and Retraction Mechanism}{26}{subsection.52}%
-\contentsline {subsection}{\numberline {3.1.2}The ESP32 Main Controller for Lasso Gripper}{27}{subsection.54}%
-\contentsline {section}{\numberline {3.2}Implications for Tendon-Driven Mechanisms and Medical Devices}{27}{section.56}%
-\contentsline {chapter}{\numberline {4}Gripping Algorithm Design}{29}{chapter.57}%
-\contentsline {section}{\numberline {4.1}Object Recognition and Point Cloud Processing}{29}{section.58}%
-\contentsline {section}{\numberline {4.2}Grasping State Machine}{29}{section.65}%
-\contentsline {section}{\numberline {4.3}Loop Positioning and Tightening}{30}{section.67}%
-\contentsline {section}{\numberline {4.4}Real-Time Feedback and Adjustment}{32}{section.76}%
-\contentsline {chapter}{\numberline {5}Dynamics of the String Loop}{33}{chapter.77}%
-\contentsline {section}{\numberline {5.1}Dynamics of the String Loop}{33}{section.79}%
-\contentsline {subsection}{\numberline {5.1.1}The Dynamics of String Analysis}{33}{subsection.80}%
-\contentsline {section}{\numberline {5.2}The workspace analysis}{35}{section.85}%
-\contentsline {chapter}{\numberline {6}Experimental Validation (Qualitative Demonstrations)}{37}{chapter.88}%
-\contentsline {section}{\numberline {6.1}Objectives}{37}{section.89}%
-\contentsline {section}{\numberline {6.2}Experimental Setup}{37}{section.94}%
-\contentsline {section}{\numberline {6.3}Experimental Procedure}{38}{section.99}%
-\contentsline {section}{\numberline {6.4}Data Collection and Analysis}{38}{section.103}%
-\contentsline {section}{\numberline {6.5}Results And Discussion}{38}{section.104}%
-\contentsline {subsection}{\numberline {6.5.1}Various Objects Grasping Results}{39}{subsection.105}%
-\contentsline {subsection}{\numberline {6.5.2}Comparisons with Antipodal Point Gripper}{41}{subsection.110}%
-\contentsline {chapter}{\numberline {7}Innovative Design of a Handheld Surgical Instrument Balancing Weight and Functionality}{43}{chapter.112}%
-\contentsline {section}{\numberline {7.1}Necessity To Develop Handheld Motorized Medical Instrument}{43}{section.114}%
-\contentsline {section}{\numberline {7.2}Core Design Advantages for Hand-Held Applications}{44}{section.115}%
-\contentsline {section}{\numberline {7.3}Defining Performance Metrics for Structural Design}{45}{section.116}%
-\contentsline {section}{\numberline {7.4}Pathway to Structural Implementation}{45}{section.117}%
-\contentsline {subsection}{\numberline {7.4.1}Relation to the Lasso Gripper and Mechanism-Focused Thesis}{46}{subsection.121}%
-\contentsline {section}{\numberline {7.5}Mechanism and Design}{47}{section.123}%
-\contentsline {subsection}{\numberline {7.5.1}Output Motors}{47}{subsection.124}%
-\contentsline {subsection}{\numberline {7.5.2}Input Motors and Sensors}{47}{subsection.125}%
-\contentsline {section}{\numberline {7.6}Cable Routing and Guidance System}{49}{section.128}%
-\contentsline {subsection}{\numberline {7.6.1}Tip Design}{49}{subsection.129}%
-\contentsline {subsection}{\numberline {7.6.2}Reel}{50}{subsection.131}%
-\contentsline {subsection}{\numberline {7.6.3}Motor Arrangement and Quick-Swap Mechanism}{51}{subsection.133}%
-\contentsline {subsection}{\numberline {7.6.4}Input Design}{52}{subsection.135}%
-\contentsline {section}{\numberline {7.7}Control Strategy}{54}{section.137}%
-\contentsline {subsection}{\numberline {7.7.1}Signal Processing and Control}{54}{subsection.138}%
-\contentsline {subsection}{\numberline {7.7.2}Human-Machine Interface}{54}{subsection.139}%
-\contentsline {chapter}{\numberline {8}Future Works}{55}{chapter.140}%
-\contentsline {section}{\numberline {8.1}Surgical Instruments}{55}{section.141}%
-\contentsline {subsection}{\numberline {8.1.1}Enhanced Precision through Adaptive Learning-based Control}{55}{subsection.142}%
-\contentsline {subsection}{\numberline {8.1.2}Expanded Modularity and Context-Aware Operation}{56}{subsection.143}%
-\contentsline {section}{\numberline {8.2}Further Applications of Lasso Gripper}{56}{section.144}%
-\contentsline {subsection}{\numberline {8.2.1}Multi-Loop Configuration}{56}{subsection.145}%
-\contentsline {subsection}{\numberline {8.2.2}Improved Gripping Stability}{57}{subsection.146}%
-\contentsline {subsection}{\numberline {8.2.3}Enhanced Adaptability}{57}{subsection.147}%
-\contentsline {subsection}{\numberline {8.2.4}Mobile Platform Grasping}{57}{subsection.148}%
-\contentsline {subsection}{\numberline {8.2.5}Potential Challenges and Solutions}{57}{subsection.149}%
-\contentsline {chapter}{\numberline {9}Conclusions}{58}{chapter.150}%
-\contentsline {chapter}{Bibliography}{60}{appendix*.152}%
+\contentsline {chapter}{\numberline {2}Related Works}{5}{chapter.20}%
+\contentsline {section}{\numberline {2.1}Advances in Actuation Technologies for Multi-DoFs End-Effectors in Laparoscopic Instruments}{5}{section.21}%
+\contentsline {subsection}{\numberline {2.1.1}Replacements of Driven Motors}{6}{subsection.22}%
+\contentsline {subsection}{\numberline {2.1.2}Additional Sensors}{7}{subsection.25}%
+\contentsline {subsection}{\numberline {2.1.3}Novel Structures of the Tip and Rod Design }{8}{subsection.26}%
+\contentsline {subsection}{\numberline {2.1.4}AI-assisted Monitor and Control}{9}{subsection.29}%
+\contentsline {section}{\numberline {2.2}Development of Adaptive Grasping and its application}{11}{section.30}%
+\contentsline {subsection}{\numberline {2.2.1}The Necessity of Enveloping and Encircling Grasping}{11}{subsection.31}%
+\contentsline {subsection}{\numberline {2.2.2}Grasping System with Integrated Sensors}{11}{subsection.33}%
+\contentsline {subsection}{\numberline {2.2.3}Designing for the Physical Properties of Soft Gripper}{13}{subsection.35}%
+\contentsline {subsection}{\numberline {2.2.4}Advancement of Grasp Planning Algorithm for Lasso Grippers}{16}{subsection.37}%
+\contentsline {subsection}{\numberline {2.2.5}Application of Lasso Grippers in Real-World Scenarios}{16}{subsection.39}%
+\contentsline {subsection}{\numberline {2.2.6}The Balance between Flexibility and Strength}{19}{subsection.41}%
+\contentsline {chapter}{\numberline {3}Lasso Gripper: Design, Analysis, and Experiments}{22}{chapter.45}%
+\contentsline {section}{\numberline {3.1}Design and Principle}{22}{section.46}%
+\contentsline {subsection}{\numberline {3.1.1}String Shooting and Retraction Mechanism}{25}{subsection.49}%
+\contentsline {subsection}{\numberline {3.1.2}The ESP32 Main Controller for Lasso Gripper}{26}{subsection.51}%
+\contentsline {section}{\numberline {3.2}Implications for Tendon-Driven Mechanisms and Medical Devices}{26}{section.53}%
+\contentsline {chapter}{\numberline {4}Gripping Algorithm Design}{28}{chapter.54}%
+\contentsline {section}{\numberline {4.1}Object Recognition and Point Cloud Processing}{28}{section.55}%
+\contentsline {section}{\numberline {4.2}Grasping State Machine}{28}{section.62}%
+\contentsline {section}{\numberline {4.3}Loop Positioning and Tightening}{29}{section.64}%
+\contentsline {section}{\numberline {4.4}Real-Time Feedback and Adjustment}{31}{section.73}%
+\contentsline {chapter}{\numberline {5}Dynamics of the String Loop}{32}{chapter.74}%
+\contentsline {section}{\numberline {5.1}Dynamics of the String Loop}{32}{section.75}%
+\contentsline {subsection}{\numberline {5.1.1}The Dynamics of String Analysis}{32}{subsection.76}%
+\contentsline {section}{\numberline {5.2}The workspace analysis}{34}{section.81}%
+\contentsline {chapter}{\numberline {6}Experimental Validation (Qualitative Demonstrations)}{36}{chapter.84}%
+\contentsline {section}{\numberline {6.1}Objectives}{36}{section.85}%
+\contentsline {section}{\numberline {6.2}Experimental Setup}{36}{section.90}%
+\contentsline {section}{\numberline {6.3}Experimental Procedure}{37}{section.95}%
+\contentsline {section}{\numberline {6.4}Data Collection and Analysis}{37}{section.99}%
+\contentsline {section}{\numberline {6.5}Results And Discussion}{37}{section.100}%
+\contentsline {subsection}{\numberline {6.5.1}Various Objects Grasping Results}{38}{subsection.101}%
+\contentsline {subsection}{\numberline {6.5.2}Comparisons with Antipodal Point Gripper}{40}{subsection.106}%
+\contentsline {chapter}{\numberline {7}Innovative Design of a Handheld Surgical Instrument Balancing Weight and Functionality}{42}{chapter.108}%
+\contentsline {section}{\numberline {7.1}Necessity To Develop Handheld Motorized Medical Instrument}{42}{section.109}%
+\contentsline {section}{\numberline {7.2}Core Design Advantages for Hand-Held Applications}{43}{section.110}%
+\contentsline {section}{\numberline {7.3}Defining Performance Metrics for Structural Design}{44}{section.111}%
+\contentsline {section}{\numberline {7.4}Pathway to Structural Implementation}{44}{section.112}%
+\contentsline {section}{\numberline {7.5}Mechanism and Design}{46}{section.116}%
+\contentsline {subsection}{\numberline {7.5.1}Output Motors}{46}{subsection.117}%
+\contentsline {subsection}{\numberline {7.5.2}Input Motors and Sensors}{46}{subsection.118}%
+\contentsline {section}{\numberline {7.6}Cable Routing and Guidance System}{47}{section.120}%
+\contentsline {subsection}{\numberline {7.6.1}Tip Design}{47}{subsection.121}%
+\contentsline {subsection}{\numberline {7.6.2}Reel}{48}{subsection.123}%
+\contentsline {subsection}{\numberline {7.6.3}Motor Arrangement and Quick-Swap Mechanism}{49}{subsection.125}%
+\contentsline {subsection}{\numberline {7.6.4}Input Design}{49}{subsection.127}%
+\contentsline {section}{\numberline {7.7}Control Strategy and Implementation}{52}{section.129}%
+\contentsline {subsection}{\numberline {7.7.1}Modeling}{52}{subsection.130}%
+\contentsline {subsection}{\numberline {7.7.2}Denavit–Hartenberg Coordinate Frames}{52}{subsection.131}%
+\contentsline {subsection}{\numberline {7.7.3}System Architecture and Data Flow}{53}{subsection.136}%
+\contentsline {subsection}{\numberline {7.7.4}Intent Estimation and Command Mapping}{53}{subsection.137}%
+\contentsline {subsection}{\numberline {7.7.5}Low-Level Actuation and Tension Management}{55}{subsection.138}%
+\contentsline {subsection}{\numberline {7.7.6}System Implementation and Details}{55}{subsection.139}%
+\contentsline {chapter}{\numberline {8}Future Works}{56}{chapter.140}%
+\contentsline {section}{\numberline {8.1}Surgical Instruments}{56}{section.141}%
+\contentsline {subsection}{\numberline {8.1.1}Enhanced Precision through Adaptive Learning-based Control}{56}{subsection.142}%
+\contentsline {subsection}{\numberline {8.1.2}Expanded Modularity and Context-Aware Operation}{57}{subsection.143}%
+\contentsline {section}{\numberline {8.2}Further Applications of Lasso Gripper}{57}{section.144}%
+\contentsline {subsection}{\numberline {8.2.1}Multi-Loop Configuration}{57}{subsection.145}%
+\contentsline {subsection}{\numberline {8.2.2}Improved Gripping Stability}{58}{subsection.146}%
+\contentsline {subsection}{\numberline {8.2.3}Enhanced Adaptability}{58}{subsection.147}%
+\contentsline {subsection}{\numberline {8.2.4}Mobile Platform Grasping}{58}{subsection.148}%
+\contentsline {subsection}{\numberline {8.2.5}Potential Challenges and Solutions}{58}{subsection.149}%
+\contentsline {chapter}{\numberline {9}Conclusions}{59}{chapter.150}%
+\contentsline {chapter}{Bibliography}{61}{appendix*.151}%

@@ -1,3 +1,5 @@
+% Instrument mechanics and implementation (formerly Chapter8.tex)
+
 % Chapter Template
 
 %\section{Mechanism and Design} % Main chapter title
@@ -5,14 +7,10 @@
 %\label{Chapter8} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}\ref{ChapterX}\ref{ChapterX}\ref{ChapterX}
 
 %----------------------------------------------------------------------------------------
-%	SECTION 1
+%\tSECTION 1
 %----------------------------------------------------------------------------------------
 
-\ChapterSummary
-This chapter details component-level design choices and their rationale: motor and sensor selection, tip guidance and cable routing, paired-cable reel mechanisms, and the quick-swap end-effector interface. Emphasis is placed on preserving cable tension, minimizing hysteresis, and enabling modularity suitable for handheld laparoscopic tools.
-
-\noindent
-Key specifications and trade-offs are given to motivate selections; thorough mechanical verification and long-term durability testing are left for future work.
+% Chapter summary moved to main.tex as a consolidated group summary
 
 \section{Mechanism and Design}
 \subsection{Output Motors}
@@ -23,19 +21,27 @@ The STS3032's serial-bus communication simplifies wiring and supports daisy-chai
 \subsection{Input Motors and Sensors}
 
 The control philosophy for this cable-driven handheld device is based on replicating the user's hand movements with high fidelity and translating them into precise motions of the distal end-effector. This requires a sophisticated input system that can accurately capture the intent of the user's fingers while providing sufficient force feedback and stability.
+
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.7 \linewidth]{Figures/STS3032.png} 
-    \caption{Feetech 3032 for output}
-    \label{fig:81}
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/STS3032.png}
+        \caption{Feetech 3032 for output}
+        \label{fig:81}
+    \end{subfigure}
+    \hfill  % 水平填充，使两张图之间有空隙
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/STS3009.png}
+        \caption{Feetech 3009 for wrist inputs}
+        \label{fig:82}
+    \end{subfigure}
+    \caption{Feetech Servo: left motor for output (STS3032), right motor for wrist inputs (STS3009)}
 \end{figure}
+
 For the input actuation, shown in Fig.\ref{fig:81}, the Feetech STS3009 servo was selected based on a different set of requirements. Weighing 40 grams and providing a stall torque of 0.3 Nm, this more powerful motor serves two essential functions in the input stage: it maintains mechanical equilibrium by resisting forces from the output tendons, thus offering a stable and responsive feel to the operator, and it helps filter out high-frequency physiological tremors or unintended jerks, ensuring that only deliberate commands are transmitted to the end-effector.
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.7 \linewidth]{Figures/STS3009.png} 
-    \caption{Feetech 3009 for wrist inputs}
-    \label{fig:82}
-\end{figure}
 
 
 However, since the two input motors alone cannot fully capture all nuanced finger movements, a hybrid sensing strategy was implemented. Two AMS AS5600 magnetic rotary encoders were integrated into the input mechanism to directly and accurately detect the user’s intent. These sensors provide ultra-high 12-bit resolution and contactless sensing, enabling precise recognition of two distinct actions: the pinching gesture of the index finger and thumb, which controls grasping, and the rotational movement of the fingers, which is translated into in-plane rotation of the end-effector. This combination of robust actuation and high-resolution sensing creates an intuitive and stable human-machine interface suitable for delicate manipulation tasks.
@@ -52,9 +58,9 @@ In addition to motor performance, the accuracy and repeatability of the end-effe
 
 A specialized tip assembly has been developed to fulfill these requirements. As shown in Fig.\ref{fig:83}, the four cables—grouped into two pairs, each controlling one jaw of the plier—are routed through custom-machined channels. These channels ensure that the cables remain aligned throughout the entire range of motion, avoiding cross-interference and reducing wear.
 
-The two jaw components (fabricated in light pink) are mounted onto a central middle base (green). To further enhance cable stability and minimize friction, donut-shaped guides machined via CNC (purple) are integrated into the middle base. These spheres act as low-friction directional pulleys, maintaining cable position with high precision and reducing bending stress, thereby extending cable service life.
+The two jaw components (fabricated in blue) are mounted onto a central middle base (green). To further enhance cable stability and minimize friction, donut-shaped guides machined via CNC (light green) are integrated into the middle base. These spheres act as low-friction directional pulleys, maintaining cable position with high precision and reducing bending stress, thereby extending cable service life.
 
-The main base housing (pink) is designed with precision-aligned holes that direct the cables perpendicularly toward the motors. This alignment is critical for maximizing force transmission efficiency and eliminating off-axis loading, which can introduce positioning errors and reduce system responsiveness.
+The main base housing (deep blue) is designed with precision-aligned holes that direct the cables perpendicularly toward the motors. This alignment is critical for maximizing force transmission efficiency and eliminating off-axis loading, which can introduce positioning errors and reduce system responsiveness.
 
 Through this integrated approach—combining dedicated guiding channels, spherical contact points, and perpendicular alignment—the system achieves high repeatability, minimal hysteresis, and smooth force feedback, making it suitable for delicate manipulation tasks requiring fine motor control.
 

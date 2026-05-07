@@ -33,7 +33,7 @@ onehalfspacing, % Single line spacing (singlespacing), alternatives: onehalfspac
 % nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
-parskip, % Uncomment to add space between paragraphs
+%parskip, % Disabled: prefer paragraph indentation with `indentfirst` for thesis style
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
@@ -150,7 +150,24 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 \usepackage{letltxmacro}
 \usepackage{xparse}
-\newcommand{\ChapterSummary}{\section*{Chapter summary}\noindent}
+% Indent first paragraph after section/chapter headings
+\usepackage{indentfirst}
+
+% Chapter summary: centered block with extra left/right indentation (no box)
+\NewDocumentEnvironment{chaptersummary}{}%
+{%
+	\par\medskip
+	\begin{center}%
+		\begin{minipage}{0.80\textwidth}%
+		\noindent\textbf{Chapter summary}\par\medskip
+}{%
+		\end{minipage}%
+	\end{center}\par\medskip
+}
+
+% Backward-compatible macro (if any remaining files use \ChapterSummary)
+\newcommand{\ChapterSummary}{\begin{chaptersummary}}
+\newcommand{\EndChapterSummary}{\end{chaptersummary}}
 
 % ======================================================================================== %
 %                                        START DOCUMENT
@@ -259,8 +276,8 @@ headsepline, % Uncomment to get a line under the header
 \include{Chapters/Chapter5}
 \include{Chapters/Chapter6}
 \include{Chapters/SurgicalInstrument}
-\include{Chapters/Chapter8}
-\include{Chapters/Chapter9}
+\include{Chapters/07_instrument_mechanics}
+\include{Chapters/07_instrument_control}
 
 
 \include{Chapters/FutureWorks}

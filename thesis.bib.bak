@@ -90,16 +90,14 @@
   publisher={Cambridge University Press}
 }
 
-@article{ abello2024string,
-	author = {{Abello, Margaux} and {Courson, Juliette} and {Maury, Arnaud} and {Renaud, Julian}},
-	title = {String Shooter’s overall shape in ambient air},
-	DOI= "10.1051/emsci/2019007",
-	url= "https://doi.org/10.1051/emsci/2019007",
-	journal = {Emergent Scientist},
-	year = 2020,
-	volume = 4,
-	pages = "1",
-}@article{hu2023dual,
+@article{abello2024string,
+  title={String Shooter's overall shape in ambient air},
+  author={Abello, Margaux and Courson, Juliette and Maury, Arnaud and Renaud, Julian},
+  journal={arXiv preprint arXiv:2402.17813},
+  year={2024}
+}
+%%%%%%%% New reference on Aug 02 %%%%%%%%%%%%%%%
+@article{hu2023dual,
   title={A dual-mode and enclosing soft robotic gripper with stiffness-tunable and high-load capacity},
   author={Hu, Tete and Lu, Xinjiang and Xu, Du},
   journal={Sensors and Actuators A: Physical},
@@ -314,40 +312,178 @@
              Last accessed on 2024-09-07},
 }
 
+@article{hernandez2023current,
+  title={Current designs of robotic arm grippers: A comprehensive systematic review},
+  author={Hernandez, Jaime and Sunny, Md Samiul Haque and Sanjuan, Javier and Rulik, Ivan and Zarif, Md Ishrak Islam and Ahamed, Sheikh Iqbal and Ahmed, Helal Uddin and Rahman, Mohammad H},
+  journal={Robotics},
+  volume={12},
+  number={1},
+  pages={5},
+  year={2023},
+  publisher={MDPI}
+}
+@article{yu2022modeling,
+  title={Modeling and analysis of a composite structure-based soft pneumatic actuators for soft-robotic gripper},
+  author={Yu, Ming and Liu, Wenwen and Zhao, Jian and Hou, Yanyan and Hong, Xuewu and Zhang, Hongjie},
+  journal={Sensors},
+  volume={22},
+  number={13},
+  pages={4851},
+  year={2022},
+  publisher={MDPI}
+}
 
+@inproceedings{mochiyama2015chameleon,
+  title={Chameleon-like shooting manipulator for accurate 10-meter reaching},
+  author={Mochiyama, Hiromi and Nakajima, Hiroto and Hatakeyama, Tomofumi},
+  booktitle={2015 10th Asian Control Conference (ASCC)},
+  pages={1--7},
+  year={2015},
+  organization={IEEE}
+}
 
+@article{tisdale2023fractal,
+  title={The Fractal Hand-II: Reviving a Classic Mechanism for Contemporary Grasping Challenges},
+  author={Tisdale, Malcolm GA and Burdick, Joel W},
+  journal={arXiv preprint arXiv:2309.08766},
+  year={2023}
+}
 
+@article{brun2014introduction,
+  title={An introduction to the mechanics of the lasso},
+  author={Brun, Pierre-Thomas and Ribe, Neil and Audoly, Basile},
+  journal={Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+  volume={470},
+  number={2171},
+  pages={20140512},
+  year={2014},
+  publisher={The Royal Society Publishing}
+}
 
+@inproceedings{liu2018caging,
+  title={Caging loops in shape embedding space: theory and computation},
+  author={Liu, Jian and Xin, Shiqing and Gao, Zengfu and Xu, Kai and Tu, Changhe and Chen, Baoquan},
+  booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={5612--5619},
+  year={2018},
+  organization={IEEE}
+}
 
+@article{murata2024elastic,
+  title={Elastic material selection for omni-wheels of in-pipe robots with high traction capability},
+  author={Murata, Kenya and Kusumegi, Makoto and Kakogawa, Atsushi and Ma, Shugen},
+  journal={Advanced Robotics},
+  pages={1--10},
+  year={2024},
+  publisher={Taylor \& Francis}
+}
+@article{daerr2019charmed,
+  title={The charmed string: self-supporting loops through air drag},
+  author={Daerr, Adrian and Courson, Juliette and Abello, Margaux and Toutain, Wladimir and Andreotti, Bruno},
+  journal={Journal of Fluid Mechanics},
+  volume={877},
+  pages={R2},
+  year={2019},
+  publisher={Cambridge University Press}
+}
 
-
-
-
-
-
-
-
-
-
+@article{ abello2024string,
+	author = {{Abello, Margaux} and {Courson, Juliette} and {Maury, Arnaud} and {Renaud, Julian}},
+	title = {String Shooter’s overall shape in ambient air},
+	DOI= "10.1051/emsci/2019007",
+	url= "https://doi.org/10.1051/emsci/2019007",
+	journal = {Emergent Scientist},
+	year = 2020,
+	volume = 4,
+	pages = "1",
+}
 
 %%%%%%%% New reference on Aug 02 %%%%%%%%%%%%%%%
+@article{hu2023dual,
+  title={A dual-mode and enclosing soft robotic gripper with stiffness-tunable and high-load capacity},
+  author={Hu, Tete and Lu, Xinjiang and Xu, Du},
+  journal={Sensors and Actuators A: Physical},
+  volume={354},
+  pages={114294},
+  year={2023},
+  publisher={Elsevier}
+}
 
+@inproceedings{gabrich2018flying,
+  title={A flying gripper based on cuboid modular robots},
+  author={Gabrich, Bruno and Saldana, David and Kumar, Vijay and Yim, Mark},
+  booktitle={2018 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={7024--7030},
+  year={2018},
+  organization={IEEE}
+}
 
+@article{wang2021lightweight,
+  title={A lightweight soft gripper driven by self-sensing super-coiled polymer actuator},
+  author={Wang, Sen and Huang, Hongxin and Huang, Hailin and Li, Bing and Huang, Ke},
+  journal={IEEE Robotics and Automation Letters},
+  volume={6},
+  number={2},
+  pages={2775--2782},
+  year={2021},
+  publisher={IEEE}
+}
 
+@article{sun2024low,
+  title={A low-cost underactuated compliant gripper with multifunctional jaws for precision manipulation},
+  author={Sun, Xiantao and Yang, Shang and Li, Yuxia and Chen, Weihai and Jin, Yan},
+  journal={Sensors and Actuators A: Physical},
+  volume={366},
+  pages={115047},
+  year={2024},
+  publisher={Elsevier}
+}
 
+@article{fang2023anygrasp,
+  title={Anygrasp: Robust and efficient grasp perception in spatial and temporal domains},
+  author={Fang, Hao-Shu and Wang, Chenxi and Fang, Hongjie and Gou, Minghao and Liu, Jirong and Yan, Hengxu and Liu, Wenhai and Xie, Yichen and Lu, Cewu},
+  journal={IEEE Transactions on Robotics},
+  year={2023},
+  publisher={IEEE}
+}
 
+@article{manes2024soft,
+  title={A soft cable loop based gripper for robotic automation of chemistry},
+  author={Manes, Lupo and Fichera, Sebastiano and Fakhruldeen, Hatem and Cooper, Andrew I and Paoletti, Paolo},
+  journal={Scientific Reports},
+  volume={14},
+  number={1},
+  pages={8899},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
 
+@article{sun2020soft,
+  title={A soft gripper with variable stiffness inspired by pangolin scales, toothed pneumatic actuator and autonomous controller},
+  author={Sun, Tao and Chen, Yuanlong and Han, Tianyu and Jiao, Chenlei and Lian, Binbin and Song, Yimin},
+  journal={Robotics and Computer-Integrated Manufacturing},
+  volume={61},
+  pages={101848},
+  year={2020},
+  publisher={Elsevier}
+}
 
+@article{chen2024soft,
+  title={A Soft Robotic Gripper with a Belt Loop Actuated Adhesion Design for Gentle Handling of Fragile Object},
+  author={Chen, Gen and Wu, Junsong and Zhang, Zijian and Zhang, Bolun and Chu, Zhongyi and Cui, Jing},
+  journal={IEEE Robotics and Automation Letters},
+  year={2024},
+  publisher={IEEE}
+}
 
-
-
-
-
-
-
-
-
-
+@inproceedings{yin2020closing,
+  title={Closing the loop with liquid-metal sensing skin for autonomous soft robot gripping},
+  author={Yin, Jessica and Hellebrekers, Tess and Majidi, Carmel},
+  booktitle={2020 3rd IEEE International Conference on Soft Robotics (RoboSoft)},
+  pages={661--667},
+  year={2020},
+  organization={IEEE}
+}
 @ARTICLE{10081306,
   author={Peng, Rui and Wang, Zehao and Lu, Peng},
   journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems}, 
@@ -360,24 +496,105 @@
   doi={10.1109/TSMC.2023.3257166}}
 
 
+@inproceedings{zhang2017design,
+  title={Design and development of a soft gripper with topology optimization},
+  author={Zhang, Hongying and Wang, Michael Yu and Chen, Feifei and Wang, Yiqiang and Kumar, A Senthil and Fuh, Jerry YH},
+  booktitle={2017 IEEE/RSJ international conference on intelligent robots and systems (IROS)},
+  pages={6239--6244},
+  year={2017},
+  organization={IEEE}
+}
 
+@inproceedings{xiong2018design,
+  title={Design and evaluation of a novel cable-driven gripper with perception capabilities for strawberry picking robots},
+  author={Xiong, Ya and From, Pal Johan and Isler, Volkan},
+  booktitle={2018 IEEE international conference on robotics and automation (ICRA)},
+  pages={7384--7391},
+  year={2018},
+  organization={IEEE}
+}
 
+@inproceedings{li2017development,
+  title={Development of a bio-inspired soft gripper with claws},
+  author={Li, Mingjun and Su, Manjia and Xie, Rongzhen and Zhang, Yihong and Zhu, Haifei and Zhang, Tao and Guan, Yisheng},
+  booktitle={2017 IEEE International Conference on Robotics and Biomimetics (ROBIO)},
+  pages={828--833},
+  year={2017},
+  organization={IEEE}
+}
 
+@inproceedings{Japan2023,
+  title={Development of String Shoot Impactor and its Application to Detection of Raised Tiles},
+  author={TOKUOMI SAEKO, MORI KAZUYA, OSHIMA YASUTAKA},
+  booktitle={Proceedings of the Japan Conference on Structural Safety and Reliability},
+  pages={66-71},
+  year={2023},
+  organization={Science Council of Japan}
+}
 
+@article{li2015fast,
+  title={Fast grasp planning using cord geometry},
+  author={Li, Yi and Saut, Jean-Philippe and Pettr{\'e}, Julien and Sahbani, Anis and Multon, Franck},
+  journal={IEEE Transactions on Robotics},
+  volume={31},
+  number={6},
+  pages={1393--1403},
+  year={2015},
+  publisher={IEEE}
+}
 
+@inproceedings{hughes2020sensorization,
+  title={Sensorization of a continuum body gripper for high force and delicate object grasping},
+  author={Hughes, Josie and Li, Shuguang and Rus, Daniela},
+  booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={6913--6919},
+  year={2020},
+  organization={IEEE}
+}
 
+@article{roth2021loop,
+  title={The loop gripper: A soft gripper for honeycomb materials},
+  author={Roth, Franziska and Eschen, Henrik and Sch{\"u}ppstuhl, Thorsten},
+  journal={Procedia manufacturing},
+  volume={55},
+  pages={160--167},
+  year={2021},
+  publisher={Elsevier}
+}
 
+@article{ciocarlie2014velo,
+  title={The Velo gripper: A versatile single-actuator design for enveloping, parallel and fingertip grasps},
+  author={Ciocarlie, Matei and Hicks, Fernando Mier and Holmberg, Robert and Hawke, Jeffrey and Schlicht, Michael and Gee, Jeff and Stanford, Scott and Bahadur, Ryan},
+  journal={The International Journal of Robotics Research},
+  volume={33},
+  number={5},
+  pages={753--767},
+  year={2014},
+  publisher={SAGE Publications Sage UK: London, England}
+}
 
+@article{li2023visual,
+  title={Visual--tactile fusion for transparent object grasping in complex backgrounds},
+  author={Li, Shoujie and Yu, Haixin and Ding, Wenbo and Liu, Houde and Ye, Linqi and Xia, Chongkun and Wang, Xueqian and Zhang, Xiao-Ping},
+  journal={IEEE Transactions on Robotics},
+  year={2023},
+  publisher={IEEE}
+}
 
+@article{wang2017shape,
+  title={Shape memory alloy-based soft gripper with variable stiffness for compliant and effective grasping},
+  author={Wang, Wei and Ahn, Sung-Hoon},
+  journal={Soft robotics},
+  volume={4},
+  number={4},
+  pages={379--389},
+  year={2017},
+  publisher={Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd Floor New Rochelle, NY 10801 USA}
+}
+String Shooter
 
-
-
-
-
-
-
-
-
+File outline
+ 
 
 @article{ciocarlie_velo_2014,
 	title = {The {Velo} gripper: {A} versatile single-actuator design for enveloping, parallel and fingertip grasps},
@@ -1153,6 +1370,22 @@ Conclusions: We describe the ﬁrst clinical application of a novel robotic plat
 @article{wu_rotary_2021,
 	title = {A Rotary Ultrasonic Motor Operating in Torsional/Bending Modes With High Torque Density and High Power Density},
 	volume = {68},
+	issn = {1557-9948},
+	url = {https://ieeexplore.ieee.org/document/9113502/},
+	doi = {10.1109/TIE.2020.3000112},
+	abstract = {In this article, to achieve high torque density and high power density of rotary ultrasonic motors ({USMs}), we develop a rod-shaped transducer operating in torsional/bending (T/B) modes and excite two elliptical motions on its bilateral ends to drive the rotor orthogonally pressed onto the transducer. Here, the torsional vibration, the driving structure, and the rod shape may enable the T/B motor to provide high driving force, large driving distance, and low weight, which facilitate the realization of high torque density and high power density. To assess the validity, first, we construct a transducer 43 and 110 mm in diameter and length, respectively. Then, we investigate the load characteristics of the T/B motor: When it works at the frequency of 21.64 {kHz}, the maximal torque and the maximal output power reach 10.1 N·m and 38.1 W, respectively. In the meantime, it yields the torque density and the power density of, respectively, 20.0 N·m/kg and 75.7 W/kg, which are, as predicted, relatively high compared to the values of most conventional rotary motors. This article not only validates the effectiveness of our proposal but also provides a new approach to design powerful rotary {USMs}.},
+	pages = {6109--6120},
+	number = {7},
+	journaltitle = {{IEEE} Transactions on Industrial Electronics},
+	author = {Wu, Jiang and Mizuno, Yosuke and Nakamura, Kentaro},
+	urldate = {2025-09-27},
+	date = {2021-07},
+	keywords = {Bending mode, Density measurement, hybrid transducer, Power system measurements, rotary ultrasonic motor ({USM}), Rotors, Torque, torsional mode, Transducers, Vibrations},
+}
+
+@article{wu_rotary_2021,
+	title = {A Rotary Ultrasonic Motor Operating in Torsional/Bending Modes With High Torque Density and High Power Density},
+	volume = {68},
 	rights = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/{IEEE}.html},
 	issn = {0278-0046, 1557-9948},
 	url = {https://ieeexplore.ieee.org/document/9113502/},
@@ -1170,7 +1403,24 @@ Conclusions: We describe the ﬁrst clinical application of a novel robotic plat
 	file = {PDF:C\:\\Users\\Yu\\Zotero\\storage\\IEHLVVKW\\Wu 等 - 2021 - A Rotary Ultrasonic Motor Operating in TorsionalBending Modes With High Torque Density and High Pow.pdf:application/pdf},
 }
 
-
+@article{liang_novel_2017,
+	title = {A Novel Position Compensation Scheme for Cable-Pulley Mechanisms Used in Laparoscopic Surgical Robots},
+	volume = {17},
+	rights = {https://creativecommons.org/licenses/by/4.0/},
+	issn = {1424-8220},
+	url = {https://www.mdpi.com/1424-8220/17/10/2257},
+	doi = {10.3390/s17102257},
+	abstract = {The tendon driven mechanism using a cable and pulley to transmit power is adopted by many surgical robots. However, backlash hysteresis objectively exists in cable-pulley mechanisms, and this nonlinear problem is a great challenge in precise position control during the surgical procedure. Previous studies mainly focused on the transmission characteristics of the cable-driven system and constructed transmission models under particular assumptions to solve nonlinear problems. However, these approaches are limited because the modeling process is complex and the transmission models lack general applicability. This paper presents a novel position compensation control scheme to reduce the impact of backlash hysteresis on the positioning accuracy of surgical robots’ end-effectors. In this paper, a position compensation scheme using a support vector machine based on feedforward control is presented to reduce the position tracking error. To validate the proposed approach, experimental validations are conducted on our cable-pulley system and comparative experiments are carried out. The results show remarkable improvements in the performance of reducing the positioning error for the use of the proposed scheme.},
+	pages = {2257},
+	number = {10},
+	journaltitle = {Sensors},
+	author = {Liang, Yunlei and Du, Zhijiang and Wang, Weidong and Sun, Lining},
+	urldate = {2025-09-29},
+	date = {2017-09-30},
+	langid = {english},
+	note = {Publisher: {MDPI} {AG}},
+	file = {PDF:C\:\\Users\\Yu\\Zotero\\storage\\HWAJQ8UC\\Liang 等 - 2017 - A Novel Position Compensation Scheme for Cable-Pulley Mechanisms Used in Laparoscopic Surgical Robot.pdf:application/pdf},
+}
 
 @article{zemiti_mechatronic_2007,
 	title = {Mechatronic Design of a New Robot for Force Control in Minimally Invasive Surgery},

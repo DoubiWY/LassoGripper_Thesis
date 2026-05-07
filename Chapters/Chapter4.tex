@@ -5,10 +5,9 @@ The design of the gripping algorithm is critical to the functionality and effici
 
 % ------------------------- 3.1 Object Recognition and Point Cloud Processing -------------------------
 \section{Object Recognition and Point Cloud Processing}
-\noindent
 The gripping algorithm begins with target detection using an Intel RealSense D435i depth camera. The captured point cloud is processed to locate candidate "neck" regions and to synthesize feasible caging loops that avoid reliance on exact surface contacts. The algorithm output is a target loop position and approach plan that the launch-and-retract mechanism can execute.
 
-\noindent
+% (paragraph will be indented)
 A concise pseudocode summary:
 \begin{enumerate}
     \item Acquire point cloud $P$ from depth camera.
@@ -20,7 +19,7 @@ A concise pseudocode summary:
 \end{enumerate}
 
 \section{Grasping State Machine}
-\noindent
+% (paragraph will be indented)
 The grasping controller is implemented as a simple finite-state machine. States and typical transition conditions are:
 \begin{itemize}
     \item \textbf{Idle}: waiting for operator start or a higher-level command.
