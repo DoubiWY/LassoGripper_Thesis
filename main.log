@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.21)  8 MAY 2026 00:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.21)  8 MAY 2026 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1540,6 +1540,12 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 
 
 [10]
+
+[11]
+
+[12
+
+]
 \openout2 = `Chapters/Introduction.aux'.
 
  (./Chapters/Introduction.tex
@@ -1575,7 +1581,6 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 38.
 
 [1
-
 
 
 ]
@@ -2795,27 +2800,27 @@ Chapter 7.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 13.
+(Font)              using `TU/ppl/m/it' instead on input line 14.
 
 [42
 
@@ -2823,7 +2828,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 
 
 ]
-Overfull \hbox (5.10825pt too wide) in paragraph at lines 24--25
+Overfull \hbox (5.10825pt too wide) in paragraph at lines 23--24
 []\TU/ppl/m/it/10 Enhanced Dexterity and Manipulation: The system enables multi-degree-of-freedom
  []
 
@@ -2831,53 +2836,53 @@ Overfull \hbox (5.10825pt too wide) in paragraph at lines 24--25
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 34.
+(Font)              using `TU/ppl/m/it' instead on input line 33.
 
 [43]
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 63.
+(Font)              using `TU/ppl/m/it' instead on input line 62.
 
 [44])
 
@@ -2909,7 +2914,9 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 \openout2 = `Chapters/07_instrument_mechanics.aux'.
 
  (./Chapters/07_instrument_mechanics.tex
-Overfull \hbox (12.62323pt too wide) in paragraph at lines 19--20
+Chapter 8.
+
+Overfull \hbox (12.62323pt too wide) in paragraph at lines 24--25
 []\TU/ppl/m/it/10 The STS3032’s serial-bus communication simplifies wiring and supports daisy-chaining,
  []
 
@@ -2921,29 +2928,30 @@ File: Figures/STS3009.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 47.
+(Font)              using `TU/ppl/m/it' instead on input line 50.
 
 [46
+
 
 
 
@@ -2954,89 +2962,89 @@ File: Figures/tip2.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 62.
+(Font)              using `TU/ppl/m/it' instead on input line 65.
 
 [47]
-Overfull \hbox (2.64024pt too wide) in paragraph at lines 69--70
+Overfull \hbox (2.64024pt too wide) in paragraph at lines 74--75
 \TU/ppl/m/it/10 single-cable configuration, unidirectional actuation presents a significant limitation: while
  []
 
-File: Figures/reel.png Graphic file (type bmp)
-<Figures/reel.png>
 
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 87.
+(Font)              using `TU/ppl/m/it' instead on input line 77.
 
 [48]
+File: Figures/reel.png Graphic file (type bmp)
+<Figures/reel.png>
 File: Figures/Motor Arrangement.png Graphic file (type bmp)
 <Figures/Motor Arrangement.png>
 
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 102.
+(Font)              using `TU/ppl/m/it' instead on input line 101.
 
 [49]
 File: Figures/input.png Graphic file (type bmp)
@@ -3045,27 +3053,27 @@ File: Figures/input.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 111.
+(Font)              using `TU/ppl/m/it' instead on input line 116.
 
 [50])
 
@@ -3097,37 +3105,35 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 \openout2 = `Chapters/07_instrument_control.aux'.
 
  (./Chapters/07_instrument_control.tex
-Overfull \hbox (45.7142pt too wide) detected at line 66
-\OML/zplm/m/it/10 A[] \OT1/zplm/m/n/10 = [] \OT1/ppl/m/n/10 ,  \OML/zplm/m/it/10 A[] \OT1/zplm/m/n/10 = [] \OT1/ppl/m/n/10 ,  \OML/zplm/m/it/10 A[] \OT1/zplm/m/n/10 = []
- []
-
+Chapter 9.
 
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 75.
+(Font)              using `TU/ppl/m/it' instead on input line 30.
 
 [52
+
 
 
 
@@ -3140,55 +3146,81 @@ File: Figures/DH cord.png Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 [53]
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 120.
+(Font)              using `TU/ppl/m/it' instead on input line 121.
 
 [54]
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 130.
+
+[55]
 Missing character: There is no   (U+202F) in font [lmroman10-regular]:mapping=tex-text;!
 )
 
@@ -3216,11 +3248,11 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 280.
 
-[55]
+[56]
 \openout2 = `Chapters/FutureWorks.aux'.
 
  (./Chapters/FutureWorks.tex
-Chapter 8.
+Chapter 10.
 
 
 
@@ -3247,7 +3279,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 16.
 
-[56
+[57
 
 
 
@@ -3278,7 +3310,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 30.
 
-[57])
+[58])
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
@@ -3304,11 +3336,11 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 283.
 
-[58]
+[59]
 \openout2 = `Chapters/Conclusions.aux'.
 
  (./Chapters/Conclusions.tex
-Chapter 9.
+Chapter 11.
 
 Overfull \hbox (0.6132pt too wide) in paragraph at lines 11--12
 \TU/ppl/m/it/10 driven framework into a handheld laparoscopic instrument for minimally invasive surgery.
@@ -3340,7 +3372,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 16.
 
-[59
+[60
 
 
 
@@ -3371,7 +3403,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 284.
 
-[60]
+[61]
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
@@ -3397,7 +3429,7 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 309.
 
-[61
+[62
 
 
 
@@ -3427,37 +3459,33 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 309.
 
-[62]
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
-
-LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 309.
-
 [63]
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
-(Font)              using `TU/ppl/m/it' instead on input line 313.
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 309.
+
+[64]
 
 
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
@@ -3479,7 +3507,11 @@ LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
 (Font)              using `TU/ppl/m/it' instead on input line 313.
 
-[64] (./main.aux (./Chapters/Introduction.aux) (./Chapters/RelatedWorks1.aux) (./Chapters/RelatedWorks.aux) (./Chapters/LassoGripper.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux) (./Chapters/SurgicalInstrument.aux) (./Chapters/07_instrument_mechanics.aux) (./Chapters/07_instrument_control.aux) (./Chapters/FutureWorks.aux) (./Chapters/Conclusions.aux))
+
+LaTeX Font Warning: Font shape `TU/ppl/m/sl' undefined
+(Font)              using `TU/ppl/m/it' instead on input line 313.
+
+[65] (./main.aux (./Chapters/Introduction.aux) (./Chapters/RelatedWorks1.aux) (./Chapters/RelatedWorks.aux) (./Chapters/LassoGripper.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux) (./Chapters/SurgicalInstrument.aux) (./Chapters/07_instrument_mechanics.aux) (./Chapters/07_instrument_control.aux) (./Chapters/FutureWorks.aux) (./Chapters/Conclusions.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -3489,18 +3521,18 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 88107B72F209AF942BD59E077867236D;16439.
+(rerunfilecheck)             Checksum: DA51A15148030EA419E47F16C3237AC8;16916.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47373 strings out of 473832
- 1048323 string characters out of 5733158
- 1918014 words of memory out of 5000000
- 69656 multiletter control sequences out of 15000+600000
+ 47377 strings out of 473832
+ 1048369 string characters out of 5733158
+ 1918145 words of memory out of 5000000
+ 69660 multiletter control sequences out of 15000+600000
  569620 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  96i,20n,131p,1693b,5765s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (81 pages).
+Output written on main.pdf (84 pages).

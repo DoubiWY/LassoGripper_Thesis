@@ -10,6 +10,11 @@
 %\tSECTION 1
 %----------------------------------------------------------------------------------------
 
+\chapter{Control Strategy and Implementation} % Main chapter title
+\label{Chapter9}
+\begin{chaptersummary}
+This chapter presents the control architecture for the handheld instrument. It includes the modelling approach, Denavit–Hartenberg frames and forward kinematics, system architecture and data flow, intent estimation and command mapping, low-level actuation and tension management, safety and homing procedures, and firmware communication and human–machine interface considerations.
+\end{chaptersummary}
 \section{Control Strategy and Implementation}
 \subsection{Modeling}
 
@@ -39,6 +44,7 @@ The coordinate frames are established using standard Denavit–Hartenberg conven
 \end{table}
 
 And the following Rotation Matrix for the end-effector orientation:
+
 \[
 A_1 =
 \begin{bmatrix}
@@ -47,7 +53,9 @@ s_1 & 0 & c_1 & 0 \\
 0 & -1 & 0 & 0 \\
 0 & 0 & 0 & 1
 \end{bmatrix},
-\qquad
+\]
+
+\[
 A_2 =
 \begin{bmatrix}
 s_2 & 0 & c_2 & -a_2 s_2 \\
@@ -55,11 +63,13 @@ c_2 & 0 & -s_2 & -a_2 c_2 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1
 \end{bmatrix},
-\qquad
+\]
+
+\[
 A_3 =
 \begin{bmatrix}
 -c_3 & -s_3 & 0 & -a_3 c_3 \\
-s_3 & -c_3 & 0 & a_3 s_3 \\ 
+s_3 & -c_3 & 0 & a_3 s_3 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
 \end{bmatrix}

@@ -44,12 +44,14 @@
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Flying object is captured by Lasso Gripper.}}{39}{figure.caption.105}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces The inflated balloon is captured by the antipodal gripper. As a result of the concentrated stress applied, the balloon was severely deformed.}}{40}{figure.caption.107}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Feetech Servo: left motor for output (STS3032), right motor for wrist inputs (STS3009)}}{46}{figure.caption.119}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Tip Design for Cable Guidance}}{47}{figure.caption.122}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Reel Design and Winding Mechanism}}{49}{figure.caption.124}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Motor Arrangement and Quick-Swap Mechanism}}{50}{figure.caption.126}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Input Module Design}}{50}{figure.caption.128}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Denavit–Hartenberg coordinate frame definition for the manipulator}}{54}{figure.caption.134}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Alternative view of the D-H coordinate frames and joint axes}}{54}{figure.caption.135}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Feetech Servo: left motor for output (STS3032), right motor for wrist inputs (STS3009)}}{47}{figure.caption.120}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Tip Design for Cable Guidance}}{48}{figure.caption.123}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Reel Design and Winding Mechanism}}{49}{figure.caption.125}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Motor Arrangement and Quick-Swap Mechanism}}{50}{figure.caption.127}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Input Module Design}}{51}{figure.caption.129}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Denavit–Hartenberg coordinate frame definition for the manipulator}}{54}{figure.caption.136}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Alternative view of the D-H coordinate frames and joint axes}}{55}{figure.caption.137}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

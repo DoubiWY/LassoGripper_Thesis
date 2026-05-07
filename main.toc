@@ -40,35 +40,37 @@
 \contentsline {section}{\numberline {6.5}Results And Discussion}{37}{section.100}%
 \contentsline {subsection}{\numberline {6.5.1}Various Objects Grasping Results}{38}{subsection.101}%
 \contentsline {subsection}{\numberline {6.5.2}Comparisons with Antipodal Point Gripper}{40}{subsection.106}%
-\contentsline {chapter}{\numberline {7}Innovative Design of a Handheld Surgical Instrument Balancing Weight and Functionality}{42}{chapter.108}%
+\contentsline {chapter}{\numberline {7}Handheld Tendon-Driven Surgical Instrument: Design, Packaging and Control}{42}{chapter.108}%
 \contentsline {section}{\numberline {7.1}Necessity To Develop Handheld Motorized Medical Instrument}{42}{section.109}%
 \contentsline {section}{\numberline {7.2}Core Design Advantages for Hand-Held Applications}{43}{section.110}%
 \contentsline {section}{\numberline {7.3}Defining Performance Metrics for Structural Design}{44}{section.111}%
 \contentsline {section}{\numberline {7.4}Pathway to Structural Implementation}{44}{section.112}%
-\contentsline {section}{\numberline {7.5}Mechanism and Design}{46}{section.116}%
-\contentsline {subsection}{\numberline {7.5.1}Output Motors}{46}{subsection.117}%
-\contentsline {subsection}{\numberline {7.5.2}Input Motors and Sensors}{46}{subsection.118}%
-\contentsline {section}{\numberline {7.6}Cable Routing and Guidance System}{47}{section.120}%
-\contentsline {subsection}{\numberline {7.6.1}Tip Design}{47}{subsection.121}%
-\contentsline {subsection}{\numberline {7.6.2}Reel}{48}{subsection.123}%
-\contentsline {subsection}{\numberline {7.6.3}Motor Arrangement and Quick-Swap Mechanism}{49}{subsection.125}%
-\contentsline {subsection}{\numberline {7.6.4}Input Design}{49}{subsection.127}%
-\contentsline {section}{\numberline {7.7}Control Strategy and Implementation}{52}{section.129}%
-\contentsline {subsection}{\numberline {7.7.1}Modeling}{52}{subsection.130}%
-\contentsline {subsection}{\numberline {7.7.2}Denavit–Hartenberg Coordinate Frames}{52}{subsection.131}%
-\contentsline {subsection}{\numberline {7.7.3}System Architecture and Data Flow}{53}{subsection.136}%
-\contentsline {subsection}{\numberline {7.7.4}Intent Estimation and Command Mapping}{53}{subsection.137}%
-\contentsline {subsection}{\numberline {7.7.5}Low-Level Actuation and Tension Management}{55}{subsection.138}%
-\contentsline {subsection}{\numberline {7.7.6}System Implementation and Details}{55}{subsection.139}%
-\contentsline {chapter}{\numberline {8}Future Works}{56}{chapter.140}%
-\contentsline {section}{\numberline {8.1}Surgical Instruments}{56}{section.141}%
-\contentsline {subsection}{\numberline {8.1.1}Enhanced Precision through Adaptive Learning-based Control}{56}{subsection.142}%
-\contentsline {subsection}{\numberline {8.1.2}Expanded Modularity and Context-Aware Operation}{57}{subsection.143}%
-\contentsline {section}{\numberline {8.2}Further Applications of Lasso Gripper}{57}{section.144}%
-\contentsline {subsection}{\numberline {8.2.1}Multi-Loop Configuration}{57}{subsection.145}%
-\contentsline {subsection}{\numberline {8.2.2}Improved Gripping Stability}{58}{subsection.146}%
-\contentsline {subsection}{\numberline {8.2.3}Enhanced Adaptability}{58}{subsection.147}%
-\contentsline {subsection}{\numberline {8.2.4}Mobile Platform Grasping}{58}{subsection.148}%
-\contentsline {subsection}{\numberline {8.2.5}Potential Challenges and Solutions}{58}{subsection.149}%
-\contentsline {chapter}{\numberline {9}Conclusions}{59}{chapter.150}%
-\contentsline {chapter}{Bibliography}{61}{appendix*.151}%
+\contentsline {chapter}{\numberline {8}Mechanical Implementation of the Handheld Instrument}{46}{chapter.116}%
+\contentsline {section}{\numberline {8.1}Mechanism and Design}{46}{section.117}%
+\contentsline {subsection}{\numberline {8.1.1}Output Motors}{46}{subsection.118}%
+\contentsline {subsection}{\numberline {8.1.2}Input Motors and Sensors}{46}{subsection.119}%
+\contentsline {section}{\numberline {8.2}Cable Routing and Guidance System}{47}{section.121}%
+\contentsline {subsection}{\numberline {8.2.1}Tip Design}{47}{subsection.122}%
+\contentsline {subsection}{\numberline {8.2.2}Reel}{48}{subsection.124}%
+\contentsline {subsection}{\numberline {8.2.3}Motor Arrangement and Quick-Swap Mechanism}{49}{subsection.126}%
+\contentsline {subsection}{\numberline {8.2.4}Input Design}{50}{subsection.128}%
+\contentsline {chapter}{\numberline {9}Control Strategy and Implementation}{52}{chapter.130}%
+\contentsline {section}{\numberline {9.1}Control Strategy and Implementation}{52}{section.131}%
+\contentsline {subsection}{\numberline {9.1.1}Modeling}{52}{subsection.132}%
+\contentsline {subsection}{\numberline {9.1.2}Denavit–Hartenberg Coordinate Frames}{53}{subsection.133}%
+\contentsline {subsection}{\numberline {9.1.3}System Architecture and Data Flow}{55}{subsection.138}%
+\contentsline {subsection}{\numberline {9.1.4}Intent Estimation and Command Mapping}{55}{subsection.139}%
+\contentsline {subsection}{\numberline {9.1.5}Low-Level Actuation and Tension Management}{56}{subsection.140}%
+\contentsline {subsection}{\numberline {9.1.6}System Implementation and Details}{56}{subsection.141}%
+\contentsline {chapter}{\numberline {10}Future Works}{57}{chapter.142}%
+\contentsline {section}{\numberline {10.1}Surgical Instruments}{57}{section.143}%
+\contentsline {subsection}{\numberline {10.1.1}Enhanced Precision through Adaptive Learning-based Control}{57}{subsection.144}%
+\contentsline {subsection}{\numberline {10.1.2}Expanded Modularity and Context-Aware Operation}{58}{subsection.145}%
+\contentsline {section}{\numberline {10.2}Further Applications of Lasso Gripper}{58}{section.146}%
+\contentsline {subsection}{\numberline {10.2.1}Multi-Loop Configuration}{58}{subsection.147}%
+\contentsline {subsection}{\numberline {10.2.2}Improved Gripping Stability}{59}{subsection.148}%
+\contentsline {subsection}{\numberline {10.2.3}Enhanced Adaptability}{59}{subsection.149}%
+\contentsline {subsection}{\numberline {10.2.4}Mobile Platform Grasping}{59}{subsection.150}%
+\contentsline {subsection}{\numberline {10.2.5}Potential Challenges and Solutions}{59}{subsection.151}%
+\contentsline {chapter}{\numberline {11}Conclusions}{60}{chapter.152}%
+\contentsline {chapter}{Bibliography}{62}{appendix*.153}%
