@@ -1,0 +1,33 @@
+# PowerPoint files
+*.ppt
+*.pptx
+*.pps
+*.ppsx
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Generated thesis outputs
+/main.pdf
+/main.synctex.gz
+
+# LaTeX temporary directories/files
+_minted-*/
+*.nav
+*.snm
+*.vrb
+*.upa
+*.upb
