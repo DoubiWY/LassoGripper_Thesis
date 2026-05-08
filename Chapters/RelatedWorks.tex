@@ -4,14 +4,14 @@
 %----------------------------------------------------------------------------------------
 
 
-\section{Development of Adaptive Grasping and its application}
+\section{Development of Adaptive Grasping and Its Applications}
 % Chapter summary moved to Chapters/RelatedWorks1.tex
 \subsection{The Necessity of Enveloping and Encircling Grasping}
 Enveloping and encircling grasping provide enhanced stability and shape adaptability for a wide range of objects. This subsection reviews recent structural and control approaches that achieve enveloping grasps and highlights the remaining limitations that motivate loop-based and tendon-driven solutions.
 
 One notable study introduces a dual-mode soft robotic gripper designed with integrated annular structures and a contraction actuator. This design significantly improves shape tolerance and gripping force by altering the contact method between the gripper and the object, adjusting the stiffness and load capacity through controlled material properties \cite{hu2023dual}.
 
-Another novel technique employs a soft gripper that leverages a belt loop with an actuated adhesion mechanism. This mechanism provides dual-directional force – both radial and tangential – which enhances the effectiveness and stability of the grasping action. The minimal interaction force strategy ensures gentle handling, making it suitable for fragile objects \cite{chen2024soft}.
+Another novel technique employs a soft gripper that leverages a belt loop with an actuated adhesion mechanism. This mechanism provides bidirectional force, both radial and tangential, which enhances the effectiveness and stability of the grasping action. The minimal interaction force strategy ensures gentle handling, making it suitable for fragile objects \cite{chen2024soft}.
 
 Additional studies introduce an affordable, underactuated compliant gripper capable of adapting to objects of diverse sizes and shapes. The design features a flexure motion transmission mechanism and multifunctional jaws, allowing for a more conforming grasp. This interaction between the gripper and the target object increases both gripping force and stability \cite{sun2024low}.
 
@@ -24,12 +24,12 @@ Enveloping and encircling grasping techniques are crucial in robotic grasping te
 \begin{minipage}[t]{0.47\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/1.png}
-\caption{Pressurized the actuation chamber and adaptive grasping \cite{hu2023dual}}
+\caption{Pressurized actuation chamber and adaptive grasping \cite{hu2023dual}}
 \end{minipage}
 \begin{minipage}[t]{0.47\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/8.png}
-\caption{Belt Loop Actuated Adhesion Design \cite{chen2024soft}}
+\caption{Belt-loop actuated adhesion design \cite{chen2024soft}}
 \end{minipage}
 \end{tabular}
 \begin{tabular}{cc}
@@ -41,7 +41,7 @@ Enveloping and encircling grasping techniques are crucial in robotic grasping te
 \begin{minipage}[t]{0.47\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/172.png}
-\caption{Examples of enveloping grasps of Velo gripper \cite{ciocarlie2014velo}}
+\caption{Examples of enveloping grasps by the Velo gripper \cite{ciocarlie2014velo}}
 \end{minipage}
 \end{tabular}
 \end{figure}
@@ -56,7 +56,7 @@ The integration of sensors with soft materials such as loops significantly enhan
 
 A notable example is a modular flying gripper that utilizes a loop gripper mechanism to control its position and pose flexibly. This system, composed of quadrotor-based modules, showcases the versatility of encircling grasping techniques. The decentralized control approach enables the flying gripper to modify its aperture angle, thereby facilitating efficient object grasping and transportation \cite{gabrich2018flying}.
 
-In another study, a soft robotic gripper equipped with a liquid-metal sensing skin provides a robust feedback mechanism. This gripper, integrated with proximity, pressure, and orientation sensors, operates using shape-memory alloy springs to transition between open and close states. The closed-loop control enabled by these sensors allows the system to detect and respond to external disturbances, enhancing its grasping, release, and transportation capabilities \cite{yin2020closing}.
+In another study, a soft robotic gripper equipped with a liquid-metal sensing skin provides a robust feedback mechanism. This gripper, integrated with proximity, pressure, and orientation sensors, operates using shape-memory alloy springs to transition between open and closed states. The closed-loop control enabled by these sensors allows the system to detect and respond to external disturbances, enhancing its grasping, release, and transportation capabilities \cite{yin2020closing}.
 
 Further advancements are seen in the development of a continuum body gripper that incorporates flexible latex bladder sensors. By measuring air pressure changes, these sensors provide tactile and proprioceptive feedback, essential for delicate and high-force grasping. This integration allows the gripper to manage a diverse array of objects, ranging from heavy to fragile items, with minimal control input. The sensorized gripper demonstrates high sensitivity and repeatability, making it a cost-effective and durable solution for universal grasping applications \cite{hughes2020sensorization}.
 
@@ -75,18 +75,18 @@ The combination of sensors with soft materials such as loops in robotic grippers
 \begin{minipage}[t]{0.47\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/15.png}
-\caption{The illustration of tactile sensor and pressure sensors integrated in the loop gripper \cite{hughes2020sensorization}}
+\caption{Illustration of the tactile sensor and pressure sensors integrated into the loop gripper \cite{hughes2020sensorization}}
 \end{minipage}
 \end{tabular}
 \end{figure}
 
 
 
-\subsection{Designing for the Physical Properties of Soft Gripper}
+\subsection{Designing for the Physical Properties of Soft Grippers}
 
 Through advancements in material technology and microstructural design, significant progress has been made in altering the physical properties of flexible materials like ropes. These innovations have paved the way for the development of more efficient and adaptable soft robotic grippers.
 
-A groundbreaking soft gripper utilizing a self-sensing super-coiled polymer (SCP) actuator is introduced by Wang et al. (2021). This actuator is crafted from multi-strand sewing thread that undergoes a self-coiling process, enabling it to untwist when heated. The addition of a metal wire wrapped around the SCP enhances temperature measurement precision, forming a closed-loop control system for accurate gripper manipulation. This approach offers a foundation for customizing the physical properties of rope-like materials for actuator applications \cite{wang2021lightweight}.
+Wang et al. (2021) introduced a groundbreaking soft gripper using a self-sensing super-coiled polymer (SCP) actuator. This actuator is crafted from multi-strand sewing thread that undergoes a self-coiling process, enabling it to untwist when heated. The addition of a metal wire wrapped around the SCP enhances temperature measurement precision, forming a closed-loop control system for accurate gripper manipulation. This approach offers a foundation for customizing the physical properties of rope-like materials for actuator applications \cite{wang2021lightweight}.
 
 Sun et al. (2020) described a soft gripper with adjustable stiffness, inspired by the behavior of pangolin scales. The gripper is composed of two layers: a variable stiffness layer and a pneumatic-driven layer. The variable stiffness layer emulates pangolin scales, remaining flexible during normal activities but becoming rigid when threatened. The toothed pneumatic actuator increases the gripper's stiffness, enabling it to grasp a wide range of objects effectively. The autonomous control system of this gripper collects feedback signals to adjust the stiffness autonomously, making it suitable for unstructured environments \cite{sun2020soft}.
 
@@ -94,7 +94,7 @@ Zhang et al. (2017) tackled the design problem of soft robots using a topology o
 
 Li et al. proposed a soft gripper inspired by the inchworm's true leg. This design includes two rows of sharp hooks on a soft palm, with connections made via Shape Memory Alloy (SMA) springs. The design allows the gripper to adhere to rough surfaces and grasp objects with varying shapes and dimensions. The combination of elastic muscle-like structures and sharp hooks enhances the load-carrying capacity of the gripper, demonstrating the potential of microstructural design in soft robotics \cite{li2017development}.
 
-Wang et al. (2017) explored the usage of Shape Memory Alloy (SMA) in soft grippers, addressing the inherent softness and low actuation force of traditional systems. The study described a soft gripper with variable stiffness based on SMA, composed of three fingers, each with two hinges. The hinges can achieve a significant change in stiffness, allowing the gripper to adapt to various shapes and weights. This material modification approach shows promise for effective grasping applications \cite{wang2017shape}.
+Wang et al. (2017) explored the use of Shape Memory Alloy (SMA) in soft grippers, addressing the inherent softness and low actuation force of traditional systems. The study described an SMA-based soft gripper with variable stiffness, composed of three fingers, each with two hinges. The hinges can achieve a significant change in stiffness, allowing the gripper to adapt to various shapes and weights. This material modification approach shows promise for effective grasping applications \cite{wang2017shape}.
 
 The integration of advanced material technologies and microstructural designs has significantly enhanced the capabilities of soft robotic grippers. These innovations provide a robust foundation for developing adaptable and efficient grasping systems.
 
@@ -123,7 +123,7 @@ The integration of advanced material technologies and microstructural designs ha
 \end{figure}
 
 
-\subsection{Advancement of Grasp Planning Algorithm for Lasso Grippers}
+\subsection{Advancement of Grasp Planning Algorithms for Lasso Grippers}
 
 The design of grasping algorithms has made significant strides in enhancing the adaptability and efficiency of robotic grippers, particularly those employing rope-like structures such as lasso grippers. These algorithms leverage unique approaches to optimize grasp planning and ensure stable and robust manipulation.
 
@@ -150,7 +150,7 @@ These advancements in grasping algorithm design underscore the importance of inn
 
 The application of lasso grippers in various real-world scenarios demonstrates their versatility and effectiveness in handling a variety of objects with minimal control effort and high reliability. This section reviews recent advancements and practical implementations of lasso grippers across different fields.
 
-Manes et al. (2024) introduced a soft cable loop-based gripper designed for robotic automation in chemistry laboratories. This gripper can reliably grasp cylindrical and prismatic objects of various sizes with minimal clearance. The design utilizes the compliance of a cable to completely envelop target objects, with support provided by a rigid finger once the grip is secured. This mechanism requires minimal control effort, making it highly practical for repetitive tasks in automated chemistry processes. The gripper demonstrated a grasp reliability with a failure rate of less than 1\%, showcasing its efficacy in handling delicate laboratory glassware. However, the use of a self-supporting plastic polymer material limits the loop size, as larger loops would fail to maintain their shape \cite{manes2024soft}.
+Manes et al. (2024) introduced a soft cable loop-based gripper designed for robotic automation in chemistry laboratories. This gripper can reliably grasp cylindrical and prismatic objects of various sizes with minimal clearance. The design uses the compliance of a cable to completely envelop target objects, with support provided by a rigid finger once the grip is secured. This mechanism requires minimal control effort, making it highly practical for repetitive tasks in automated chemistry processes. The gripper demonstrated reliable grasping, with a failure rate of less than 1\%, showcasing its efficacy in handling delicate laboratory glassware. However, the use of a self-supporting plastic polymer material limits the loop size, as larger loops would fail to maintain their shape \cite{manes2024soft}.
 
 \begin{figure}[htbp]
 \centering
@@ -158,7 +158,7 @@ Manes et al. (2024) introduced a soft cable loop-based gripper designed for robo
 \begin{minipage}[t]{1\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/6.png}
-\caption{A cable loop gripper prototype was evaluated for its ability to grasp various types of chemistry glassware. \cite{manes2024soft}}
+\caption{A cable loop gripper prototype evaluated for grasping various types of chemistry glassware \cite{manes2024soft}}
 \end{minipage}
 
 \end{tabular}
@@ -166,7 +166,7 @@ Manes et al. (2024) introduced a soft cable loop-based gripper designed for robo
 \begin{minipage}[t]{0.47\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/13.png}
-\caption{String shoot impact towards a wall \cite{Japan2023}}
+\caption{String-shoot impact toward a wall \cite{Japan2023}}
 \end{minipage}
 \begin{minipage}[t]{0.47\textwidth}
 \centering
@@ -188,7 +188,7 @@ These studies underscore the practical applications of lasso grippers in diverse
 
 \subsection{The Balance between Flexibility and Strength}
 
-Current research in robotic gripping mechanisms often focuses on achieving a balance between flexibility and strength. Pneumatic flexible grippers, for instance, offer excellent shape adaptability but are limited in their working range and load capacity. Yu et al. have noted that soft pneumatic actuators are widely utilized in soft robots, where their bending angles and motion rules at different pressures are crucial for practical applications \cite{yu2022modeling}. However, despite their flexibility, these actuators struggle with heavier loads and larger workspaces. Moreover, their dependency on precise pressure control can make them susceptible to performance inconsistencies, particularly in environments where maintaining stable pressure is challenging.
+Current research in robotic gripping mechanisms often focuses on achieving a balance between flexibility and strength. Pneumatic flexible grippers, for instance, offer excellent shape adaptability but are limited in their working range and load capacity. Yu et al. have noted that soft pneumatic actuators are widely used in soft robots, where their bending angles and motion rules at different pressures are crucial for practical applications \cite{yu2022modeling}. However, despite their flexibility, these actuators struggle with heavier loads and larger workspaces. Moreover, their dependence on precise pressure control can make them susceptible to performance inconsistencies, particularly in environments where maintaining stable pressure is challenging.
 
 \begin{figure}[htbp]
 \centering
@@ -209,7 +209,7 @@ Current research in robotic gripping mechanisms often focuses on achieving a bal
 \end{tabular}
 \end{figure}
 
-On the other hand, Chameleon-like shooting manipulator offer extended working ranges but suffer from lower success rates and reduced effective working ranges \cite{mochiyama2015chameleon}. Such systems often rely heavily on complex control algorithms and precise timing, which can be difficult to manage in real-time applications, leading to potential delays and reduced effectiveness in fast-paced environments.
+On the other hand, chameleon-like shooting manipulators offer extended working ranges but suffer from lower success rates and reduced effective working ranges \cite{mochiyama2015chameleon}. Such systems often rely heavily on complex control algorithms and precise timing, which can be difficult to manage in real-time applications, leading to potential delays and reduced effectiveness in fast-paced environments.
 
 \begin{figure}[htbp]
 \centering
@@ -238,7 +238,7 @@ Fractal grippers, as discussed by Tisdale and Burdick, draw inspiration from an 
 \begin{minipage}[t]{0.9\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/fractal.png}
-\caption{ Fractal Hand prototype \cite{tisdale2023fractal}.}
+\caption{Fractal Hand prototype \cite{tisdale2023fractal}.}
 \label{fig:fractal_hand_prototype}
 \end{minipage}
 % \qquad

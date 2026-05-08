@@ -40,7 +40,7 @@ Transitions rely on fused sensor information (point-cloud-based enclosure detect
 \begin{minipage}[t]{0.9\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/caging.png}
-\caption{ The caging loop calculating algorithm for Lasso Gripper \cite{liu2018caging}. (a) The setup of the depth reconstruction system (b)The Point cloud captured by depth camera directly. (c) A r-offset surface is built for defining the grasping space. (d) Two Morse saddle points (blue) are calculated to define the grasping loop.}
+\caption{Caging-loop calculation algorithm for Lasso Gripper \cite{liu2018caging}. (a) Setup of the depth reconstruction system. (b) Point cloud captured directly by the depth camera. (c) An r-offset surface built to define the grasping space. (d) Two Morse saddle points (blue) calculated to define the grasping loop.}
 \end{minipage}
 \end{tabular}
 \end{figure}
@@ -58,14 +58,14 @@ Once the neck region is identified, the algorithm determines the optimal positio
 \begin{minipage}[t]{0.9\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/exp.png}
-\caption{The illustration of the relative position of the string loop and the target object -- an early test}
+\caption{Illustration of the relative position of the string loop and the target object -- an early test}
 \end{minipage}
 \end{tabular}
 \end{figure}
 
-The tightening process is executed in a controlled manner, with the string loop gradually constricting around the neck region. The wrist of the gripper approaches the object in synchrony with the tightening action, ensuring that the loop maintains its position and grip. The following pseudo code illustrates the sequence of operations:
+The tightening process is executed in a controlled manner, with the string loop gradually constricting around the neck region. The wrist of the gripper approaches the object in synchrony with the tightening action, ensuring that the loop maintains its position and grip. The following pseudocode illustrates the sequence of operations:
 
-Input: Point Cloud P, String shooting velocity V
+Input: point cloud P, string-shooting velocity V
 
 \begin{enumerate}
     \item Scan P using depth camera
@@ -74,7 +74,7 @@ Input: Point Cloud P, String shooting velocity V
     \item Determine optimal loop position L according to V 
     \item Align lower end of L with N
     \item Execute controlled tightening action
-    \item Approach wrist towards object while maintaining loop position
+    \item Approach wrist toward object while maintaining loop position
 \end{enumerate}
 
 % ------------------------- 3.3 Real-Time Feedback and Adjustment -------------------------

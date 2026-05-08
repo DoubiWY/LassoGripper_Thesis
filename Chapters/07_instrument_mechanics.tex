@@ -15,7 +15,7 @@
 \chapter{Mechanical Implementation of the Handheld Instrument} % Main chapter title
 \label{Chapter8}
 \begin{chaptersummary}
-This chapter describes the mechanical and electromechanical implementation of the handheld tendon-driven instrument. It covers actuator selection and arrangement, cable routing and guidance, paired-cable reels and winding mechanisms, tip design and quick-swap interfaces, input module architecture, and packaging considerations for preserving tension, minimising hysteresis, and reducing distal mass.
+This chapter describes the mechanical and electromechanical implementation of the handheld tendon-driven instrument. It covers actuator selection and arrangement, cable routing and guidance, paired-cable reels and winding mechanisms, tip design and quick-swap interfaces, input module architecture, and packaging considerations for preserving tension, minimizing hysteresis, and reducing distal mass.
 \end{chaptersummary}
 \section{Mechanism and Design}
 \subsection{Output Motors}
@@ -43,7 +43,7 @@ The control philosophy for this cable-driven handheld device is based on replica
         \caption{Feetech 3009 for wrist inputs}
         \label{fig:82}
     \end{subfigure}
-    \caption{Feetech Servo: left motor for output (STS3032), right motor for wrist inputs (STS3009)}
+    \caption{Feetech servos: left motor for output (STS3032), right motor for wrist inputs (STS3009)}
 \end{figure}
 
 For the input actuation, shown in Fig.\ref{fig:81}, the Feetech STS3009 servo was selected based on a different set of requirements. Weighing 40 grams and providing a stall torque of 0.3 Nm, this more powerful motor serves two essential functions in the input stage: it maintains mechanical equilibrium by resisting forces from the output tendons, thus offering a stable and responsive feel to the operator, and it helps filter out high-frequency physiological tremors or unintended jerks, ensuring that only deliberate commands are transmitted to the end-effector.
@@ -61,17 +61,43 @@ However, since the two input motors alone cannot fully capture all nuanced finge
 \end{figure}
 In addition to motor performance, the accuracy and repeatability of the end-effector’s motion are highly dependent on precise cable guidance and sustained tension control. To ensure consistent behavior during operation, each cable must be constrained to move freely yet securely within a meticulously designed path, minimizing unwanted friction and slack.
 
-A specialized tip assembly has been developed to fulfill these requirements. As shown in Fig.\ref{fig:83}, the four cables—grouped into two pairs, each controlling one jaw of the plier—are routed through custom-machined channels. These channels ensure that the cables remain aligned throughout the entire range of motion, avoiding cross-interference and reducing wear.
+A specialized tip assembly has been developed to fulfill these requirements. As shown in Fig.\ref{fig:83}, the four cables—grouped into two pairs, each controlling one jaw of the pliers—are routed through custom-machined channels. These channels ensure that the cables remain aligned throughout the entire range of motion, avoiding cross-interference and reducing wear.
 
-The two jaw components (fabricated in blue) are mounted onto a central middle base (green). To further enhance cable stability and minimize friction, donut-shaped guides machined via CNC (light green) are integrated into the middle base. These spheres act as low-friction directional pulleys, maintaining cable position with high precision and reducing bending stress, thereby extending cable service life.
+The two jaw components (fabricated in blue) are mounted onto a central middle base (green). To further enhance cable stability and minimize friction, donut-shaped guides machined via CNC (light green) are integrated into the middle base. These guides act as low-friction directional pulleys, maintaining cable position with high precision and reducing bending stress, thereby extending cable service life.
 
 The main base housing (deep blue) is designed with precision-aligned holes that direct the cables perpendicularly toward the motors. This alignment is critical for maximizing force transmission efficiency and eliminating off-axis loading, which can introduce positioning errors and reduce system responsiveness.
 
 Through this integrated approach—combining dedicated guiding channels, spherical contact points, and perpendicular alignment—the system achieves high repeatability, minimal hysteresis, and smooth force feedback, making it suitable for delicate manipulation tasks requiring fine motor control.
 
+\subsubsection{Finite Element Analysis of Tip Components}
+\label{sec:tip_fea}
+To validate the structural integrity of the tip assembly, finite element analysis (FEA) simulations were conducted on the two primary load-bearing components: the jaw (gripper) and the middle base. Both models used Aluminum Alloy 6061 as the material. A mesh size of 0.2\,mm was adopted and the pivot shaft was modeled as a fixed support. Cable contact forces were applied as distributed loads over a circular area of 1.2\,mm diameter to represent the cable-guide contact.
+
+\paragraph{Jaw (gripper) FEA}
+Model setup: mesh size 0.2\,mm, material Al\,6061, pivot fixed. A 6\,N load was applied over a 1.2\,mm diameter circular contact area at the cable interface. Results show a maximum von Mises stress of 12.4\,MPa (see Fig.~\ref{fig:jaw_fea}). This stress level is well below the typical yield strength of 6061 aluminum ($\approx$55.1\,MPa), indicating a large safety margin for the jaw under the applied loading.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Figures/Jaw FEA.png}
+    \caption{Jaw FEA: von Mises stress distribution under a 6\,N cable load}
+    \label{fig:jaw_fea}
+\end{figure}
+
+\paragraph{Middle base FEA}
+Model setup: mesh size 0.2\,mm, material Al\,6061, pivot fixed. A 6.5\,N load was applied over a 1.2\,mm diameter circular contact area at the cable interface. In addition, the transmitted loads from a pair of jaws (two 6\,N forces) were applied to the upper pivot to represent the combined loading path. The analysis yields a maximum von Mises stress of 9.1\,MPa (see Fig.~\ref{fig:mid_fea}), also well below the material yield strength.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Figures/Mid FEA.png}
+    \caption{Middle base FEA: von Mises stress distribution under combined cable and jaw-transmitted loads}
+    \label{fig:mid_fea}
+\end{figure}
+
+Overall, the FEA results indicate that both the jaw and middle base have ample structural capacity under the stated loading conditions. Local stress concentrations near cable holes and sharp edges were identified; applying small fillets, ensuring adequate material thickness around guide features, and standard deburring practices are recommended to mitigate these effects.
+
 \subsection{Reel}
 
-A fundamental challenge in cable-driven mechanisms lies in maintaining adequate tension during both winding and unwinding phases. In a conventional single-motor-single-cable configuration, unidirectional actuation presents a significant limitation: while rotation in one direction (e.g., clockwise) effectively pulls and tensions the cable, reverse rotation (counterclockwise) does not positively push the cable but often results in slack accumulation along the path. This leads to unpredictable response, reduced positional accuracy, and potential entanglements.
+A fundamental challenge in cable-driven mechanisms lies in maintaining adequate tension during both winding and unwinding phases. In a conventional single-motor-single-cable configuration, unidirectional actuation presents a significant limitation: while rotation in one direction (e.g., clockwise) effectively pulls and tensions the cable, reverse rotation (counterclockwise) does not positively push the cable but often results in slack accumulation along the path. This leads to unpredictable response, reduced positional accuracy, and potential entanglement.
 
 To address this issue, a paired-cable design has been implemented. The two cables corresponding to a single degree of freedom are affixed to the same axial shaft driven by one motor. This configuration effectively reforms the two independent cables into a continuous loop—functioning conceptually as a flexible drive belt. As a result, when the motor rotates in one direction, one cable is pulled while the other is simultaneously recovered, enabling bidirectional force transmission without slack accumulation.
 
@@ -90,7 +116,7 @@ To prevent slippage and undesired loosening of the cables during operation, one-
 
 As previously discussed, the STS3032 servos are employed as the driving motors for the cable reels. In practical surgical scenarios, various end-effector tips are often required throughout a single procedure. To accommodate this need, a quick-swap system has been integrated into the design, allowing for rapid and secure tip replacement without compromising system integrity.
 
-To achieve a compact form factor suitable for handheld operation, the four motors are arranged in a rotational symmetry pattern within the main housing. This layout optimizes spatial efficiency while maintaining sufficient clearance for motor power and communication cables, thereby preventing interference and ensuring reliable connectivity.
+To achieve a compact form factor suitable for handheld operation, the four motors are arranged in a rotationally symmetric pattern within the main housing. This layout optimizes spatial efficiency while maintaining sufficient clearance for motor power and communication cables, thereby preventing interference and ensuring reliable connectivity.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7 \linewidth]{Figures/Motor Arrangement.png} 
@@ -103,7 +129,7 @@ This design ensures a robust mechanical and electrical connection during use, ma
 
 \subsection{Input Design}
 
-The input module is designed to intuitively capture the user’s hand and finger motions with high precision and minimal latency. By integrating two STS3009 servos and two AS5600 magnetic encoders, the system is capable of sensing four degrees of freedom (DoFs): two DoFs from the wrist movement—yaw and pitch—and two DoFs from the fingers, namely roll and open/close actuation.
+The input module is designed to intuitively capture the user’s hand and finger motions with high precision and minimal latency. By integrating two STS3009 servos and two AS5600 magnetic encoders, the system is capable of sensing four degrees of freedom (DOFs): two DOFs from the wrist movement—yaw and pitch—and two DOFs from the fingers, namely roll and open/close actuation.
 
 The wrist motions are translated through a dual-axis gimbal-like mechanism, where the STS3009 servos provide both actuation force and preliminary positional feedback. Fine rotational movements in yaw and pitch are accurately detected and relayed to the control system, enabling responsive and natural manipulation of the end-effector.
 \begin{figure}[htbp]

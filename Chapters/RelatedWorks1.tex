@@ -3,14 +3,14 @@
 \begin{chaptersummary}
 This chapter surveys prior work relevant to adaptive and enveloping grasping as well as tendon-driven laparoscopic end-effectors. It covers loop- and belt-based grippers, sensorized soft grippers, material and microstructure innovations, grasp planning algorithms, actuation technologies, sensing strategies, tip and rod architectures, soft and continuum approaches, and AI-assisted monitoring and control.
 
-The review highlights recurring challenges—such as cable coupling, material creep and stretch, frictional losses, and the trade-offs between flexibility, load capacity, and sensing complexity—and identifies open gaps that motivate this thesis: compact, tension-preserving cable routing; miniature sensing for closed-loop compensation; mechanism-level evaluations linking design choices to performance; and robust sensing and routing strategies for loop-based grippers, which Lasso Gripper prototype seeks to explore.
+The review highlights recurring challenges—such as cable coupling, material creep and stretch, frictional losses, and the trade-offs between flexibility, load capacity, and sensing complexity—and identifies open gaps that motivate this thesis: compact, tension-preserving cable routing; miniature sensing for closed-loop compensation; mechanism-level evaluations linking design choices to performance; and robust sensing and routing strategies for loop-based grippers, which Lasso Gripper seeks to explore.
 \end{chaptersummary}
 
-\section{Advances in Actuation Technologies for Multi-DoFs End-Effectors in Laparoscopic Instruments}
+\section{Advances in Actuation Technologies for Multi-DOF End-Effectors in Laparoscopic Instruments}
 
 Minimally Invasive Surgery (MIS) shifted instrument design toward restoring distal dexterity within severe access constraints. Cable-driven actuation is widely used because it enables multi-degree-of-freedom tips with low distal mass, but it brings challenges such as cable coupling, material creep, and reduced control fidelity. This section summarizes actuation alternatives, sensing strategies for tension and pose estimation, and tip/shaft design patterns that motivate the tendon-driven choices explored in this thesis.
 
-To address the limited dexterity at the instrument tip, a prominent solution involves using cables as a medium to transmit power from the handpiece to the end-effector, thereby enabling enhanced DoFs, such as roll or yaw rotations. First introduced in the late 1990s, Intuitive Surgical's da Vinci system exemplifies this approach, employing a cable-driven mechanism to control its articulated tips. The primary advantage of such a system is that cables can transmit power over a distance with a lower weight penalty compared to rigid linkages or gear trains\cite{brodie_future_2018}. However, this benefit is accompanied by inherent challenges. In the initial design of the da Vinci system, cable coupling—where the movement of one cable inadvertently affects another—was a significant issue that could not be overlooked, often leading to kinematic inaccuracies and reduced control fidelity. Therefore, various approaches have been studied to address these problems.
+To address the limited dexterity at the instrument tip, a prominent solution involves using cables as a medium to transmit power from the handpiece to the end-effector, thereby enabling additional DOFs, such as roll or yaw rotations. First introduced in the late 1990s, Intuitive Surgical's da Vinci system exemplifies this approach, employing a cable-driven mechanism to control its articulated tips. The primary advantage of such a system is that cables can transmit power over a distance with a lower weight penalty compared to rigid linkages or gear trains\cite{brodie_future_2018}. However, this benefit is accompanied by inherent challenges. In the initial design of the da Vinci system, cable coupling—where the movement of one cable inadvertently affects another—was a significant issue that could not be overlooked, often leading to kinematic inaccuracies and reduced control fidelity. Therefore, various approaches have been studied to address these problems.
 
 \subsection{Replacements of Driven Motors}
 \begin{figure}[htbp]
@@ -19,7 +19,7 @@ To address the limited dexterity at the instrument tip, a prominent solution inv
 \begin{minipage}[t]{0.45\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/magnetic.png}
-\caption{Design and Illustration of Ultrasonic Motors\cite{li_design_2022}.}
+\caption{Design and illustration of ultrasonic motors\cite{li_design_2022}.}
 \label{fig31}
 \end{minipage}
 \end{tabular}
@@ -31,13 +31,13 @@ To address the challenges of control fidelity loss and restricted tip articulati
 \begin{minipage}[t]{0.45\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/bending torsion.png}
-\caption{Bending and Torsion layouts of the Transducer\cite{wu_rotary_2021}.}
+\caption{Bending and torsion layouts of the transducer\cite{wu_rotary_2021}.}
 \label{fig32}
 \end{minipage}
 \end{tabular}
 \end{figure}
 
-To match the power density and peak torque output of this proposed driving method to electromagnetic actuators, there are studies that focus on this area. By applying a rod-shaped transducer in torsional and bending modes, the rotor is driven in its orthogonal direction with external excitements at certain frequencies. By adjusting exciting frequencies, the maximum torque recorded in the experiments reaches 10.1 N.m and output power reaches 38.1 W\cite{wu_rotary_2021}.
+Some studies focus on matching the power density and peak torque output of this proposed driving method to those of electromagnetic actuators. By applying a rod-shaped transducer in torsional and bending modes, the rotor is driven in its orthogonal direction with external excitations at specific frequencies. By adjusting the excitation frequencies, the maximum torque recorded in the experiments reached 10.1 N·m, and the output power reached 38.1 W\cite{wu_rotary_2021}.
 
 \subsection{Additional Sensors}
 
@@ -53,21 +53,21 @@ To address these limitations, recent research has focused on miniaturized sensin
 
 \subsection{Novel Structures of the Tip and Rod Design }
 
-In conventional master-slave robotic systems, such as the da Vinci Surgical System and similar handheld robotic instruments, the end-effector typically provides 4 to 5 DoFs. This configuration is designed to replicate the articulation capabilities of the human wrist and fingers, enabling complex maneuvers like pitching, yawing, rolling, and grasping. However, a significant design limitation persists: these multiple DoFs are concentrated exclusively at the distal tip, while the connecting shaft or linkage primarily functions as a passive rotary base.
+In conventional master-slave robotic systems, such as the da Vinci Surgical System and similar handheld robotic instruments, the end-effector typically provides 4 to 5 DOFs. This configuration is designed to replicate the articulation capabilities of the human wrist and fingers, enabling complex maneuvers like pitching, yawing, rolling, and grasping. However, a significant design limitation persists: these multiple DOFs are concentrated exclusively at the distal tip, while the connecting shaft or linkage primarily functions as a passive rotary base.
 
-This recognition of ergonomic limitations in conventional articulated instruments has stimulated significant research into alternative tip architectures in recent years. With advances in the modeling and control of continuum robots, their design principles have been increasingly translated into the medical domain. Unlike traditional tip designs composed of multiple rigid links connected by discrete joints, continuum robots offer a validated scheme for implementing soft or continuously flexible connections—both between the tip and the instrument shaft, and among individual sub-components of the tip itself. This paradigm shift enables a more distributed deformation along the instrument's length, effectively increasing the overall dexterity without concentrating all articulation at a single point. The resulting designs, often drawing inspiration from biological structures like tentacles or snakes, promise to mitigate surgeon fatigue by decoupling the end-effector's pose from the precise position of the surgeon's hand, thereby offering a more intuitive and ergonomic manipulation platform for complex surgical tasks.
+This recognition of ergonomic limitations in conventional articulated instruments has stimulated significant research into alternative tip architectures in recent years. With advances in the modeling and control of continuum robots, their design principles have been increasingly translated into the medical domain. Unlike traditional tip designs composed of multiple rigid links connected by discrete joints, continuum robots offer a validated scheme for implementing soft or continuously flexible connections—both between the tip and the instrument shaft, and among individual subcomponents of the tip itself. This paradigm shift enables a more distributed deformation along the instrument's length, effectively increasing the overall dexterity without concentrating all articulation at a single point. The resulting designs, often drawing inspiration from biological structures like tentacles or snakes, promise to mitigate surgeon fatigue by decoupling the end-effector's pose from the precise position of the surgeon's hand, thereby offering a more intuitive and ergonomic manipulation platform for complex surgical tasks.
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
 \begin{minipage}[t]{0.45\textwidth}
 \centering
 \includegraphics[width=\linewidth]{Figures/soft modular.png}
-\caption{flexible fluidic actuators formed with granular to vary stiffness \cite{ranzani_soft_2016}}
+\caption{Flexible fluidic actuators with granular jamming for variable stiffness \cite{ranzani_soft_2016}}
 \label{fig33}
 \end{minipage}
 \end{tabular}
 \end{figure}
-Building upon the foundational research in continuum robotics, recent studies have explored innovative structural designs to enhance surgical instrument dexterity and safety. Ranzani et al. (2016) demonstrated a significant advancement by integrating flexible fluidic actuators within a silicone matrix containing multiple pneumatic chambers. This design enabled multi-directional bending and elongation capabilities. The proposed manipulator employed a modular architecture, utilizing granular jamming techniques to achieve dynamic stiffness variation and diverse movement profiles, as illustrated in \ref{fig33}.
+Building upon the foundational research in continuum robotics, recent studies have explored innovative structural designs to enhance surgical instrument dexterity and safety. Ranzani et al. (2016) demonstrated a significant advancement by integrating flexible fluidic actuators within a silicone matrix containing multiple pneumatic chambers. This design enabled multidirectional bending and elongation capabilities. The proposed manipulator employed a modular architecture, utilizing granular jamming techniques to achieve dynamic stiffness variation and diverse movement profiles, as illustrated in Fig.~\ref{fig33}.
 \begin{figure}[htbp]
 \centering
 \begin{tabular}{cc}
@@ -79,9 +79,9 @@ Building upon the foundational research in continuum robotics, recent studies ha
 \end{minipage}
 \end{tabular}
 \end{figure}
-Further extending this paradigm, researchers have investigated the transition from rigid linkages to compliant structures to substantially improve operational flexibility. One notable approach involves manipulating the trimmed angle of a helicoid structure to create a variable-stiffness robotic arm\cite{guan_trimmed_2023}. When coupled with a cable-driven actuation system, this design achieves an expanded workspace while significantly minimizing the risk of iatrogenic tissue damage during surgical procedures, as shown in \ref{fig34}. These developments in soft robotics and variable-stiffness mechanisms represent promising directions for next-generation surgical instruments that balance precision with patient safety.
+Further extending this paradigm, researchers have investigated the transition from rigid linkages to compliant structures to substantially improve operational flexibility. One notable approach involves manipulating the trimmed angle of a helicoid structure to create a variable-stiffness robotic arm\cite{guan_trimmed_2023}. When coupled with a cable-driven actuation system, this design achieves an expanded workspace while significantly minimizing the risk of iatrogenic tissue damage during surgical procedures, as shown in Fig.~\ref{fig34}. These developments in soft robotics and variable-stiffness mechanisms represent promising directions for next-generation surgical instruments that balance precision with patient safety.
 
-\subsection{AI-assisted Monitor and Control}
+\subsection{AI-Assisted Monitoring and Control}
 As analyzed in previous sections, contemporary research in medical instrumentation predominantly advances along three interconnected fronts: innovative tip design, integrated sensory feedback systems, and intelligent control algorithms. The rapid evolution of Deep Learning and Reinforcement Learning methodologies has now catalyzed a fourth research direction: the integration of data-driven approaches into clinical practice.
 
 A particularly promising development lies in repurposing the existing endoscopic camera—initially intended solely for surgical visualization—as an external verification system for instrument navigation. Specifically, Kong et al. (2023) demonstrated that through a specially designed architecture, both the visual stream from the camera and kinematic data from the actuation motors can be fused to estimate the positional discrepancy between commanded and actual end-effector positions following movement execution\cite{kong_automatic_2023}. This estimated deviation is subsequently converted into compensation signals that drive automatic self-correction maneuvers, effectively creating a vision-enhanced closed-loop control system that continuously calibrates the instrument without requiring additional hardware beyond the standard surgical setup.

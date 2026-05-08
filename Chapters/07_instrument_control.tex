@@ -13,12 +13,12 @@
 \chapter{Control Strategy and Implementation} % Main chapter title
 \label{Chapter9}
 \begin{chaptersummary}
-This chapter presents the control architecture for the handheld instrument. It includes the modelling approach, Denavit–Hartenberg frames and forward kinematics, system architecture and data flow, intent estimation and command mapping, low-level actuation and tension management, safety and homing procedures, and firmware communication and human–machine interface considerations.
+This chapter presents the control architecture for the handheld instrument. It includes the modeling approach, Denavit–Hartenberg frames and forward kinematics, system architecture and data flow, intent estimation and command mapping, low-level actuation and tension management, safety and homing procedures, and firmware communication and human–machine interface considerations.
 \end{chaptersummary}
 \section{Control Strategy and Implementation}
 \subsection{Modeling}
 
-The project aims to implement a da Vinci–style surgical instrument claw effect using a compact 4-DoFs hardware architecture: a 3-DoFs manipulator arm plus a single gripper open/close degree of freedom. The system input is provided by the handle as three rotational joint angles and one gripper opening angle.
+The project aims to implement a da Vinci–style surgical instrument claw effect using a compact 4-DOF hardware architecture: a 3-DOF manipulator arm plus a single gripper open/close degree of freedom. The system input is provided by the handle as three rotational joint angles and one gripper opening angle.
 
 Since the manipulator itself has only three actual mechanical degrees of freedom, it cannot realize an arbitrary rotation axis in space. A specified direction in space requires three independent pose parameters, and a stable pose also consumes three degrees of freedom. This makes the system inherently over-constrained if arbitrary axis rotation is demanded. In contrast, the da Vinci system achieves effective 6-DOF stabilized control by using a larger arm to drive a smaller wristed arm in coordinated motion. Under the hardware constraints of this project, that six-degree-of-freedom stabilization strategy is not considered.
 
@@ -43,7 +43,7 @@ The coordinate frames are established using standard Denavit–Hartenberg conven
     \end{tabular}
 \end{table}
 
-And the following Rotation Matrix for the end-effector orientation:
+The following rotation matrix describes the end-effector orientation:
 
 \[
 A_1 =
@@ -140,6 +140,6 @@ While running, the lock/release mechanism functions as a safety measure: it reli
 
 Visual and diagnostic feedback is delivered through a WS2812 LED strip and serial output. Error conditions activate red LEDs, whereas normal operation leaves the indicators off. Both USB and Bluetooth connectivity support data logging, facilitating offline analysis of control performance and user interactions.
 
-The firmware communicates with servos via HardwareSerial at 500k baud and uses standard Serial for debugging. Motor commands are assembled using a custom protocol that includes unload/enable directives. The main loop executes roughly every 3 ms, striking a balance between system responsiveness and computational overhead.
+The firmware communicates with servos via HardwareSerial at 500k baud and uses standard Serial for debugging. Motor commands are assembled using a custom protocol that includes unload/enable directives. The main loop executes roughly every 3~ms, striking a balance between system responsiveness and computational overhead.
 
 This implementation embodies a practical tendon-driven control framework, translating high-level intentions into low-level actuation while emphasizing safety and usability within a compact, real-time system.

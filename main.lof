@@ -5,22 +5,22 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Prototype of the proposed Lasso Gripper.}}{3}{figure.caption.14}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Typical single-hole surgical instruments with limited distal dexterity.}}{4}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Design and Illustration of Ultrasonic Motors\blx@tocontentsinit {0}\cite {li_design_2022}.}}{6}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Bending and Torsion layouts of the Transducer\blx@tocontentsinit {0}\cite {wu_rotary_2021}.}}{7}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces flexible fluidic actuators formed with granular to vary stiffness \blx@tocontentsinit {0}\cite {ranzani_soft_2016}}}{9}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Design and illustration of ultrasonic motors\blx@tocontentsinit {0}\cite {li_design_2022}.}}{6}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Bending and torsion layouts of the transducer\blx@tocontentsinit {0}\cite {wu_rotary_2021}.}}{7}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Flexible fluidic actuators with granular jamming for variable stiffness \blx@tocontentsinit {0}\cite {ranzani_soft_2016}}}{9}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The tendon-driven manipulator design with Trimmed Helicoids\blx@tocontentsinit {0}\cite {guan_trimmed_2023}}}{9}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Pressurized the actuation chamber and adaptive grasping \blx@tocontentsinit {0}\cite {hu2023dual}}}{12}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Belt Loop Actuated Adhesion Design \blx@tocontentsinit {0}\cite {chen2024soft}}}{12}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pressurized actuation chamber and adaptive grasping \blx@tocontentsinit {0}\cite {hu2023dual}}}{12}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Belt-loop actuated adhesion design \blx@tocontentsinit {0}\cite {chen2024soft}}}{12}{figure.caption.32}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Enveloping grasps of the multifunctional jaw \blx@tocontentsinit {0}\cite {sun2024low}}}{12}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Examples of enveloping grasps of Velo gripper \blx@tocontentsinit {0}\cite {ciocarlie2014velo}}}{12}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Examples of enveloping grasps by the Velo gripper \blx@tocontentsinit {0}\cite {ciocarlie2014velo}}}{12}{figure.caption.32}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces The Flying Gripper holding a coffee cup \blx@tocontentsinit {0}\cite {gabrich2018flying}}}{13}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces The illustration of tactile sensor and pressure sensors integrated in the loop gripper \blx@tocontentsinit {0}\cite {hughes2020sensorization}}}{13}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of the tactile sensor and pressure sensors integrated into the loop gripper \blx@tocontentsinit {0}\cite {hughes2020sensorization}}}{13}{figure.caption.34}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Manufacturing process of actuator with multifilament nylon thread \blx@tocontentsinit {0}\cite {wang2021lightweight}}}{15}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Bio-mechanism of inchworm’s true leg \blx@tocontentsinit {0}\cite {li2017development}}}{15}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Shape Memory Alloy-Based Soft Gripper \blx@tocontentsinit {0}\cite {wang2017shape}}}{15}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Geometric construction of a non-stiff cord \blx@tocontentsinit {0}\cite {li2015fast}}}{17}{figure.caption.38}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces A cable loop gripper prototype was evaluated for its ability to grasp various types of chemistry glassware. \blx@tocontentsinit {0}\cite {manes2024soft}}}{18}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces String shoot impact towards a wall \blx@tocontentsinit {0}\cite {Japan2023}}}{18}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces A cable loop gripper prototype evaluated for grasping various types of chemistry glassware \blx@tocontentsinit {0}\cite {manes2024soft}}}{18}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces String-shoot impact toward a wall \blx@tocontentsinit {0}\cite {Japan2023}}}{18}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces String loop gripper for honeycomb materials \blx@tocontentsinit {0}\cite {roth2021loop}}}{18}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Pneumatic actuator grasping process of an egg \blx@tocontentsinit {0}\cite {yu2022modeling}: (a) The soft actuator moves toward the egg when pneumatic module one is pressurized to 10 kPa, with module two remaining at zero pressure. (b) Contact between the tip of the soft actuator and the egg occurs when the pressure in module one is increased to 20 kPa and module two is set to 14.1 kPa. (c) The egg is securely pinched by the gripper when both module one and module two are pressurized to 20 kPa. (d) The egg is held firmly when the supporting platform is removed, indicating a stable grasp by the gripper.}}{19}{figure.caption.42}%
 \contentsline {figure}{\numberline {2.19}{\ignorespaces Manipulating model of chameleon-like gripper \blx@tocontentsinit {0}\cite {mochiyama2015chameleon}.}}{20}{figure.caption.43}%
@@ -31,12 +31,12 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces The friction wheels and the retraction mechanism driving motors are highlighted for illustration.}}{25}{figure.caption.50}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces The ESP32 controller used in the proposed Lasso Gripper.}}{26}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The caging loop calculating algorithm for Lasso Gripper \blx@tocontentsinit {0}\cite {liu2018caging}. (a) The setup of the depth reconstruction system (b)The Point cloud captured by depth camera directly. (c) A r-offset surface is built for defining the grasping space. (d) Two Morse saddle points (blue) are calculated to define the grasping loop.}}{29}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The illustration of the relative position of the string loop and the target object -- an early test}}{30}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Caging-loop calculation algorithm for Lasso Gripper \blx@tocontentsinit {0}\cite {liu2018caging}. (a) Setup of the depth reconstruction system. (b) Point cloud captured directly by the depth camera. (c) An r-offset surface built to define the grasping space. (d) Two Morse saddle points (blue) calculated to define the grasping loop.}}{29}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Illustration of the relative position of the string loop and the target object -- an early test}}{30}{figure.caption.65}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of numerical loop-shape solutions with representative experimental profiles \blx@tocontentsinit {0}\cite {abello2024string}. Example parameters: linear mass $\mu = 0.283 \pm 0.005\,\mathrm {g\,m^{-1}}$, loop length $L = 160\,\mathrm {cm}$, ejection speed $v = 5.1\,\mathrm {m\,s^{-1}}$, and several ejection pitch angles $\theta _0$. A satisfactory fit with $\chi ^2 \leq 11$ was obtained for these samples.}}{33}{figure.caption.77}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Lasso Gripper string loop is set at the end of UR5 robotic arm. The green point at the end of the robotic arm marks the position reachable by a rigid manipulator, while the red point indicates the furthest position on the string loop from the original point at the same robotic position.}}{34}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The initial robotic arm workspace is marked in green and extended Lasso Gripper workspace is marked in red.}}{35}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The initial robotic arm workspace is marked in green, and the extended Lasso Gripper workspace is marked in red.}}{35}{figure.caption.83}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Validation of grasping ability via bull and horse figures.}}{38}{figure.caption.102}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Validation of grasping ability over variable shapes: drone, cabbage, coke can and chili pepper.}}{38}{figure.caption.103}%
@@ -45,13 +45,15 @@
 \contentsline {figure}{\numberline {6.5}{\ignorespaces The inflated balloon is captured by the antipodal gripper. As a result of the concentrated stress applied, the balloon was severely deformed.}}{40}{figure.caption.107}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Feetech Servo: left motor for output (STS3032), right motor for wrist inputs (STS3009)}}{47}{figure.caption.120}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Feetech servos: left motor for output (STS3032), right motor for wrist inputs (STS3009)}}{47}{figure.caption.120}%
 \contentsline {figure}{\numberline {8.2}{\ignorespaces Tip Design for Cable Guidance}}{48}{figure.caption.123}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Reel Design and Winding Mechanism}}{49}{figure.caption.125}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Motor Arrangement and Quick-Swap Mechanism}}{50}{figure.caption.127}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Input Module Design}}{51}{figure.caption.129}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Jaw FEA: von Mises stress distribution under a 6\,N cable load}}{49}{figure.caption.126}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Middle base FEA: von Mises stress distribution under combined cable and jaw-transmitted loads}}{50}{figure.caption.128}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Reel Design and Winding Mechanism}}{51}{figure.caption.130}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Motor Arrangement and Quick-Swap Mechanism}}{51}{figure.caption.132}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Input Module Design}}{52}{figure.caption.134}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Denavit–Hartenberg coordinate frame definition for the manipulator}}{54}{figure.caption.136}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Alternative view of the D-H coordinate frames and joint axes}}{55}{figure.caption.137}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Denavit–Hartenberg coordinate frame definition for the manipulator}}{56}{figure.caption.141}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Alternative view of the D-H coordinate frames and joint axes}}{57}{figure.caption.142}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

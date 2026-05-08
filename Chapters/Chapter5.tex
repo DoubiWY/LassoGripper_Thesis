@@ -2,7 +2,7 @@
 \chapter{Dynamics of the String Loop}
 \label{Chapter5}
 \begin{chaptersummary}
-This chapter analyses the dynamics that govern the formation and stability of the self-supporting string loop used by the Lasso Gripper. An analytical model based on a Frenet--Serret description balances tension, gravity and aerodynamic drag to identify regimes of loop formation and critical junctures in the solution.
+This chapter analyzes the dynamics that govern the formation and stability of the self-supporting string loop used by Lasso Gripper. An analytical model based on a Frenet--Serret description balances tension, gravity, and aerodynamic drag to identify regimes of loop formation and critical junctures in the solution.
 
 Assumptions and simplifications (e.g., negligible string radius, linear drag approximation) are stated explicitly and comparison with representative experimental profiles is used to validate trends. Detailed parametric sensitivity studies and structural FEA are outside this chapter's scope and are deferred to future work.
 \end{chaptersummary}
@@ -58,10 +58,10 @@ The formation of the self-supporting loop is governed by aerodynamic drag acting
 
 The loop-shape equations are formulated under the assumption of negligible string radius. They reveal a critical interface separating two regions: a supercritical zone (string speed larger than wave speed) and a subcritical zone (wave speed larger than local string speed). Regular solutions that cross this juncture continuously can be obtained and compared with experimental profiles.
 
-In practical terms, understanding the string loop dynamics has significant implications for the Lasso Gripper's design and operation. By leveraging the principles of aerodynamic drag and the transition between different velocity regimes, the Lasso Gripper can achieve precise control over the string loop's shape and stability. This enables the gripper to handle objects with varying sizes and shapes effectively, improving robustness of capture.
+In practical terms, understanding the string loop dynamics has significant implications for Lasso Gripper's design and operation. By leveraging the principles of aerodynamic drag and the transition between different velocity regimes, Lasso Gripper can achieve precise control over the string loop's shape and stability. This enables the gripper to handle objects with varying sizes and shapes effectively, improving robustness of capture.
 
-\section{The workspace analysis}
-Due to the self-supporting loop configuration of the Lasso Gripper in three-dimensional space, the operational workspace of the proposed manipulator significantly exceeds the physical reach of the robotic arm.
+\section{Workspace Analysis}
+Due to the self-supporting loop configuration of Lasso Gripper in three-dimensional space, the operational workspace of the proposed manipulator significantly exceeds the physical reach of the robotic arm.
 
 \begin{figure}[ht]
     \centering
@@ -75,8 +75,8 @@ As delineated in Section 5.1, the three-dimensional pose kinematics of the lasso
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.6 \linewidth]{ws3.jpg} 
-    \caption{The initial robotic arm workspace is marked in green and extended Lasso Gripper workspace is marked in red.}
+    \caption{The initial robotic arm workspace is marked in green, and the extended Lasso Gripper workspace is marked in red.}
     \label{ws2}
 \end{figure}
 
-A case study is conducted with specific parameters to investigate the working space of the Lasso Gripper on a 6-axis robotic arm using the Monte Carlo method. A UR5 robot without joint angle limitation is applied as an example in Fig. \ref{ws1}, and $[R, x_{+}, x_{-}]$ is set as $[0.7, 0.2m, 0.1m]$ in this case. The green point at the end of the robotic arm is the specific position that a rigid manipulator can reach, and the red point represents the furthest point on the string loop from the same robotic position. The set of green points and red points in Fig. \ref{ws2} is the workspace of the robotic arm and the extended Lasso Gripper, respectively. Generating 200,000 sampling points for robotic arm configuration, the volume of workspace convex hull is calculated. The volume of the original UR5 workspace convex hull is $3.4620\,\mathrm{m^3}$, and the volume of the extended Lasso Gripper workspace convex hull is $8.9002\,\mathrm{m^3}$. The workspace extending ratio is up to $157.08\%$.
+A case study is conducted with specific parameters to investigate the workspace of Lasso Gripper on a 6-axis robotic arm using the Monte Carlo method. A UR5 robot without joint angle limits is used as an example in Fig. \ref{ws1}, and $[R, x_{+}, x_{-}]$ is set as $[0.7, 0.2\,m, 0.1\,m]$ in this case. The green point at the end of the robotic arm is the specific position that a rigid manipulator can reach, and the red point represents the furthest point on the string loop from the same robotic position. The sets of green and red points in Fig. \ref{ws2} are the workspace of the robotic arm and the extended workspace of Lasso Gripper, respectively. After generating 200,000 sampled robotic-arm configurations, the convex-hull workspace volume is calculated. The volume of the original UR5 workspace convex hull is $3.4620\,\mathrm{m^3}$, and the volume of the extended Lasso Gripper workspace convex hull is $8.9002\,\mathrm{m^3}$. The workspace extension ratio reaches $157.08\%$.

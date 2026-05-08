@@ -4,7 +4,7 @@
 
 
 \section{Objectives}
-To validate the unique capabilities of the Lasso Gripper and to compare its performance with antipodal grippers, the following experimental procedure was designed. The setup employed a modular robotic arm (Inovo Robotic) with a maximum payload of 6 kg, mounted on a flat platform where the target objects were placed.
+To validate the unique capabilities of Lasso Gripper and to compare its performance with antipodal grippers, the following experimental procedure was designed. The setup employed a modular robotic arm (Inovo Robotic) with a maximum payload of 6 kg, mounted on a flat platform where the target objects were placed.
 The experimental objectives were divided into four categories:
 
     \begin{enumerate}
@@ -23,21 +23,21 @@ For Objectives 1 to 3, the procedure consisted of the following steps:
     \begin{enumerate}
         \item The robotic arm moved to a predefined position to initiate the launch phase;
 
-        \item The Lasso Gripper was swept toward the target while maintaining its open-loop configuration;
+        \item Lasso Gripper was swept toward the target while maintaining its open-loop configuration;
 
         \item Upon reaching the target, the string was retracted to secure the object;
 
         \item The arm performed a vertical lifting motion while maintaining a stable grip.
     \end{enumerate}
-For Objective 4, the robotic arm remained stationary, and the Lasso Gripper independently executed the capture process aimed at intercepting a moving object in flight.
+For Objective 4, the robotic arm remained stationary, and Lasso Gripper independently executed the capture process aimed at intercepting a moving object in flight.
 \section{Experimental Procedure}
-The experimental procedure was divided into phases to evaluate the Lasso Gripper's performance:
+The experimental procedure was divided into phases to evaluate Lasso Gripper's performance:
 \begin{enumerate}
     \item \textbf{Static Object Gripping Tests}: Static object gripping tests were conducted to assess the gripper's ability to handle stationary objects. Test objects were placed in fixed positions, and the gripping algorithm was executed to secure and lift each object. Success rates, gripping forces, and any slippage or deformation of the objects were recorded where feasible.
 
 \item \textbf{Dynamic Object Gripping Tests}: Dynamic object gripping tests focused on evaluating the gripper's performance with moving objects. Test objects with controlled motion, such as rolling or sliding trajectories, were introduced and the lasso attempted to intercept and secure them. The effectiveness and speed of the gripping action were measured to assess performance in dynamic scenarios.
 
-\item \textbf{Comparative Analysis}: Finally, a comparative analysis was conducted to compare the Lasso Gripper's performance with traditional gripping methods. Parallel tests using a standard parallel-jaw gripper were carried out on the same set of test objects. Differences in gripping force, handling precision, success rates, and overall efficiency were analyzed to highlight advantages and potential areas for improvement of the Lasso Gripper.
+\item \textbf{Comparative Analysis}: Finally, a comparative analysis was conducted to compare Lasso Gripper's performance with traditional gripping methods. Parallel tests using a standard parallel-jaw gripper were carried out on the same set of test objects. Differences in gripping force, handling precision, success rates, and overall efficiency were analyzed to highlight advantages and potential areas for improvement of Lasso Gripper.
 \end{enumerate}
 
 
@@ -46,7 +46,7 @@ Data collection involved capturing both quantitative and qualitative metrics whe
 
 Limited summary statistics were computed where appropriate, but a comprehensive statistical campaign (large-sample success rates, fatigue tests) was outside the present scope and is recommended for future work.
 
-\section{Results And Discussion}
+\section{Results and Discussion}
 % (paragraph will be indented)
 The evaluation reported in this chapter is demonstration-focused and intended to validate feasibility, illustrate common operating modes, and highlight comparative behavior versus conventional antipodal grasping. Test cases emphasized scenarios where a loop-based capture offers clear mechanical advantages. Results are presented as illustrative sequences and representative frames rather than as full statistical studies. Observed failure modes (entanglement, missed captures at extreme approach angles, and tension-management lapses) are documented to guide design improvements.
 \subsection{Various Objects Grasping Results}
@@ -70,16 +70,16 @@ The evaluation reported in this chapter is demonstration-focused and intended to
     \caption{Validation of grasping ability with oversized objects: inflated balloons.}
     \label{fig:5}
 \end{figure}
-Fig. \ref{fig:3} illustrates the experiment results for Aim 1. The lasso attached to the horns and necks and secured the figures, allowing the robot to lift and transport them from the platform. For the second set of target objects (a drone, a cabbage, an empty coke can and a chili pepper), the Lasso Gripper successfully grasped the targets and carried them away from the base.
+Fig. \ref{fig:3} illustrates the experimental results for Objective 1. The lasso attached to the horns and necks and secured the figures, allowing the robot to lift and transport them from the platform. For the second set of target objects (a drone, a cabbage, an empty coke can, and a chili pepper), Lasso Gripper successfully grasped the targets and carried them away from the base.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7 \linewidth]{test4.png}
     \caption{Flying object is captured by Lasso Gripper.}
     \label{fig:6}
 \end{figure}
-The grasping strategy for these experiments was similar. In both cases the robot swept above the target while the Lasso Gripper maintained the string in its full range, ensuring the target could be captured as the string retracted. This strategy was extended to expansive targets such as oversized balloons. The third set comprised two flower-shaped balloons (diameters 45 cm and 71 cm) and a spike ball of 18 cm diameter, as shown in Fig. \ref{fig:5}. Although the Lasso Gripper could not fully encircle the largest balloons due to loop-size limitations, the loop still secured them sufficiently to lift them from the platform. This observation led to the fourth case, capturing flying objects. Fig. \ref{fig:6} shows examples where a long balloon and a small flower balloon were manually thrown through the Lasso Gripper's loop and successfully intercepted.
+The grasping strategy for these experiments was similar. In both cases, the robot swept above the target while Lasso Gripper maintained the string in its full range, ensuring that the target could be captured as the string retracted. This strategy was extended to expansive targets such as oversized balloons. The third set comprised two flower-shaped balloons (diameters 45 cm and 71 cm) and a spike ball of 18 cm diameter, as shown in Fig. \ref{fig:5}. Although Lasso Gripper could not fully encircle the largest balloons due to loop-size limitations, the loop still secured them sufficiently to lift them from the platform. This observation led to the fourth case, capturing flying objects. Fig. \ref{fig:6} shows examples where a long balloon and a small flower balloon were manually thrown through Lasso Gripper's loop and successfully intercepted.
 
-Some notable phenomena were observed during the demonstrations, illustrating additional advantages of the Lasso Gripper. The string's sustained high speed made it possible to grasp objects placed close to surfaces. In Fig. \ref{fig:4} (B) and (D), where the cabbage and chili pepper were placed near the table, the Lasso Gripper maintained the loop shape and achieved successful grasps. The adaptive, distributed contact provided by the loop tolerated deviations in placement; compared with the grasp posture in Fig. \ref{fig:5} (D), the loop in Fig. \ref{fig:5} (C) exhibited an unexpected pose deviation yet still produced a secure grip. Thus, the Lasso Gripper demonstrates adaptive force-closure behavior.
+Some notable phenomena were observed during the demonstrations, illustrating additional advantages of Lasso Gripper. The string's sustained high speed made it possible to grasp objects placed close to surfaces. In Fig. \ref{fig:4} (B) and (D), where the cabbage and chili pepper were placed near the table, Lasso Gripper maintained the loop shape and achieved successful grasps. The adaptive, distributed contact provided by the loop tolerated deviations in placement; compared with the grasp posture in Fig. \ref{fig:5} (D), the loop in Fig. \ref{fig:5} (C) exhibited an unexpected pose deviation yet still produced a secure grip. Thus, Lasso Gripper demonstrates adaptive force-closure behavior.
 
 \subsection{Comparisons with Antipodal Point Gripper}
 
@@ -89,6 +89,6 @@ Some notable phenomena were observed during the demonstrations, illustrating add
     \caption{The inflated balloon is captured by the antipodal gripper. As a result of the concentrated stress applied, the balloon was severely deformed.}
     \label{fig:7}
 \end{figure}
-As the comparison group, the 2F-140 gripper from Robotiq was used as the classical antipodal gripper. In this scenario, the small flower balloon served as the target due to its elasticity. As shown in Fig. \ref{fig:7}, the flower balloon experienced severe deformation when grasped by the antipodal gripper. Although the balloon remained intact after the trial, the limitation of traditional grippers for delicate or highly deformable objects was evident. Instead of concentrating forces on small contact patches, the Lasso Gripper captures objects via distributed rope tension, avoiding damage to delicate surfaces and enabling handling of larger, potentially heavier objects than some traditional grippers.
+As the comparison group, the 2F-140 gripper from Robotiq was used as the classical antipodal gripper. In this scenario, the small flower balloon served as the target due to its elasticity. As shown in Fig. \ref{fig:7}, the flower balloon experienced severe deformation when grasped by the antipodal gripper. Although the balloon remained intact after the trial, the limitation of traditional grippers for delicate or highly deformable objects was evident. Instead of concentrating forces on small contact patches, Lasso Gripper captures objects via distributed rope tension, avoiding damage to delicate surfaces and enabling handling of larger, potentially heavier objects than some traditional grippers.
 
-Taken together, these demonstrations validate the feasibility of the Lasso Gripper as both a novel end-effector and a mechanism study platform for tendon-driven manipulation. The results show that controlled tension, distributed contact, and low-distal-complexity actuation can produce robust behavior under uncertainty in object size, shape, and motion. The next part of this thesis transfers these mechanism insights to a more constrained setting, where the same tendon-driven principles must satisfy the stricter requirements of hand-held surgical instrumentation.
+Taken together, these demonstrations validate the feasibility of Lasso Gripper as both a novel end-effector and a mechanism study platform for tendon-driven manipulation. The results show that controlled tension, distributed contact, and low-distal-complexity actuation can produce robust behavior under uncertainty in object size, shape, and motion. The next part of this thesis transfers these mechanism insights to a more constrained setting, where the same tendon-driven principles must satisfy the stricter requirements of handheld surgical instrumentation.
