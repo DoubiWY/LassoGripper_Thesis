@@ -1,0 +1,195 @@
+\chapter{General Discussion}
+
+\label{ChapterDiscussion}
+
+\begin{chaptersummary}
+This chapter synthesizes the two prototype studies presented in the thesis, with Lasso Gripper serving as the main mechanism contribution and the handheld surgical instrument serving as a complementary application case. Rather than treating the two systems as unrelated devices, the discussion identifies the common design variables that govern both systems: proximal actuation, flexible tensile transmission, routing geometry, tension management, compliance, sensing, and task-specific interaction geometry.
+
+The chapter also evaluates what has and has not been demonstrated by the present work. Lasso Gripper is treated as the main mechanism contribution of the thesis, showing the feasibility of a free tensile loop for adaptive capture under uncertain object geometry. The handheld instrument is treated as a complementary application case, showing how guided cable transmission can be packaged into a compact, multi-DOF tool architecture. The discussion clarifies the limitations of qualitative demonstrations, static FEA, and open-loop control, and extracts practical design guidelines for future tendon-driven robotic systems.
+\end{chaptersummary}
+
+\section{Unifying View of the Two Prototype Systems}
+
+The thesis develops two systems that appear different at the application level. Lasso Gripper is an adaptive robotic end-effector for capturing objects using a launched and retracted string loop. The handheld surgical instrument is a compact motorized laparoscopic tool that transmits motion from proximal actuators to a distal multi-DOF tip through guided cables. One system operates in an open manipulation environment and emphasizes capture tolerance; the other operates under medical-device constraints and emphasizes precision, packaging, and reliable bidirectional transmission. However, at the mechanism level, both systems address the same central question: how can flexible tensile elements be used to produce useful robotic behavior without allowing flexibility, slack, and hysteresis to dominate the system response?
+
+This perspective is important for interpreting the thesis as a coherent body of work. The two prototypes are not intended to solve the same task, nor should their experimental results be compared directly as if they were alternative grippers. They are parallel embodiments under the same tendon-driven mechanism framework, but they do not carry equal roles in the thesis. Lasso Gripper is the primary mechanism platform and the main source of novelty; the surgical instrument is a complementary engineering case that examines the same design variables under tighter packaging and control constraints. Together, they occupy two ends of a design spectrum for tendon-driven mechanisms. Lasso Gripper uses a deliberately unconstrained loop. Its advantage arises from allowing the tensile element to occupy a large capture region and conform to objects with uncertain geometry. The surgical instrument uses a highly constrained cable path. Its advantage arises from imposing routing, guidance, and paired winding so that cable motion becomes repeatable enough for handheld teleoperation. The design problem is therefore not whether a cable should be free or constrained, but how much constraint should be introduced for the target task.
+
+In Lasso Gripper, the loop is useful because it is not forced to behave like a rigid linkage. It can sweep across a region, tighten around protrusions or enclosed features, and distribute contact over a larger portion of the object surface. This is particularly valuable for deformable, oversized, or moving objects, where precise antipodal point placement is difficult. In the surgical instrument, by contrast, an unconstrained cable would be unacceptable. The cable must remain inside a guide path, maintain pretension, avoid crossing or entanglement, and transmit motion with predictable phase and displacement. The same physical property--flexible tension transmission--therefore supports two different functions depending on the surrounding mechanical constraints.
+
+This relationship can be summarized through several mechanism-level variables. Both systems share the same underlying design concerns, but each system chooses a different point in the tendon-driven design space.
+
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt,itemsep=0.8em]
+    \item[\textbf{Tensile element role.}]
+    Lasso Gripper uses a free loop that creates an adaptive capture region. The handheld surgical instrument uses guided cables that transmit tool motion from proximal servos.
+
+    \item[\textbf{Primary objective.}]
+    Lasso Gripper aims to increase capture tolerance and distributed contact. The handheld instrument aims to preserve distal dexterity and repeatable control in a compact form factor.
+
+    \item[\textbf{Routing constraint.}]
+    Lasso Gripper imposes a low level of constraint, allowing the loop shape to remain task-dependent and partly self-supporting. The surgical instrument imposes a high level of constraint through guide tubes, pulleys, reels, and tip channels.
+
+    \item[\textbf{Tension management.}]
+    In Lasso Gripper, retraction tension closes and secures the loop. In the surgical instrument, paired-cable winding maintains bidirectional force transmission.
+
+    \item[\textbf{Main uncertainty.}]
+    Lasso Gripper is mainly affected by loop placement, object motion, and object geometry. The surgical instrument is mainly affected by cable stretch, friction, backlash, and user-command mapping.
+
+    \item[\textbf{Validation evidence and limitation.}]
+    Lasso Gripper is supported by representative grasping demonstrations and workspace analysis, but it remains demonstration-focused without large-sample statistics. The surgical instrument is supported by mechanical design, kinematic mapping, FEA, packaging, and control implementation, but it remains a prototype without clinical or long-duration reliability validation.
+\end{description}
+
+The shared mechanism framework also clarifies why both systems are relevant to the broader field of robotic manipulation. Rigid-link mechanisms are effective when the desired interaction geometry is known, the object is sufficiently rigid, and the workspace is accessible. Tendon-driven mechanisms become attractive when the designer wants to relocate actuation, reduce distal mass, introduce compliance, or create interaction regions larger than the physical end-effector. These advantages are not free. They require explicit design attention to routing, pretension, friction, sensing, and load paths. The thesis demonstrates this trade-off through a primary free-loop gripper and a secondary guided-cable instrument rather than through a single optimized final device.
+
+\section{Tension as a Central Design Variable}
+
+Tension is the most important internal state in both prototypes. In a rigid mechanism, joint position is often the primary variable used to reason about function. In a tendon-driven mechanism, position alone is insufficient. A cable can have the correct nominal displacement but still fail to transmit useful force if it is slack. Conversely, excessive tension can damage an object, overload a component, increase friction, or accelerate wear. The useful operating region is therefore bounded from below by the need to avoid slack and from above by safety, material strength, and task-specific contact limits.
+
+For Lasso Gripper, tension controls the transition between loop formation, loop placement, tightening, and transport. During launch, the loop must retain enough shape to sweep across the target region. During retraction, tension must increase fast enough to close the loop before the object escapes, but not so aggressively that the string slips to an undesired location or damages a deformable object. During lifting, tension must remain sufficient to support the object against gravity and motion-induced disturbances. The chili-pepper trial demonstrates the importance of this last phase. The loop initially captured the object, but the uneven mass distribution allowed the object to rotate and slip. In that case, the issue was not simply whether the loop touched the object; it was whether the tensioned loop ended in a stable relationship with the object's center of mass.
+
+For the handheld surgical instrument, tension controls command fidelity and safety. The paired-cable winding design transforms each antagonistic pair into a belt-like transmission path: as one cable is wound, the other is recovered. This arrangement reduces slack during direction reversal and helps preserve a more consistent relationship between motor rotation and distal motion. The one-way bearing concept further supports tension retention by preventing undesired back-driving and loosening. Without such tension management, the system would experience dead zones, delayed response, and unpredictable motion when the operator changes direction.
+
+The two systems therefore reveal a common principle: tendon-driven mechanisms should not be evaluated only by whether the cable can move. They must be evaluated by whether the cable can remain in an appropriate tension state throughout the task. The functional role of tension changes across the operating sequence:
+
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt,itemsep=0.8em]
+    \item[\textbf{Initialization.}]
+    Lasso Gripper uses initialization to establish repeatable loop length and launch state. The handheld instrument uses it to establish neutral cable pretension and servo reference positions.
+
+    \item[\textbf{Motion generation.}]
+    In Lasso Gripper, tension helps shape and project the free loop through friction-wheel launch and spool retraction. In the handheld instrument, cable tension converts servo rotation into distal roll, pitch, yaw, and gripper open/close motion.
+
+    \item[\textbf{Contact formation.}]
+    Lasso Gripper tightens the loop around protrusions, neck regions, or enclosed features. The surgical instrument closes the jaw or orients the distal tip through guided antagonistic cable motion.
+
+    \item[\textbf{Stability.}]
+    Lasso Gripper must maintain enough load to prevent object escape during lifting or transport. The surgical instrument must prevent cable slack, backlash, and delayed response during teleoperation.
+
+    \item[\textbf{Safety and failure modes.}]
+    Lasso Gripper must avoid excessive compression or string damage to deformable targets; its common failures include missed loops, late tightening, slippage, and entanglement. The surgical instrument must avoid excessive cable load, motor stall, component yielding, and unsafe tool force; its common failures include slack, hysteresis, wear, overload, and loss of position fidelity.
+\end{description}
+
+This emphasis on tension suggests a more general design process. A tendon-driven mechanism should first define the minimum tension required for useful function and the maximum tension allowed by the object, actuator, cable, and structure. The designer should then ensure that the routing and actuation scheme keep the cable inside this range across the full task sequence. For Lasso Gripper, this means selecting loop length, launch speed, retraction timing, and approach geometry together. For the surgical instrument, it means selecting reel radius, cable material, guide-tube path, pulley geometry, servo torque, and firmware limits together. Treating these choices independently risks producing a system that works in one pose but fails when the load path or direction changes.
+
+\section{Proximal Actuation and Distal Mass Reduction}
+
+Both prototypes use proximal actuation to reduce distal complexity. In Lasso Gripper, the launch and retraction mechanisms are mounted near the gripper body, while the functional capture region is created by the projected string loop. In the surgical instrument, the STS3032 output servos and STS3009 input-side servos are packaged in the handheld body, while the distal tool remains comparatively light. This design pattern is common in cable-driven robotic systems because it allows motors, electronics, and heat-generating components to be moved away from the interaction point.
+
+The benefit is especially clear in constrained or handheld systems. A heavy distal end-effector increases rotational inertia, makes fine positioning more difficult, and can amplify user fatigue. In surgical applications, distal bulk also reduces accessibility and can obstruct the operative field. By concentrating mass proximally, the instrument can preserve a slender shaft and lighter distal forceps while still using motors large enough to provide useful torque. The prototype mass distribution reflects this goal: approximately 539\,g is located in the handheld body, while the operating forceps account for about 143\,g.
+
+However, proximal actuation transfers difficulty from one part of the mechanism to another. Removing the motor from the distal joint requires a transmission path, and that path introduces friction, compliance, backlash, and routing constraints. The design challenge is therefore not simply to move the motor away from the tip, but to do so without losing controllability. This is why the cable material, Teflon guide tube, pulleys, matched 11\,mm reel/tip diameter, and paired winding mechanism are not secondary details. They are the mechanism features that make proximal actuation usable.
+
+Lasso Gripper illustrates the same principle in a different form. The system does not need to place multiple rigid fingers or actuators around the object. Instead, the string loop reaches outward from the mechanism and temporarily becomes the functional grasping structure. This expands the effective interaction region without requiring a large rigid end-effector. The workspace analysis demonstrates this effect: the loop extends the reachable capture region beyond the original rigid manipulator workspace. In practical terms, a robot equipped with Lasso Gripper can interact with objects whose size or motion would make precise finger placement difficult.
+
+The broader design lesson is that proximal actuation is powerful when the transmitted element can be made task-compatible. In the surgical instrument, task compatibility means repeatable cable displacement and safe force transmission. In Lasso Gripper, task compatibility means a loop shape and closure sequence that can tolerate uncertainty. The same actuation principle therefore supports precision in one case and adaptability in the other.
+
+\section{Routing Geometry, Friction, and Hysteresis}
+
+Routing geometry determines whether a tendon-driven mechanism behaves predictably. A cable path with unnecessary bends, sharp edges, or inconsistent contact regions can introduce friction and wear. In addition, frictional effects are direction-dependent: the force required to pull a cable through a curved path is not generally the same as the force recovered when the cable relaxes or reverses direction. This produces hysteresis between input motion and output motion, which is one of the central difficulties in tendon-driven surgical systems.
+
+The handheld instrument addresses routing through several design choices. The tungsten cable uses a fine 7$\times$37 construction to maintain flexibility while preserving a high breaking force. The Teflon guide tube reduces sliding friction along the carbon shaft. The tip integrates pulleys and guide features so that the cable path remains aligned near the distal joints. The reel diameter is matched to the tip rotation-axis diameter to simplify the displacement relationship. The 35-tooth driving gear and 65-tooth driven gear at the roll transmission improve angular resolution while keeping the quick-swap module compact.
+
+These choices do not eliminate hysteresis, but they reduce its causes and make it more manageable. The current prototype still relies largely on position commands and low-level servo feedback rather than direct distal pose sensing. Therefore, future accuracy will depend on either improved mechanical repeatability or additional compensation. This is why the Future Works chapter emphasizes repeated-cycle characterization and adaptive calibration. A cable-driven instrument can appear accurate during a short demonstration but drift after cable stretch, guide wear, or repeated load cycling. Long-term validation is therefore essential.
+
+Lasso Gripper has a different routing problem. Its free loop does not follow a fixed guide path during capture, so classical cable-routing hysteresis is less important than loop dynamics and contact evolution. However, friction still matters at the launch wheels, spool, and object contact region. If wheel friction is insufficient, launch speed and loop formation become inconsistent. If object contact friction is too low, the loop may slide away from the desired capture region. If spool retraction is too aggressive, the loop may collapse or shift before stable enclosure is achieved. Thus, even a free-loop system cannot be understood without considering friction and timing.
+
+The common lesson is that a tendon-driven mechanism must be designed as a coupled system. Cable material, routing radius, actuator torque, surface friction, sensing, and control timing all shape the final behavior. A design that is mechanically compact but frictionally inconsistent will not produce reliable output. A design that has adequate actuator torque but poor tension recovery will still feel delayed or unstable. This is why the thesis repeatedly emphasizes tension-preserving routing rather than only actuator selection.
+
+\section{Evidence Provided by the Present Prototypes}
+
+The thesis provides several forms of evidence: conceptual design, prototype construction, analytical modeling, simulation, representative experiments, FEA, and control implementation. These forms of evidence support different claims. It is important to separate them clearly.
+
+For Lasso Gripper, the main demonstrated claim is feasibility of adaptive loop-based capture. The experiments show that a controllable string loop can capture animal figures, a drone, a cabbage, an empty coke can, chili pepper, oversized balloons, and thrown balloons under preset conditions. The results support the claim that loop-based capture can tolerate object shape variation and reduce dependence on precise antipodal grasp points. The comparison with the Robotiq 2F-140 gripper illustrates a qualitative advantage for deformable objects: the loop distributes contact rather than concentrating force at two small contact patches.
+
+The Lasso experiments do not prove general statistical reliability across arbitrary target poses. Most representative scenes were repeated twice after loop length and approach angle had been selected. The demonstrations are therefore better interpreted as evidence of operating modes and mechanism feasibility. They identify what the mechanism can do and where it begins to fail, but they do not replace a large-sample success-rate study. This distinction is valuable because it prevents overclaiming while still preserving the contribution of the prototype.
+
+For the handheld surgical instrument, the main demonstrated claim is that a compact tendon-driven architecture can be designed, packaged, analyzed, and controlled as a functional prototype. The actuator allocation, input design, cable routing, winding mechanism, and quick-swap structure show how the system is physically organized. The D-H modeling and firmware discussion show how commands are mapped to output motion. The FEA provides static structural evidence for the 6061-T4 jaw/tip and middle-base components under conservative stall-torque-derived loads. The maximum von Mises stresses of 73.6\,MPa and 76.8\,MPa remain below the 227.53\,MPa yield strength, with safety factors of approximately 3.09 and 2.96 respectively.
+
+The surgical-instrument results do not yet prove clinical readiness. The prototype has not undergone sterilization validation, biocompatibility assessment, ex vivo tissue testing, long-duration fatigue testing, or user studies with surgeons. It also does not yet include direct distal force sensing or closed-loop visual correction. The contribution is therefore an engineering mechanism contribution rather than a certified medical-device result.
+
+The supported claims and remaining validation gaps can be separated as follows:
+
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt,itemsep=0.8em]
+    \item[\textbf{Lasso capture feasibility.}]
+    Current evidence consists of representative captures across rigid, deformable, oversized, and moving targets. The remaining gap is large-sample statistics over randomized poses and object categories.
+
+    \item[\textbf{Loop-based object tolerance.}]
+    Current evidence shows successful grasping of targets that are difficult for point-contact grippers. The remaining gap is systematic measurement of pose-error tolerance and capture probability.
+
+    \item[\textbf{Workspace extension.}]
+    Current evidence comes from Monte Carlo workspace analysis showing an extended reachable region. The remaining gap is experimental validation over calibrated three-dimensional capture volumes.
+
+    \item[\textbf{Surgical instrument packaging.}]
+    Current evidence includes CAD design, exploded views, prototype dimensions, and mass distribution. The remaining gap is ergonomic user study and comparison with conventional handheld tools.
+
+    \item[\textbf{Structural strength.}]
+    Current evidence comes from FEA of the jaw/tip and middle base under conservative load cases. The remaining gap is physical load testing, fatigue testing, and evaluation of off-axis collision cases.
+
+    \item[\textbf{Control implementation.}]
+    Current evidence includes servo feedback, input sensing, command mapping, and firmware safety logic. The remaining gap is distal sensing, closed-loop compensation, and clinical task validation.
+\end{description}
+
+This separation between supported claims and remaining gaps is central to the thesis. The work should not be judged as a completed commercial gripper or a clinically deployable surgical instrument. It should be judged as a mechanism study that builds and evaluates two tendon-driven embodiments, extracts design principles from them, and identifies the technical path required for more rigorous future validation.
+
+\section{Design Guidelines Extracted from the Thesis}
+
+The two prototypes lead to several design guidelines for future tendon-driven systems. These guidelines are not universal rules, and they should not be read as evidence that the handheld instrument is a direct continuation of Lasso Gripper. Instead, they summarize the engineering lessons that appear across the primary free-loop mechanism and the complementary guided-cable implementation.
+
+First, the task should determine the degree of cable constraint. A free loop is advantageous when the goal is to create a large capture region and tolerate object uncertainty. A guided cable path is advantageous when the goal is repeatable motion transmission. Over-constraining a loop-based gripper would reduce its adaptivity; under-constraining a surgical instrument would destroy precision.
+
+Second, tension should be designed as an operating range rather than as a maximum value. Designers often focus on actuator stall torque or cable breaking force, but these quantities alone do not define performance. The mechanism needs enough tension to avoid slack and produce motion, but not so much that it damages objects, overloads components, or increases wear. The useful range depends on the task, object, cable path, and control strategy.
+
+Third, routing geometry should be treated as part of the transmission model. Every guide tube, pulley, bend, hole, and cable-contact region affects friction and hysteresis. A compact design that ignores routing losses may perform poorly even if the actuator has adequate torque. The handheld instrument addresses this through Teflon guidance, pulleys, matched reel/tip geometry, and paired winding, but further experimental characterization is still needed.
+
+Fourth, proximal actuation should be paired with explicit transmission compensation. Moving motors away from the distal tip reduces mass and inertia, but it increases reliance on the cable path. Without compensation, the benefits of proximal actuation can be offset by backlash, stretch, and delayed response. Servo feedback, direct distal sensing, visual correction, or learned compensation can all help, but they must be integrated into the design rather than added after the mechanism is fixed.
+
+Fifth, qualitative demonstrations should be converted into parameterized validation as soon as the operating principle is established. The experiments with Lasso Gripper were appropriate for demonstrating feasibility, but the next stage must quantify success rate, failure type, tension profile, and pose tolerance. Similarly, the surgical instrument prototype demonstrates packaging and control feasibility, but future work must quantify accuracy, hysteresis, repeatability, fatigue, and user performance.
+
+The practical guidelines extracted from the thesis are:
+
+\begin{description}[style=nextline,leftmargin=1.5em,labelindent=0pt,itemsep=0.8em]
+    \item[\textbf{Match cable constraint to task.}]
+    Free or lightly constrained loops should be used when capture tolerance is the priority. Guided cable paths should be used when precision transmission is the priority.
+
+    \item[\textbf{Define a tension operating window.}]
+    The mechanism should avoid both slack and excessive loading. Actuator limits, cable strength, and control thresholds must therefore be selected together.
+
+    \item[\textbf{Design routing as a functional component.}]
+    Guide tubes, pulleys, holes, reels, and bends should be treated as part of the transmission model rather than as secondary packaging details.
+
+    \item[\textbf{Preserve distal simplicity.}]
+    Proximal actuation can reduce distal mass, but it must be paired with compensation for transmission compliance and hysteresis.
+
+    \item[\textbf{Combine mechanics and sensing early.}]
+    Sensor selection should match the dominant uncertainty, such as loop placement, cable load, distal pose, or user intent.
+
+    \item[\textbf{Validate failure modes, not only successes.}]
+    Geometric, dynamic, stability, fatigue, and control failures should be classified separately so that each failure type leads to an appropriate design response.
+
+    \item[\textbf{Keep modularity compatible with alignment.}]
+    Quick-swap modules must preserve cable routing, pretension, and mechanical reference positions; otherwise, modularity will reduce repeatability.
+\end{description}
+
+These guidelines also help explain why the thesis uses two prototypes. A single prototype would reveal only one subset of tendon-driven behavior. The free-loop gripper reveals the central contribution of the thesis: capture, compliance, and large workspace effects produced by a controllable tensile loop. The surgical instrument reveals routing, packaging, tension preservation, and multi-DOF control issues in a more constrained application setting. Together, they provide a broader basis for mechanism-level conclusions without implying a linear development path from one device to the other.
+
+\section{Limitations of the Current Work}
+
+The current work has several limitations. The first limitation is the qualitative nature of the evaluation of Lasso Gripper. Although representative tests were repeated and failure cases were recorded, the study does not yet include a statistically large experiment set. The object set is also not fully standardized. Some objects were selected because they clearly demonstrate the intended mechanism advantage, such as balloons, irregular vegetables, and lightweight flying targets. This is appropriate for feasibility validation, but future claims about reliability require randomized placement, repeated trials, and formal success criteria.
+
+The second limitation is the absence of closed-loop perception in the current demonstrations with Lasso Gripper. The thesis discusses caging-loop planning and point-cloud reasoning, but the reported prototype uses preprogrammed loop length, approach path, launch timing, and retraction timing. The system therefore does not autonomously decide when to launch or tighten based on online object recognition. This distinction is important. The contribution is a mechanical and control-sequence feasibility demonstration, not a complete autonomous manipulation pipeline.
+
+The third limitation is that the surgical instrument remains at the prototype level. The FEA supports static strength under selected conservative load cases, but it does not replace physical load testing. The prototype also requires long-duration tests to evaluate cable stretch, wear, guide-tube abrasion, thermal behavior, and repeatability. The firmware uses servo feedback and safety logic, but does not yet implement direct distal force sensing or high-level adaptive compensation.
+
+The fourth limitation is the absence of clinical validation. The handheld instrument has not been tested under sterilization constraints, surgical workflow constraints, or tissue interaction conditions. Its mass distribution is reasonable for prototype validation, but user fatigue and task performance must be measured with real users. The quick-swap architecture is mechanically promising, but a clinically viable version would require sealed, cleanable, and sterilizable interfaces.
+
+The fifth limitation concerns manufacturability and tolerance. CAD models and prototype assemblies can demonstrate feasibility, but small misalignments in cable paths, pulley axes, reel geometry, and quick-swap interfaces can significantly affect friction and hysteresis. Future work should include tolerance analysis and assembly procedures that preserve cable alignment after repeated module changes.
+
+These limitations do not negate the contribution. They define the boundary of the present thesis. The thesis establishes a mechanism framework and demonstrates two embodiments; it does not claim to complete all validation required for deployment.
+
+\section{Implications for Future Tendon-Driven Robots}
+
+The broader implication of this work is that tendon-driven mechanisms should be designed around interaction geometry rather than actuator placement alone. Many systems use cables because they allow remote actuation, but remote actuation is only one benefit. A tensile element can also define a compliant contact region, distribute load, conform to uncertain geometry, and create behavior that would be difficult with rigid links. The designer's task is to decide which of these properties should be preserved and which must be constrained for the target interaction.
+
+The two prototypes show that flexibility is not a single design category. A free tensile loop, as used in Lasso Gripper, deliberately preserves geometric freedom so that the end-effector can occupy a large capture region and adapt to uncertain object shape. A guided cable path, as used in the handheld surgical instrument, deliberately suppresses geometric freedom so that cable displacement can be converted into repeatable distal motion. Between these two extremes lies a broader design space in which cables may be partially constrained, locally guided, or selectively released depending on whether the task requires adaptivity, precision, compliance, or compactness.
+
+This design-space view is the main mechanism-level outcome of the thesis. The work does not argue that tendon-driven systems are inherently superior to rigid mechanisms or soft mechanisms. Instead, it shows that tendon-driven mechanisms can bridge rigid precision and soft adaptivity when their tension state, routing geometry, actuation location, and sensing assumptions are treated as coupled design variables. If these variables are considered independently, the mechanism may suffer from slack, hysteresis, excessive friction, or poor repeatability. If they are designed together, the same tensile-transmission principle can support both adaptive grasping and compact surgical manipulation.
+
+In summary, Lasso Gripper and the handheld surgical instrument demonstrate two complementary uses of tendon-driven mechanisms. Lasso Gripper is the primary mechanism contribution, using a tensile loop to expand capture range and adapt to object uncertainty. The handheld surgical instrument is a secondary application-oriented implementation, using guided cables to preserve dexterity and reduce distal mass in a compact medical tool. Their shared lessons are that tension must be controlled, routing must be designed, proximal actuation must be compensated, and validation must distinguish feasibility from deployment readiness. The next chapter builds on these lessons by outlining concrete future development paths for the two prototype systems.

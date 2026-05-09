@@ -1,5 +1,6 @@
 % Chapter 6
-\chapter{Experimental Validation (Qualitative Demonstrations)}
+%\chapter{Experimental Validation (Qualitative Demonstrations)}
+\section{Experimental Validation (Qualitative Demonstrations)}
 \label{Chapter6}
 
 
@@ -30,10 +31,12 @@ For Objectives 1 to 3, the procedure consisted of the following steps:
         \item The arm performed a vertical lifting motion while maintaining a stable grip.
     \end{enumerate}
 For Objective 4, the robotic arm remained stationary, and Lasso Gripper independently executed the capture process aimed at intercepting a moving object in flight.
+\paragraph{Control mode}
+All demonstrations used a preprogrammed control sequence. The system did not autonomously detect the object or decide when to initiate grasping. Instead, the robot path, launch timing, retraction timing, and release timing were defined before each trial. The operator initiated the sequence, and the controller executed the scripted motor commands while monitoring cable tension and motor state for safety.
 \section{Experimental Procedure}
 The experimental procedure was divided into phases to evaluate Lasso Gripper's performance:
 \begin{enumerate}
-    \item \textbf{Static Object Gripping Tests}: Static object gripping tests were conducted to assess the gripper's ability to handle stationary objects. Test objects were placed in fixed positions, and the gripping algorithm was executed to secure and lift each object. Success rates, gripping forces, and any slippage or deformation of the objects were recorded where feasible.
+    \item \textbf{Static Object Gripping Tests}: Static object gripping tests were conducted to assess the gripper's ability to handle stationary objects. Test objects were placed in fixed positions, and the preprogrammed launch-and-retract sequence was executed to secure and lift each object. Success rates, gripping forces, and any slippage or deformation of the objects were recorded where feasible.
 
 \item \textbf{Dynamic Object Gripping Tests}: Dynamic object gripping tests focused on evaluating the gripper's performance with moving objects. Test objects with controlled motion, such as rolling or sliding trajectories, were introduced and the lasso attempted to intercept and secure them. The effectiveness and speed of the gripping action were measured to assess performance in dynamic scenarios.
 

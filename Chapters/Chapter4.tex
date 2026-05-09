@@ -1,38 +1,63 @@
 % Chapter 4
-\chapter{Gripping Algorithm Design} % Main chapter title
+%\chapter{Gripping Sequence and Control Logic} % Main chapter title
+\section{{Gripping Sequence and Control Logic} }
 \label{Chapter4} % For referencing the chapter elsewhere, use
-The design of the gripping algorithm is critical to the functionality and efficiency of Lasso Gripper, ensuring precise and reliable manipulation of various objects. This chapter outlines the algorithm's design, which leverages practical point-cloud processing, loop-synthesis for caging grasps, and real-time tension feedback to achieve robust performance in demonstrative scenarios.
+The operation of Lasso Gripper in the reported demonstrations was implemented as a preprogrammed launch, approach, retraction, lifting, and release sequence. The system did not autonomously recognize objects or decide when to grasp based on visual detection. Instead, the target position, approach direction, launch timing, retraction duration, and release command were specified before each trial according to the experimental setup. This chapter clarifies that control logic and distinguishes the implemented demonstration sequence from possible future closed-loop autonomy.
 
-% ------------------------- 3.1 Object Recognition and Point Cloud Processing -------------------------
-\section{Object Recognition and Point Cloud Processing}
-The gripping algorithm begins with target detection using an Intel RealSense D435i depth camera. The captured point cloud is processed to locate candidate "neck" regions and to synthesize feasible caging loops that avoid reliance on exact surface contacts. The algorithm output is a target loop position and approach plan that the launch-and-retract mechanism can execute.
+% ------------------------- 3.1 Demonstration Control Assumptions -------------------------
+\section{Demonstration Control Assumptions}
+The experiments were designed to validate the mechanical feasibility of loop-based capture rather than to demonstrate autonomous perception or decision making. Before each trial, the object was placed in a known region and the robot motion was manually selected or preprogrammed so that the open string loop would sweep across the intended capture region. For static targets, the launch and retraction timing were triggered by the experiment script. For moving-object demonstrations, the gripper was held at a fixed pose and the object was manually thrown through the loop during the launch window.
 
-% (paragraph will be indented)
-A concise pseudocode summary:
-\begin{enumerate}
-    \item Acquire point cloud $P$ from depth camera.
-    \item Preprocess $P$ (filtering, downsampling, outlier removal).
-    \item Identify candidate neck regions using caging-loop detection.
-    \item Select loop pose $L$ according to capture feasibility and approach constraints.
-    \item Execute launch sequence and monitor spool tension.
-    \item Retract and close loop; apply tension-based release criteria.
-\end{enumerate}
+Sensors were used primarily for command execution, monitoring, and post-trial interpretation rather than for autonomous state transitions. Motor controllers provided speed and position control for the friction wheels and retraction spool. The spool-mounted force sensor was used to monitor cable tension and prevent excessive loading during retraction. Camera images and point-cloud examples were used to illustrate feasible loop placement and caging geometry, but the prototype did not use online object recognition to initiate grasping or release actions.
 
-\section{Grasping State Machine}
-% (paragraph will be indented)
-The grasping controller is implemented as a simple finite-state machine. States and typical transition conditions are:
+\section{Preprogrammed Grasping State Machine}
+The demonstration controller can be described as a simple state machine with scripted transitions. The transitions are based on elapsed time, predefined motor commands, robot trajectory waypoints, operator commands, and safety limits rather than automatic visual recognition. The states are:
 \begin{itemize}
-    \item \textbf{Idle}: waiting for operator start or a higher-level command.
-    \item \textbf{Scan}: acquire and preprocess the point cloud; detect candidate neck regions.
-    \item \textbf{Plan}: synthesize loop pose $L$ and compute an approach trajectory that avoids collisions.
-    \item \textbf{Launch}: spin friction wheels and extrude the loop along the planned trajectory.
-    \item \textbf{Monitor}: observe loop pose and spool tension. A capture is declared if visual enclosure is detected for $N$ consecutive frames or spool tension rises above a capture threshold $T_{detect}$ for a debounce interval $t_{debounce}$.
-    \item \textbf{Tighten}: retract the spool until the target holding tension $T_{hold}$ or a position limit is reached.
-    \item \textbf{Lift}: lift and transport the object while maintaining tension control.
-    \item \textbf{Release/Recovery}: release the object on command or on safety conditions; rewind the loop and return to \textbf{Idle}.
+    \item \textbf{Idle}: the controller waits for an operator start command.
+    \item \textbf{Preset}: the target pose, robot sweep path, launch motor current, retraction motor current, and timing parameters are loaded into the experiment script.
+    \item \textbf{Launch}: the friction wheels spin up and extrude the string to form the open loop.
+    \item \textbf{Approach/Sweep}: for static objects, the robot follows the predefined path so that the loop passes around the target region; for moving objects, the gripper remains fixed while the object enters the loop.
+    \item \textbf{Retract/Tighten}: the spool motor retracts the string according to the programmed duration or position command. Tension is monitored to avoid excessive load.
+    \item \textbf{Lift/Transport}: after retraction, the robot performs the scripted lifting or transport motion.
+    \item \textbf{Release}: the operator or script commands spool unwinding and friction-wheel reversal or relaxation, allowing the loop to reopen and release the object.
+    \item \textbf{Recovery}: the string is rewound to the initial configuration and the controller returns to \textbf{Idle}.
 \end{itemize}
 
-Transitions rely on fused sensor information (point-cloud-based enclosure detection, spool-mounted tension sensor, motor encoder positions) and safety timeouts. For example: if no capture is detected within a maximum launch time $t_{max}$ the controller aborts the attempt and executes a recovery sequence to avoid entanglement.
+The corresponding actuation and signal flow is summarized in Fig.~\ref{fig:grasp_release_flow}. The host script sends velocity or position commands to the ESP32 controller. The ESP32 drives the electronic speed controllers for the friction wheels and the spool motor driver for retraction. Sensor feedback is limited to motor state and cable tension monitoring; it does not trigger autonomous grasp initiation in the current prototype.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node distance=0.5cm,
+    every node/.style={font=\small},
+    block/.style={draw, rectangle, rounded corners, align=center, minimum width=3.2cm, minimum height=0.85cm},
+    arrow/.style={->, thick}
+]
+\node[block] (idle) {Idle\\operator start};
+\node[block, below=of idle] (preset) {Preset trial\\pose, timing, speeds};
+\node[block, below=of preset] (launch) {Launch loop\\friction wheels on};
+\node[block, below=of launch] (sweep) {Approach / sweep\\predefined robot motion};
+\node[block, below=of sweep] (retract) {Retract / tighten\\spool motor command};
+\node[block, below=of retract] (lift) {Lift / transport\\scripted robot motion};
+\node[block, below=of lift] (release) {Release\\unwind or relax string};
+\node[block, below=of release] (recovery) {Recovery\\rewind and reset};
+
+\draw[arrow] (idle) -- (preset);
+\draw[arrow] (preset) -- (launch);
+\draw[arrow] (launch) -- (sweep);
+\draw[arrow] (sweep) -- (retract);
+\draw[arrow] (retract) -- (lift);
+\draw[arrow] (lift) -- (release);
+\draw[arrow] (release) -- (recovery);
+\draw[arrow] (recovery.east) -- ++(1.2,0) |- (idle.east);
+
+\node[block, right=4.4cm of retract, minimum width=3.9cm] (monitor) {Monitoring only\\tension, motor state};
+\draw[arrow] (retract.east) -- (monitor.west);
+\draw[arrow] (monitor.south) |- (release.east);
+\end{tikzpicture}
+\caption{Preprogrammed grasping and release sequence used in the demonstrations. The current prototype does not autonomously detect objects or trigger grasping from visual feedback; state transitions are commanded by the operator or experiment script, with tension and motor signals used for monitoring and safety.}
+\label{fig:grasp_release_flow}
+\end{figure}
 
 \begin{figure}[htbp]
 \centering
@@ -41,16 +66,17 @@ Transitions rely on fused sensor information (point-cloud-based enclosure detect
 \centering
 \includegraphics[width=\linewidth]{Figures/caging.png}
 \caption{Caging-loop calculation algorithm for Lasso Gripper \cite{liu2018caging}. (a) Setup of the depth reconstruction system. (b) Point cloud captured directly by the depth camera. (c) An r-offset surface built to define the grasping space. (d) Two Morse saddle points (blue) calculated to define the grasping loop.}
+\label{fig:caging_loop_method}
 \end{minipage}
 \end{tabular}
 \end{figure}
 
-The algorithm employs a method for identifying the "neck" of the object, which is a critical region for secure gripping. The method entails identifying caging loops, which are closed curves characterized within the embedding space of the target object's shape \cite{liu2018caging}. By decoupling the caging loops from the surface geometry, the algorithm can synthesize feasible caging grasps that are not constrained by the object's surface details. This enables the gripper to handle objects with complex geometries and topologies effectively.
+The caging-loop concept shown in Fig.~\ref{fig:caging_loop_method} motivates the geometric placement of the loop around neck-like regions. In the present prototype, this concept was used to guide experimental setup and qualitative interpretation rather than as a fully automated online perception module. Future versions could integrate the point-cloud caging method with closed-loop planning, but this capability was outside the scope of the current demonstration.
 
 % ------------------------- 3.2 Loop Positioning and Tightening -------------------------
 \section{Loop Positioning and Tightening}
 
-Once the neck region is identified, the algorithm determines the optimal position for the string loop around the neck. The positioning is crucial for ensuring that the loop can be tightened securely without slipping or causing damage to the object. The algorithm calculates the precise coordinates for the loop's placement, taking into account the object's shape and the desired gripping force.
+For the reported experiments, loop positioning was determined before each trial from the known target location and the intended capture region. The key requirement was to align the open loop so that retraction would cause the string to close around a neck, protrusion, or enclosed region of the object. This preplanned positioning was sufficient for demonstrating the mechanical advantages of distributed contact and large capture tolerance.
 
 \begin{figure}[htbp]
 \centering
@@ -63,23 +89,11 @@ Once the neck region is identified, the algorithm determines the optimal positio
 \end{tabular}
 \end{figure}
 
-The tightening process is executed in a controlled manner, with the string loop gradually constricting around the neck region. The wrist of the gripper approaches the object in synchrony with the tightening action, ensuring that the loop maintains its position and grip. The following pseudocode illustrates the sequence of operations:
-
-Input: point cloud P, string-shooting velocity V
-
-\begin{enumerate}
-    \item Scan P using depth camera
-    \item Process P to identify key features
-    \item Identify neck region N in P using the caging loop method
-    \item Determine optimal loop position L according to V 
-    \item Align lower end of L with N
-    \item Execute controlled tightening action
-    \item Approach wrist toward object while maintaining loop position
-\end{enumerate}
+The tightening process is executed in a controlled manner, with the string loop gradually constricting around the target region. The wrist of the gripper approaches the object in synchrony with the programmed retraction action, ensuring that the loop maintains its position and grip.
 
 % ------------------------- 3.3 Real-Time Feedback and Adjustment -------------------------
-\section{Real-Time Feedback and Adjustment}
-The gripping algorithm incorporates real-time feedback mechanisms to adjust the gripping force and position dynamically. Sensors embedded in the gripper provide continuous data on the tension of the string, the position of the loop, and the force exerted on the object. This data is processed by the controller to make real-time adjustments, ensuring that the grip remains secure and stable.
+\section{Monitoring and Safety Feedback}
+The current prototype uses feedback for monitoring and safety rather than autonomous grasp planning. The spool-mounted force sensor provides cable-tension information during retraction, while motor encoders provide actuator state information. These signals help verify whether the commanded sequence is being executed properly and whether the cable load remains within a reasonable range.
 
-The force feedback sensor, located on the spool's axle, plays a pivotal role in this process. It monitors the tension of the string during the tightening phase and adjusts the motor's torque accordingly. This prevents excessive force that could damage the object and ensures that the grip is firm enough to hold the object securely.
+The force feedback sensor, located on the spool's axle, plays a safety role during tightening. If the measured tension exceeds a preset threshold, the controller can stop or relax the retraction command to reduce the risk of damaging the object or overloading the mechanism. In the reported demonstrations, this feedback was not used to automatically recognize successful capture; capture success was assessed from the observed outcome of the trial.
 \let\cleardoublepage\clearpage

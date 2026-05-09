@@ -5,6 +5,10 @@
 This chapter presents Lasso Gripper as the principal mechanism embodiment used to explore tendon-driven design rules. The chapter focuses on the device concept, mechanical architecture, actuation and sensing choices, the grasp planning strategy, and a set of demonstration experiments. The goal is to establish the feasibility of using a controllable tensile loop as a practical end-effector and to identify the mechanism-level advantages and failure modes that inform the broader thesis.
 
 The experimental program reported here is demonstration-focused and qualitative by design: experiments illustrate the gripper's operating behaviors, its tolerance to object uncertainty, and comparative advantages versus a classical antipodal gripper. Quantitative statistical evaluation (e.g., large-sample success rates, repeatability statistics, fatigue testing) is not included and is recommended as a follow-up study.
+
+%This chapter analyzes the dynamics that govern the formation and stability of the self-supporting string loop used by Lasso Gripper. An analytical model based on a Frenet--Serret description balances tension, gravity, and aerodynamic drag to identify regimes of loop formation and critical junctures in the solution.
+
+%Assumptions and simplifications (e.g., negligible string radius, linear drag approximation) are stated explicitly and comparison with representative experimental profiles is used to validate trends. Detailed parametric sensitivity studies and structural FEA are outside this chapter's scope and are deferred to future work.
 \end{chaptersummary}
 % ------------------------- 2.1 Overall Structure -------------------------
 \section{Design and Principle}
@@ -42,7 +46,7 @@ The string shooting and retraction mechanism is a defining feature of Lasso Grip
 
 The propulsion of the string is achieved through two pairs of friction wheels. These wheels are designed with high-friction surfaces to grip the string effectively. The wheels are driven by coreless motors with high speed so that the required rotational speeds for rapid string extrusion can be achieved\cite{murata2024elastic}.
 
-During the string shooting phase, both pairs of friction wheels rotate in the same direction, propelling the string forward through a guided track. This track is meticulously designed to ensure the string forms a loop within the desired dimensions and shape. Sensors along the track monitor the string's position and velocity, providing real-time feedback to the controller.
+During the string shooting phase, both pairs of friction wheels rotate in the same direction, propelling the string forward through a guided track. This track is designed to help the string form a loop within the desired dimensions and shape. In the prototype reported here, the launch duration and wheel speeds were specified by the experiment script rather than adjusted by online visual recognition.
 
 \begin{figure}[htbp]
 \centering
@@ -57,7 +61,7 @@ During the string shooting phase, both pairs of friction wheels rotate in the sa
 
 When retraction is required, the mechanism undergoes a coordinated sequence of actions. The rear pair of friction wheels maintains its rotational speed, continuing to pull the string inwards. Simultaneously, the front pair of wheels reverses direction, creating a counterforce that pulls the string loop into the space between the two pairs of wheels. This space is precisely designed to accommodate the retracted string without entanglement.
 
-Within this confined space, a spool mechanism is designed. The spool is equipped with a rotational motor that winds the string onto itself, storing it neatly for future use. The tension exerted on the string during retraction is carefully controlled by a force feedback sensor located on the spool's axle. This sensor monitors the tension and adjusts the motor's torque to ensure that the object is gripped securely without applying excessive force that could cause damage.
+Within this confined space, a spool mechanism is designed. The spool is equipped with a rotational motor that winds the string onto itself, storing it neatly for future use. The tension exerted on the string during retraction is monitored by a force feedback sensor located on the spool's axle. This sensor is used to observe cable loading and support safety limits during the preprogrammed retraction sequence.
 
 \subsection{The ESP32 Main Controller for Lasso Gripper}
 
@@ -72,9 +76,9 @@ The ESP32 Main Controller serves as the central hub for Lasso Gripper operations
 \end{minipage}
 \end{tabular}
 \end{figure}
-Its dual-core processor handles real-time sensor processing, execution of the grasping algorithms, and communication with external devices. The controller interfaces with a spool-mounted force sensor, motor encoders, and any auxiliary trackers used during experiments.
+Its dual-core processor handles motor command execution, basic sensor monitoring, and communication with external devices. The controller interfaces with a spool-mounted force sensor, motor encoders, and any auxiliary trackers used during experiments.
 
-GPIO pins drive the retraction modules and friction-wheel controllers, while PWM outputs provide fine speed control for the propulsion motors. Wireless connectivity is used for logging, target-recognition offload, and remote monitoring via a host computer when required.
+GPIO pins drive the retraction modules and friction-wheel controllers, while PWM outputs provide fine speed control for the propulsion motors. Wireless connectivity is used for logging and remote monitoring via a host computer when required.
 
 \section{Implications for Tendon-Driven Mechanisms and Medical Devices}
 
